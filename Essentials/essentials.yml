@@ -1,0 +1,376 @@
+ELoc:
+    command: help ELoc
+    description: List all location commands from Essentials
+    plugin: Essentials
+    main: true
+essentialsdepth:
+    command: depth
+    description: Displays your current block depth in relation to sea-level.
+    plugin: ELoc
+    main: false
+    permissions: essentials.depth
+essentialsgetpos:
+    command: getpos
+    description: Displays your current coordinate location in the world.
+    plugin: ELoc
+    main: false
+    permissions: essentials.getpos
+essentialscompass:
+    command: compass
+    description: Displays your current bearing in the world.
+    plugin: ELoc
+    main: false
+    permissions: essentials.compass
+essentialstop:
+    command: top
+    description: Teleports you to the highest block at your current location.
+    plugin: ELoc
+    main: false
+    permissions: essentials.top
+essentialsjump:
+    command: jump, /j
+    description: Teleports you to the nearest block, in your line of sight (Crosshair).
+    plugin: ELoc
+    main: false
+    permissions: essentials.jump
+essentialsback:
+    command: back
+    description: Use this command after dying, it will transport you to a safe deathpoint.
+    plugin: ELoc
+    main: false
+    permissions: essentials.back
+essentialsworld:
+    command: world [nether|gamercide]
+    description: Allows you to teleport to any world by name, which is on the server.
+    plugin: ELoc
+    main: false
+    permissions: essentials.world
+
+ESocial:
+    command: help ESocial
+    description: List all Social commands from Essentials
+    plugin: Essentials
+    main: true
+essentialsmsg:
+    command: msg, /whisper, /tell, /m [player] [message]
+    description: This allows you to private message another player.
+    plugin: ESocial
+    main: false
+    permissions: essentials.msg
+essentialsafk:
+    command: afk [reason]
+    description: Sets your status as AFK.
+    plugin: ESocial
+    main: false
+    permissions: essentials.afk
+essentialsrules:
+    command: rules [page]
+    description: Displays the rules.
+    plugin: ESocial
+    main: false
+    permissions: essentials.rules
+essentialsmotd:
+    command: motd
+    description: Displays the Message Of The Day.
+    plugin: ESocial
+    main: false
+    permissions: essentials.motd
+essentialsme:
+    command: me [message]
+    description: Allows you to emote.
+    plugin: ESocial
+    main: false
+    permissions: essentials.me
+essentialslist:
+    command: list, /who, /playerlist, /online, /L
+    description: Lists the players online and how many slots are left.
+    plugin: ESocial
+    main: false
+    permissions: essentials.list
+essentialsmail:
+    command: mail [read|clear|send] [player] [message]
+    description: Allows you to send, recieve, and read mail from other players on the server.
+    plugin: ESocial
+    main: false
+    permissions: essentials.mail
+essentialshelpop:
+    command: helpop [message]
+    description: Requests help from online admins/operators.
+    plugin: ESocial
+    main: false
+    permissions: essentials.helpop
+essentialswhois:
+    command: whois [nickname|playername]
+    description: Displays a specified players money, real name (if using a nick), and afk status.
+    plugin: ESocial
+    main: false
+    permissions: essentials.whois
+essentialsnick:
+    command: nick, /n [player] [nickname|off]
+    description: Allows you to give yourself or another player, a nick name.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.nick
+EAdmin:
+    command: help EAdmin
+    description: List all Essentials Admin Commands
+    plugin: Essentials
+    main: true
+    permissions: essentials.essentials
+essentialsreload:
+    command: essentials
+    description: Reloads your Essentials.jar configuration.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.essentials
+essentialsreloadall:
+    command: reloadall, /rel
+    description: Reloads all of your plugins. (Can crash server!)
+    plugin: EAdmin
+    main: false
+    permissions: essentials.reloadall
+essentialsgc:
+    command: gc
+    description: Displays chunk, memory, and world information.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.gc
+essentialsplugin:
+    command: plugin [list] [<enable|disable|reload> <plugin name>]
+    description: Allows you to enable, disable, or reload a specified plugin.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.plugin
+essentialsspawnmob:
+    command: spawnmob [mob],[mount]:[slime-size] [amount]
+    description: Allows you to spawn a specified mob with an optional mount, with Slime-size support.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.spawnmob
+essentialsclearinv:
+    command: clearinventory [player name]
+    description: Allows you to clear your own inventory or the inventory of a specified player.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.clearinventory
+essentialsbroadcast:
+    command: broadcast
+    description: Displays a specified message to all players on the server.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.broadcast
+essentialsburn:
+    command: burn [player] [seconds]
+    description: Sets a player on fire for an amount time.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.burn
+essentialsext:
+    command: ext [player]
+    description: Extinguish a player.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.ext
+essentialskill:
+    command: kill
+    description: Allows you to kill a specified player.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.kill
+essentialsping:
+    command: ping
+    description: Replys with a "Pong!". Used to make sure Essentials.jar is working correctly.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.ping
+
+ECheats:
+    command: help ECheats
+    description: Display Available Cheats
+    plugin: Essentials
+    main: true
+essentialsgive:
+    command: give [player] [item] [amount]
+    description: Allows you to give another player a specified item.
+    plugin: ECheats
+    main: false
+    permissions: essentials.give
+essentialsitem:
+    command: item, /i [player] [item] [amount]
+    description: Gives yourself a specified item.
+    plugin: ECheats
+    main: false
+    permissions: essentials.item
+essentialstime:
+    command: time [day|night]
+    description: Allows you to switch the world time between day and night.
+    plugin: ECheats
+    main: false
+    permissions: essentials.time
+essentialstree:
+    command: tree [tree|birch|redwood]
+    description: Spawns a specified tree 2 blocks in front of yourself.
+    plugin: ECheats
+    main: false
+    permissions: essentials.tree
+essentialsbigtree:
+    command: bigtree [tree|redwood]
+    description: Spawns a specified big tree 2 blocks in front of yourself.
+    plugin: ECheats
+    main: false
+    permissions: essentials.bigtree
+essentialsgod:
+    command: god
+    description: Makes you invulnerable to all damage types.
+    plugin: ECheats
+    main: false
+    permissions: essentials.god
+essentialsheal:
+    command: heal [player]
+    description: Allows you to completely heal yourself or a specified player.
+    plugin: ECheats
+    main: false
+    permissions: essentials.heal
+ETele:
+    command: help ETele
+    description: Display Essentials Teleport Commands
+    plugin: Essentials
+    main: true
+essentialstptoggle:
+    command: tptoggle
+    description: Toggles players ability to teleport or request teleport to/from you.
+    plugin: ETele
+    main: false
+    permissions: essentials.tptoggle
+essentialstpa:
+    command: tpa [player]
+    description: If not denied by tptoggle status, then asks the player if you can teleport to them.
+    plugin: ETele
+    main: false
+    permissions: essentials.tpa
+essentialstp:
+    command: tp, /tele [player]
+    description: Direct (you >> player) teleport unless denied by tptoggle status.
+    plugin: ETele
+    main: false
+    permissions: essentials.tp
+essentialstpo:
+    command: tpo
+    description: Overrides the tptoggle status and directly teleports you to the specified player.
+    plugin: ETele
+    main: false
+    permissions: essentials.tpo
+essentialstpahere:
+    command: tpahere [player]
+    description: If not denied by tptoggle status, then asks the specified player to accept transport to your location.
+    plugin: ETele
+    main: false
+    permissions: essentials.tpahere
+essentialstphere:
+    command: tphere, /s [player]
+    description: Direct (player >> you) teleport unless denied by tptoggle status.
+    plugin: ETele
+    main: false
+    permissions: essentials.tphere
+essentialstphere:
+    command: tpohere [player]
+    description: Overrides the tptoggle status and directly teleports a specified player to your location.
+    plugin: ETele
+    main: false
+    permissions: essentials.tpohere
+essentialstppos:
+    command: tppos [x] [y] [z]
+    description: Type in an <x> <y> <z> coordinate and off you go! The Y coordinate is your "Up in the Sky or Down near the Bedrock" location.
+    plugin: ETele
+    main: false
+    permissions: essentials.tppos
+essentialsspawn:
+    command: spawn
+    description: Teleports you to the global spawn or group defined spawn area.
+    plugin: ETele
+    main: false
+    permissions: essentials.spawn
+essentialssetspawn:
+    command: setspawn [group]
+    description: Sets global spawn or group defined spawn area.
+    plugin: ETele
+    main: false
+    permissions: essentials.spawn
+essentialswarp:
+    command: warp [warpname]
+    description: Warps you to a defined area.
+    plugin: ETele
+    main: false
+    permissions: essentials.warp
+essentialssetwarp:
+    command: setwarp [warpname]
+    description: Sets a warp.
+    plugin: ETele
+    main: false
+    permissions: essentials.setwarp
+essentialsdelwarp:
+    command: delwarp [warpname]
+    description: Deletes a warp.
+    plugin: ETele
+    main: false
+    permissions: essentials.delwarp
+EMod:
+    command: help EMod
+    description: Display Essentials Moderator Commands
+    plugin: Essentials
+    main: true
+    permissions: essentials.ban
+essentialsban:
+    command: ban [playername]
+    description: Bans a specified player.
+    plugin: EMod
+    main: false
+    permissions: essentials.ban
+essentialsbanip:
+    command: banip [playername]
+    description: Bans the IP of a specified player.
+    plugin: EMod
+    main: false
+    permissions: essentials.banip
+essentialsmute:
+    command: mute [playername]
+    description: Mutes or un-mutes a specified player.
+    plugin: EMod
+    main: false
+    permissions: essentials.mute
+essentialskick:
+    command: kick [playername] [reason]
+    description: Kicks a specified player off the server.
+    plugin: EMod
+    main: false
+    permissions: essentials.kick
+essentialskickall:
+    command: kick [playername] [reason]
+    description: Kicks all players off the server.
+    plugin: EMod
+    main: false
+    permissions: essentials.kickall
+essentialsunban:
+    command: unban [playername]
+    description: Unbans a specified player.
+    plugin: EMod
+    main: false
+    permissions: essentials.unban
+essentialsunbanip:
+    command: unbanip [playername|IP address]
+    description: Unbans a specified players IP address.
+    plugin: EMod
+    main: false
+    permissions: essentials.unbanip
+essentialstjail:
+    command: togglejail, /tjail [playername]
+    description: Jail/unjail a player. Jailing prevents them from building and destroying blocks.
+    plugin: EMod
+    main: false
+    permissions: essentials.togglejail
+essentialssetjail:
+    command: setjail [jail name]
+    description: Set a jail point at your current location.
+    plugin: EMod
+    main: false
+    permissions: essentials.setjail
