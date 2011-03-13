@@ -3,6 +3,7 @@ petitionopen:
     description: Open a support ticket.
     plugin: Petition
     permissions: petition
+    main: true
 petitioncomment:
     command: pe comment [#] <message>
     description: Comment to a ticket.
