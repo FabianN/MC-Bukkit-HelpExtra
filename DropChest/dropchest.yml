@@ -20,7 +20,7 @@ dropchestradius:
     permissions: dropchest.radius.set
 dropchestwhich:
     command: dropchest which
-    description: Rightclick on a chest to get info.
+    description: R-Click on a chest to get info.
     plugin: DropChest
     permissions: dropchest.which
 dropchesttp:
@@ -35,7 +35,7 @@ dropchestname:
     permissions: dropchest
 dropchestfilter:
     command: dropchest filter [suck|push|pull]
-    description: Edit filter. Rightclick w/item. Be sure to finish.
+    description: R-Click w/item.
     plugin: DropChest
     permissions: dropchest.filter
 dropchestfinish:
