@@ -28,7 +28,7 @@ essentialstop:
     main: false
     permissions: essentials.top
 essentialsjump:
-    command: jump, /j
+    command: jump
     description: Teleports you to the nearest block, in your line of sight (Crosshair).
     plugin: ELoc
     main: false
@@ -52,7 +52,7 @@ ESocial:
     plugin: Essentials
     main: true
 essentialsmsg:
-    command: msg, /whisper, /tell, /m [player] [message]
+    command: tell [player] [message]
     description: This allows you to private message another player.
     plugin: ESocial
     main: false
@@ -82,14 +82,14 @@ essentialsme:
     main: false
     permissions: essentials.me
 essentialslist:
-    command: list, /who, /playerlist, /online, /L
+    command: list
     description: Lists the players online and how many slots are left.
     plugin: ESocial
     main: false
     permissions: essentials.list
 essentialsmail:
     command: mail [read|clear|send] [player] [message]
-    description: Allows you to send, recieve, and read mail from other players on the server.
+    description: Access mailbox.
     plugin: ESocial
     main: false
     permissions: essentials.mail
@@ -101,13 +101,13 @@ essentialshelpop:
     permissions: essentials.helpop
 essentialswhois:
     command: whois [nickname|playername]
-    description: Displays a specified players money, real name (if using a nick), and afk status.
+    description: Displays a players info.
     plugin: ESocial
     main: false
     permissions: essentials.whois
 essentialsnick:
-    command: nick, /n [player] [nickname|off]
-    description: Allows you to give yourself or another player, a nick name.
+    command: nick [player] [nickname|off]
+    description: Allows you to give yourself or another player a nick name.
     plugin: EAdmin
     main: false
     permissions: essentials.nick
@@ -124,7 +124,7 @@ essentialsreload:
     main: false
     permissions: essentials.essentials
 essentialsreloadall:
-    command: reloadall, /rel
+    command: rel
     description: Reloads all of your plugins. (Can crash server!)
     plugin: EAdmin
     main: false
@@ -136,14 +136,20 @@ essentialsgc:
     main: false
     permissions: essentials.gc
 essentialsplugin:
-    command: plugin [list] [<enable|disable|reload> <plugin name>]
+    command: plugin [list]
+    description: List plugins.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.plugin
+essentialsplugin:
+    command: plugin [enable|disable|reload] [plugin name]
     description: Allows you to enable, disable, or reload a specified plugin.
     plugin: EAdmin
     main: false
     permissions: essentials.plugin
 essentialsspawnmob:
-    command: spawnmob [mob],[mount]:[slime-size] [amount]
-    description: Allows you to spawn a specified mob with an optional mount, with Slime-size support.
+    command: spawnmob [mob],[mount]:[size] [amount]
+    description: Allows you to spawn a specified mob with an optional mount.
     plugin: EAdmin
     main: false
     permissions: essentials.spawnmob
@@ -160,8 +166,8 @@ essentialsbroadcast:
     main: false
     permissions: essentials.broadcast
 essentialsburn:
-    command: burn [player] [seconds]
-    description: Sets a player on fire for an amount time.
+    command: burn [player] [sec]
+    description: Sets a player on fire for time.
     plugin: EAdmin
     main: false
     permissions: essentials.burn
@@ -196,7 +202,7 @@ essentialsgive:
     main: false
     permissions: essentials.give
 essentialsitem:
-    command: item, /i [player] [item] [amount]
+    command: i [player] [item] [amount]
     description: Gives yourself a specified item.
     plugin: ECheats
     main: false
@@ -249,7 +255,7 @@ essentialstpa:
     main: false
     permissions: essentials.tpa
 essentialstp:
-    command: tp, /tele [player]
+    command: tp [player]
     description: Direct (you >> player) teleport unless denied by tptoggle status.
     plugin: ETele
     main: false
@@ -363,7 +369,7 @@ essentialsunbanip:
     main: false
     permissions: essentials.unbanip
 essentialstjail:
-    command: togglejail, /tjail [playername]
+    command: tjail [playername]
     description: Jail/unjail a player. Jailing prevents them from building and destroying blocks.
     plugin: EMod
     main: false
