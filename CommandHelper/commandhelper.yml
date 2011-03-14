@@ -1,0 +1,26 @@
+CommandHelper:
+    command: help CommandHelper
+    description: Display CommandHelper Help.
+    main: true
+    plugin: CommandHelper
+chrepeat:
+    command: .
+    description: Repeat your last command.
+    plugin: CommandHelper
+cheach:
+    command: each <groups,users> </command>
+    description: Use Command on All Users / Selected Groups. Use ^ to specify where to put the players' names.
+    plugin: CommandHelper
+    main: false
+    permissions: OP
+chperform:
+    command: perform <groups,users> </command>
+    description: Make others use commands
+    plugin: CommandHelper
+    main: false
+    permissions: OP
+chalias:
+    command: alias </name> </command>
+    description: Make an alias for a given command
+    plugin: CommandHelper
+    main: false
