@@ -1,0 +1,12 @@
+essentialsspawn:
+    command: spawn
+    description: Warp to the spawn point.
+    plugin: ETele
+    main: true
+    permissions: essentials.spawn
+essentialssetspawn:
+    command: setspawn
+    description: Sets spawnpoint to your current position.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.setspawn
