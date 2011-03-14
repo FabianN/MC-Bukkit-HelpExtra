@@ -336,7 +336,7 @@ WETool:
     permissions: worldedit.tool
 mat:
     description: Change the material used by your current brush
-    command: mat, /material, /fill [mat]
+    command: mat [mat]
     plugin: WETool
     main: false
 size:
@@ -500,7 +500,7 @@ distr:
     permissions: worldedit.analysis.distr
 count:
     command: //count <block>
-    description: Counts the number of a certain type of block
+    description: Counts the number of a type of block
     plugin: WorldEdit
     main: false
     permissions: worldedit.analysis.count
@@ -535,19 +535,19 @@ restore:
     permissions: worldedit.superpickaxe
 superpickaxesingle:
     description: Switch to single block super pickaxe mode
-    command: superpickaxe, pickaxe, sp single
+    command: sp single
     plugin: WorldEdit
     main: false
     permissions: worldedit.superpickaxe
 superpickaxearea:
     description: Switch to area super pickaxe mode
-    command: superpickaxe, pickaxe, sp area <range>
+    command: sp area <range>
     plugin: WorldEdit
     main: false
     permissions: worldedit.superpickaxe.area
 superpickaxerecur:
     description: Switch to recursive super pickaxe mode
-    command: superpickaxe, pickaxe, sp recur <range>
+    command: sp recur <range>
     plugin: WorldEdit
     main: false
     permissions: worldedit.superpickaxe.recursive
