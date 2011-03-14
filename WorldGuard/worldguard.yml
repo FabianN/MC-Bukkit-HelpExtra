@@ -1,0 +1,66 @@
+WorldGuard:
+    command: help WorldGuard
+    description: Display WorldGuard Commands
+    plugin: WorldGuard
+    main: true
+    permissions: /heal
+Stopfire:
+    command: stopfire
+    description: Disables fire spread globally.
+    plugin: WorldGuard
+    main: false
+    permissions: /stopfire
+Allowfire:
+    command: allowfire
+    description: Re-enables fire after /stopfire is used.
+    plugin: WorldGuard
+    main: false
+    permissions: /stopfire
+God:
+    command: god
+    description: Toggle your invincibility.
+    plugin: WorldGuard
+    main: false
+    permissions: /god
+Godother:
+    command: god [Player]
+    description: Toggle a players invincibility.
+    plugin: WorldGuard
+    main: false
+    permissions: /godother
+Heal:
+    command: heal
+    description: Heal yourself.
+    plugin: WorldGuard
+    main: false
+    permissions: /heal
+Healother:
+    command: heal [Player]
+    description: Heals yourself or antoher player.
+    plugin: WorldGuard
+    main: false
+    permissions: /healother
+Slay:
+    command: slay [Player]
+    description: Kill yourself or another player.
+    plugin: WorldGuard
+    main: false
+    permissions: /slay
+Stack:
+    command: stack
+    description: Stack unstackable items.
+    plugin: WorldGuard
+    main: false
+    permissions: /stack
+Locate:
+    command: locate [<player>|<x> <y> <z>]
+    description: Set your compass to point to spawn/player/position. (NOT live)
+    plugin: WorldGuard
+    main: false
+    permissions: /locate
+ReloadWG:
+    command: reloadwg
+    description: Reloads WorldGuards configuration and blacklist.
+    plugin: WorldGuard
+    main: false
+    permissions: /reloadwg
