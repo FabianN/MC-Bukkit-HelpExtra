@@ -24,7 +24,7 @@ dspartysingle:
     plugin: DiscoSheep
     permissions: discosheep.party
 dshelp:
-    command; ds help
+    command: ds help
     description: More detailed DiscoSheep help, covers paramiters.
     plugin: DiscoSheep
     permissions: discosheep.help
