@@ -1,0 +1,6 @@
+mc:
+    command: mc [size]
+    description: Spawns a glass carpet under your feet
+    plugin: MagicCarpet
+    main: true
+    permissions: magiccarpet.mc
