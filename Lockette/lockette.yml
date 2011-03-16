@@ -1,0 +1,4 @@
+Lockette:
+    command: "lockette <line> <text>"
+    description: "Edit lines on a Lockette sign after right clicking on it."
+    plugin: "Lockette"
