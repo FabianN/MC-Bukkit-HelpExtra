@@ -1,0 +1,73 @@
+iConomyBAhelp:
+    command: "account help [page]"
+    description: Displays help page.
+    plugin: "iConomy BankAccount"
+
+iConomyBAopen:
+    command: "account open <accountname> [players]"
+    description: Open account with specified name and playernames.
+    plugin: "iConomy BankAccount"
+
+iConomyBAinfo:
+    command: "account info <accountname>"
+    description: Shows Account information.
+    plugin: "iConomy BankAccount"
+
+iConomyBAbalance:
+    command: "account balance <accountname>"
+    description: Shows the balance in your account.
+    plugin: "iConomy BankAccount"
+
+iConomyBAuser>account:
+    command: "account adduser <accountname> <player>"
+    description: Add another player to your account.
+    plugin: "iConomy BankAccount"
+
+iConomyBAuser<account:
+    command: "account removeuser <accountname> <player>"
+    description: Remove a user from an account.
+    plugin: "iConomy BankAccount"
+    permissions: "bankaccount.admin"
+
+iConomyBApassword:
+    command: "account password <accountname> [password]"
+    description: Set a password for your account.
+    plugin: "iConomy BankAccount"
+
+iConomyBAdeposit:
+    command: "account deposit <accountname> <amount>"
+    description: Deposit a specified amount into the specified account.
+    plugin: "iConomy BankAccount"
+
+iConomyBAwithdraw:
+    command: "account withdraw <accountname> <amount> [password]"
+    description: Withdray a specified amount from the specified account.
+    plugin: "iConomy BankAccount"
+
+iConomyBAtransfer:
+    command: "account transfer <from account> <to account> <amount> [password]"
+    description: Transer a specified amount between two accounts.
+    plugin: "iConomy BankAccount"
+
+iConomyBAclose:
+    command: "account close <accountname> [password]"
+    description: Delete an account.
+    plugin: "iConomy BankAccount"
+
+iConomyBAselect:
+    command: "account select"
+    description: Select an account from a list.
+    plugin: "iConomy BankAccount"
+    permissions: "bankaccount.admin"
+
+iConomyBAsetArea:
+    command: "account setarea <areaname>"
+    description: Give a specified area an account.
+    plugin: "iConomy BankAccount"
+    permissions: "bankaccount.admin"
+
+iConomyBAremoveArea:
+    command: "account removearea <areaname>"
+    description: Remove the account from specified area.
+    plugin: "iConomy BankAccount"
+    permissions: "bankaccount.admin"
