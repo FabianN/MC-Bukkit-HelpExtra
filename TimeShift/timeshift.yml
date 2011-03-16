@@ -1,0 +1,43 @@
+TimeShiftDay:
+    command: "shift day"
+    description: "Changes time to day"
+    plugin: "TimeShift"
+    permissions: "timeshift.shift"
+
+TimeShiftNight:
+    command: "shift night"
+    description: "Changes time to night"
+    plugin: "TimeShift"
+    permissions: "timeshift.shift"
+
+TimeShiftStop:
+    command: "shift stop"
+    description: "Stops time"
+    plugin: "TimeShift"
+    permissions: "timeshift.shift"
+
+TimeShiftCancel:
+    command: "time "
+    description: "Cancels shift"
+    plugin: "TimeShift"
+    permissions: "timeshift.shift"
+
+TimeShiftStartDay:
+    command: "shift startup day"
+    description: "Set server startup to day"
+    plugin: "TimeShift"
+    permissions: "timeshift.startup"
+
+TimeShiftStartNight:
+    command: "shift startup night"
+    description: "Set server startup to night"
+    plugin: "TimeShift"
+    permissions: "timeshift.startup"
+
+TimeShiftStartStop:
+    command: "shift startup stop"
+    description: "Set server startup to stopped time"
+    plugin: "TimeShift"
+    permissions: "timeshift.startup"
+
+
