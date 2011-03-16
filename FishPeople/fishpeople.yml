@@ -1,0 +1,41 @@
+FishPeopleHelp:
+    command: "fishpeople help [command]"
+    description: "Opens FishPeople Help menu, or shows information about a specified command."
+    plugin: "FishPeople"
+    main: false
+
+FishPeopleReload:
+    command: "fishpeople reload"
+    description: "Reloads the configuration from the hard disk"
+    plugin: "FishPeople"
+    main: false
+
+FishPeopleEnable:
+    command: "fishpeople <enable|disable>"
+    description: "Enables or disables infinite air and chat filter."
+    plugin: "FishPeople"
+    main: false
+
+FishPeopleOpOnly:
+    command: "fishpeople op-only <true|false>"
+    description: "Determines whether the infinite air feature applies only to Ops."
+    plugin: "FishPeople"
+    main: false
+
+FishPeopleHelmet:
+    command: "fishpeople helmet-type <id>"
+    description: "Changes the type of helmet FishPeople works for."
+    plugin: "FishPeople"
+    main: false
+
+FishPeopleChatFilter:
+    command: "fishpeople chat-filter <true|false>"
+    description: "Determines whether underwater chat is garbled."
+    plugin: "FishPeople"
+    main: false
+
+FishPeopleChatMessage:
+    command: "fishpeople underwater-chat <message>"
+    description: "Sets the message that appears when someone talks underwater"
+    plugin: "FishPeople"
+    main: false
