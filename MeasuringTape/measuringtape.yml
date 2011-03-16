@@ -1,0 +1,59 @@
+MeasuringTapeEnable:
+    command: "mt enable"
+    description: "Enables string attaching."
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.measure"
+
+MeasuringTapeDisable:
+    command: "mt disable"
+    description: "Disables string attaching."
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.measure"
+
+MeasuringTapeGetTape:
+    command: "mt tape"
+    description: "Gives you a string (if you don't have one)."
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.tape"
+
+MeasuringTapeRead:
+    command: "mt read"
+    description: "Displays distance again."
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.measure"
+
+MeasuringTapeDetach:
+    command: "mt unset"
+    description: "Unsets all positions."
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.measure"
+
+MeasuringTapeMode:
+    command: "mt mode [mode]"
+    description: "Toggles the measuring mode. Available are as follows.
+                        distance        Direct distance between two blocks
+                        vectors         xyz-vectors between two blocks
+                        area            Area between two points
+                        blocks          Number of blocks in x, y and z axis between two blocks (inclusive these two blocks)
+                        track           Distance between multiple blocks
+                        volume          Amount of blocks (meters cubed, respectively) in a cuboid"
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.measure"
+
+MeasuringTapeTP:
+    command: "mt tp"
+    description: "Teleports you to the center of the area (must be used in area mode)"
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.tp"
+
+MeasuringTapeHelp:
+    command: "mt help"
+    description: "Displays help page."
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.measure"
+
+MeasuringTapeModeHelp:
+    command: "mt modehelp"
+    description: "Displays mode page."
+    plugin: "MeasuringTape"
+    permissions: "measuringtape.measure"
