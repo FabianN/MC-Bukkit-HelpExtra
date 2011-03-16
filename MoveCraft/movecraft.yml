@@ -1,0 +1,36 @@
+raft:
+    command: <craft>[command]
+    description: Takes control over the [craft] you're on
+    plugin: MoveCraft
+    main: false
+    permissions: movecraft.*
+craftrelease:
+    command: <craft> release
+    description: Releases the controlled craft
+    plugin: MoveCraft
+    main: false
+    permissions: movecraft.*
+craftremote:
+    command: <craft> remote
+    description: Toggles the remote controller
+    plugin: MoveCraft
+    main: false
+    permissions: movecraft.*
+craftsize:
+    command: <craft> size
+    description: Shows the size of the craft
+    plugin: MoveCraft
+    main: false
+    permissions: movecraft.*
+crafttypes:
+    command: movecraft types
+    description: Shows the available crafts
+    plugin: MoveCraft
+    main: false
+    permissions: movecraft.*
+craftlist:
+    command: movecraft list
+    description: Lists all controlled crafts
+    plugin: MoveCraft
+    main: false
+    permissions: movecraft.*
