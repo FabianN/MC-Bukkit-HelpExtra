@@ -1,0 +1,47 @@
+boomstick:
+    command: boomstick
+    description: Gives your stick incredible power!
+    plugin: TPack
+    main: true
+    permissions: tpack.boomstick
+cuboid:
+    command: cuboid
+    description: Toggles cuboid mode
+    plugin: TPack
+    main: true
+    permissions: tpack.cuboid
+cfill:
+    command: cfill [block]
+    description: Fills the selected area with [block]
+    plugin: TPack
+    main: false
+    permissions: tpack.cuboid
+cdel:
+    command: cdel
+    description: Deletes all blocks in the selected area
+    plugin: TPack
+    main: false
+    permissions: tpack.cuboid
+cselect:
+    command: cselect [co 1][co 2]
+    description: Selects the given cordinates
+    plugin: TPack
+    main: false
+    permissions: tpack.cuboid
+listcuboid:
+    command: listcuboid
+    description: Shows the cordinates of the two points
+    plugin: TPack
+    main: false
+    permissions: tpack.cuboid
+time?:
+    command: time?
+    description: Shows what time it is
+    plugin: TPack
+    main: false
+.:
+    command: .
+    description: Spawns a shelter around you
+    plugin: TPack
+    main: false
+    permissions: tpack.snap
