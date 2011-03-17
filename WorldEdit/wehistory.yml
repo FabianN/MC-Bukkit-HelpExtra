@@ -1,0 +1,27 @@
+WEHistory:
+    description: Display WorldEdit History Commands
+    command: help WEHistory
+    plugin: WorldEdit
+    main: true
+    permissions: worldedit.history
+
+clearhistory:
+    description: Clear your history
+    command: clearhistory
+    plugin: WEHistory
+    main: false
+    permissions: worldedit.history.clear
+
+redo:
+    description: Redoes the last action
+    command: /redo [times]
+    plugin: WEHistory
+    main: false
+    permissions: worldedit.history.redo
+
+undo:
+    description: Undoes the last action
+    command: /undo [times]
+    plugin: WEHistory
+    main: false
+    permissions: worldedit.history.undo

@@ -1,0 +1,55 @@
+WENav:
+    description: Display WorldEdit Navigation Commands
+    command: help WENav
+    plugin: WorldEdit
+    main: true
+    permissions: worldedit.navigation
+
+unstuck:
+    description: Escape from being stuck inside a block
+    command: unstuck
+    plugin: WENav
+    main: false
+    permissions: worldedit.navigation.unstuck
+
+ascend:
+    description: Go up one level
+    command: ascend
+    plugin: WENav
+    main: false
+    permissions: worldedit.navigation.ascend
+
+descend:
+    description: Go down one level
+    command: descend
+    plugin: WENav
+    main: false
+    permissions: worldedit.navigation.descend
+
+thru:
+    description: Passthrough walls
+    command: thru
+    plugin: WENav
+    main: false
+    permissions: worldedit.navigation.thru
+
+jumpto:
+    description: Teleport to a location
+    command: jumpto
+    plugin: WENav
+    main: false
+    permissions: worldedit.navigation.jumpto
+
+ceil:
+    description: Go to the celing
+    command: ceil [clearance]
+    plugin: WENav
+    main: false
+    permissions: worldedit.navigation.ceil
+
+up:
+    description: Go upwards some distance
+    command: up [distance]
+    plugin: WENav
+    main: false
+    permissions: worldedit.navigation.up

@@ -1,0 +1,48 @@
+WEGen:
+    description: Display WorldEdit Generation Commands
+    command: help WEGen
+    plugin: WorldEdit
+    main: true
+    permissions: worldedit.generation
+
+hcyl:
+    description: Generate a hollow cylinder
+    command: /hcyl [block] [radius] [height]
+    plugin: WEGen
+    main: false
+    permissions: worldedit.generation.cylinder
+
+cyl:
+    description: Generate a cylinder
+    command: /cyl [block] [radius] [height]
+    plugin: WEGen
+    main: false
+    permissions: worldedit.generation.cylinder
+
+hsphere:
+    description: Generate a hollow sphere
+    command: /hsphere [block] [radius] [raised?]
+    plugin: WEGen
+    main: false
+    permissions: worldedit.generation.sphere
+
+sphere:
+    description: Generate a filled sphere
+    command: /sphere [block] [radius] [raised?]
+    plugin: WEGen
+    main: false
+    permissions: worldedit.generation.sphere
+
+forestgen:
+    description: Generate a forest
+    command: forestgen [size] [type] [density]
+    plugin: WEGen
+    main: false
+    permissions: worldedit.generation.forest
+
+pumpkins:
+    description: Generate pumpkin patches
+    command: pumpkins [size]
+    plugin: WEGen
+    main: false
+    permissions: worldedit.generation.pumpkins

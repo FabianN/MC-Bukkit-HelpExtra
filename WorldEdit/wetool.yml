@@ -1,0 +1,86 @@
+WETool:
+    description: Display WorldEdit Tool and Brush commands
+    command: help WETool
+    plugin: WorldEdit
+    main: true
+    permissions: worldedit.tool
+
+mat:
+    description: Change the material used by your current brush
+    command: mat [mat]
+    plugin: WETool
+    main: false
+
+size:
+    description: Change the size of the current brushes
+    command: size <size>
+    plugin: WETool
+    main: false
+
+mask:
+    description: Set the brush mask. Leave empty to clear
+    command: mask <mask>
+    plugin: WETool
+    main: false
+
+none:
+    description: Turn off all superpickaxe alternate modes
+    command: none
+    plugin: WETool
+    main: false
+
+repl:
+    description: Switch to block replacer tool
+    command: repl <block>
+    plugin: WETool
+    main: false
+    permissions: worldedit.tool.replacer
+
+cycler:
+    description: Block data cycler tool
+    command: cycler
+    plugin: WETool
+    main: false
+    permissions: worldedit.tool.data-cycler
+
+brushsphere:
+    description: Switch to the sphere brush tool.
+    command: brush sphere [-h] <type> <radius>
+    plugin: WETool
+    main: false
+    permissions: worldedit.brush.sphere
+
+brushcylinder:
+    descriptio: Switch to the cylinder brush tool.
+    command: brush cylinder [-h] <type> <radius> [height]
+    plugin: WETool
+    main: false
+    permissions: worldedit.brush.cylinder
+
+brushclip:
+    description: Switch to the clipboard tool.
+    command: brush clipboard
+    plugin: WETool
+    main: false
+    permissions: worldedit.brush.clipboard
+
+brushsmooth:
+    description: Smooth the region.
+    command: brush smooth <radius> [iterations]
+    plugin: WETool
+    main: false
+    permissions: worldedit.brush.smooth
+
+info:
+    description: Switch to the info tool.
+    command: info
+    plugin: WETool
+    main: false
+    permissions: worldedit.tool.info
+
+tree:
+    description: Switch to the tree tool.
+    command: tree [type]
+    plugin: WETool
+    main: false
+    permissions: worldedit.tool.tree

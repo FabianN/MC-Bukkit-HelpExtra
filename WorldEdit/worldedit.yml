@@ -3,494 +3,28 @@ WorldEdit:
     command: help WorldEdit
     plugin: WorldEdit
     main: true
+    permissions: worldedit
+
 chunkinfo:
     description: Get information about the chunk that you are inside
     command: chunkinfo
     plugin: WorldEdit
     main: false
     permissions: worldedit.chunkinfo
+
 listchunks:
     description: List chunks that your selection includes
     command: listchunks
     plugin: WorldEdit
     main: false
     permissions: worldedit.listchunks
+
 delchunks:
     description: Delete chunks that your selection includes
     command: delchunks
     plugin: WorldEdit
     main: false
     permissions: worldedit.delchunks
-WEClip:
-    command: help WEClip
-    description: Display WorldEdit Clipboard Commands
-    plugin: WorldEdit
-    main: true
-    permissions: worldedit.clipboard
-clearclipboard:
-    description: Clear your clipboard
-    command: clearclipboard
-    plugin: WEClip
-    main: false
-    permissions: worldedit.clipboard.clear
-load:
-    description: Load a schematic into your clipboard
-    command: /load [filename]
-    plugin: WEClip
-    main: false
-    permissions: worldedit.clipboard.load
-save:
-    description: Save a schematic into your clipboard
-    command: /save [filename]
-    plugin: WEClip
-    main: false
-    permissions: worldedit.clipboard.save
-copy:
-    description: Copy the selection to the clipboard
-    command: /copy
-    plugin: WEClip
-    main: false
-    permissions: worldedit.clipboard.copy
-flip:
-    description: Flip the contents of the clipboard
-    command: /flip [dir]
-    plugin: WEClip
-    main: false
-    permissions: worldedit.clipboard.flip
-rotate:
-    description: Rotate the contents of the clipboard
-    command: /rotate [angle-in-degrees]
-    plugin: WEClip
-    main: false
-    permissions: worldedit.clipboard.rotate
-cut:
-    description: Cut the selection to the clipboard
-    command: /cut [leave-id]
-    plugin: WEClip
-    main: false
-    permissions: worldedit.clipboard.cut
-paste:
-    description: Paste the clipboard's contents
-    command: /paste [-ao]
-    plugin: WEClip
-    main: false
-    permissions: worldedit.clipboard.paste
-WEGen:
-    description: Display WorldEdit Generation Commands
-    command: help WEGen
-    plugin: WorldEdit
-    main: true
-hcyl:
-    description: Generate a hollow cylinder
-    command: /hcyl [block] [radius] [height]
-    plugin: WEGen
-    main: false
-    permissions: worldedit.generation.cylinder
-cyl:
-    description: Generate a cylinder
-    command: /cyl [block] [radius] [height]
-    plugin: WEGen
-    main: false
-    permissions: worldedit.generation.cylinder
-hsphere:
-    description: Generate a hollow sphere
-    command: /hsphere [block] [radius] [raised?]
-    plugin: WEGen
-    main: false
-    permissions: worldedit.generation.sphere
-sphere:
-    description: Generate a filled sphere
-    command: /sphere [block] [radius] [raised?]
-    plugin: WEGen
-    main: false
-    permissions: worldedit.generation.sphere
-forestgen:
-    description: Generate a forest
-    command: forestgen [size] [type] [density]
-    plugin: WEGen
-    main: false
-    permissions: worldedit.generation.forest
-pumpkins:
-    description: Generate pumpkin patches
-    command: pumpkins [size]
-    plugin: WEGen
-    main: false
-    permissions: worldedit.generation.pumpkins
-WEHistory:
-    description: Display WorldEdit History Commands
-    command: help WEHistory
-    plugin: WorldEdit
-    main: true
-clearhistory:
-    description: Clear your history
-    command: clearhistory
-    plugin: WEHistory
-    main: false
-    permissions: worldedit.history.clear
-redo:
-    description: Redoes the last action
-    command: /redo [times]
-    plugin: WEHistory
-    main: false
-    permissions: worldedit.history.redo
-undo:
-    description: Undoes the last action
-    command: /undo [times]
-    plugin: WEHistory
-    main: false
-    permissions: worldedit.history.undo
-WENav:
-    description: Display WorldEdit Navigation Commands
-    command: help WENav
-    plugin: WorldEdit
-    main: true
-unstuck:
-    description: Escape from being stuck inside a block
-    command: unstuck
-    plugin: WENav
-    main: false
-    permissions: worldedit.navigation.unstuck
-ascend:
-    description: Go up one level
-    command: ascend
-    plugin: WENav
-    main: false
-    permissions: worldedit.navigation.ascend
-descend:
-    description: Go down one level
-    command: descend
-    plugin: WENav
-    main: false
-    permissions: worldedit.navigation.descend
-thru:
-    description: Passthrough walls
-    command: thru
-    plugin: WENav
-    main: false
-    permissions: worldedit.navigation.thru
-jumpto:
-    description: Teleport to a location
-    command: jumpto
-    plugin: WENav
-    main: false
-    permissions: worldedit.navigation.jumpto
-ceil:
-    description: Go to the celing
-    command: ceil [clearance]
-    plugin: WENav
-    main: false
-    permissions: worldedit.navigation.ceil
-up:
-    description: Go upwards some distance
-    command: up [distance]
-    plugin: WENav
-    main: false
-    permissions: worldedit.navigation.up
-WERegion:
-    description: Display WorldEdit Region Commands
-    command: help WERegion
-    plugin: WorldEdit
-    main: true
-overlay:
-    description: Set a block on top of blocks in the region
-    command: /overlay [block]
-    plugin: WERegion
-    main: false
-    permissions: worldedit.region.overlay
-walls:
-    description: Build the four sides of the selection
-    command: /walls [block]
-    plugin: WERegion
-    main: false
-    permissions: worldedit.region.walls
-outline:
-    description: Build the walls, ceiling, and roof of a selection
-    command: /outline [block]
-    plugin: WERegion
-    main: false
-    permissions: worldedit.region.faces
-smooth:
-    description: Smooth the elevation in the selection
-    command: /smooth [iterations]
-    plugin: WERegion
-    main: false
-    permissions: worldedit.region.smooth
-replace:
-    description: Replace all blocks in the selection with another
-    command: /replace [from-block] [to-block]
-    plugin: WERegion
-    main: false
-    permissions: worldedit.region.replace
-stack:
-    description: Repeat the contents of the selection
-    command: /stack [-a] [count] [direction]
-    plugin: WERegion
-    main: false
-    permissions: worldedit.region.stack
-set:
-    description: Set all the blocks inside the selection to a block
-    command: /set [block]
-    plugin: WERegion
-    main: false
-    permissions: worldedit.region.set
-move:
-    description: Move the contents of the selection
-    command: /move [count] [direction] [leave-id]
-    plugin: WERegion
-    main: false
-    permissions: worldedit.region.move
-WESel:
-    command: help WESel
-    description: Display WorldEdit Selection Commands
-    plugin: WorldEdit
-    main: true
-chunk:
-    command: /chunk
-    description: Set the selection to your current chunk
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.chunk
-pos1:
-    command: /pos1
-    description: Set position 1
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.pos
-pos2:
-    command: /pos2
-    description: Set position 2
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.pos
-hpos1:
-    command: /hpos1
-    description: Set position 1 to block you look at
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.hpos
-hpos2:
-    command: /hpos2
-    description: Set position 2 to block you look at
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.hpos
-wand:
-    command: /wand
-    description: Get the wand object
-    plugin: WESel
-    main: false
-    permissions: worldedit.wand
-toggleeditwand:
-    command: toggleeditwand
-    description: Toggle functionality of the edit wand
-    plugin: WESel
-    main: false
-    permissions: worldedit.wand.toggle
-contract:
-    command: /contract [amount] [reverse-amount] [direction]
-    description: Contract the selection area
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.contract
-outset:
-    command: /outset [-hv] [amount]
-    description: Outset the selection area
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.outset
-size:
-    command: /size
-    description: Get the size of selected region
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.size
-shift:
-    command: /shift [amount] [direction]
-    description: Shift the selection area
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.shift
-expand:
-    command: /expand [amount] [reverse-amount] [direction]
-    description: Expand the selection area
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.expand
-sel:
-    command: /sel [cuboid|poly]
-    description: Choose the region shape to use for selections
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection
-inset:
-    command: /inset [-hv] [amount]
-    description: Inset the selection area
-    plugin: WESel
-    main: false
-    permissions: worldedit.selection.inset
-WETool:
-    description: Display WorldEdit Tool and Brush commands
-    command: help WETool
-    plugin: WorldEdit
-    main: true
-    permissions: worldedit.tool
-mat:
-    description: Change the material used by your current brush
-    command: mat [mat]
-    plugin: WETool
-    main: false
-size:
-    description: Change the size of the current brushes
-    command: size <size>
-    plugin: WETool
-    main: false
-mask:
-    description: Set the brush mask. Leave empty to clear
-    command: mask <mask>
-    plugin: WETool
-    main: false
-none:
-    description: Turn off all superpickaxe alternate modes
-    command: none
-    plugin: WETool
-    main: false
-repl:
-    description: Switch to block replacer tool
-    command: repl <block>
-    plugin: WETool
-    main: false
-    permissions: worldedit.tool.replacer
-cycler:
-    description: Block data cycler tool
-    command: cycler
-    plugin: WETool
-    main: false
-    permissions: worldedit.tool.data-cycler
-brushsphere:
-    description: Switch to the sphere brush tool.
-    command: brush sphere [-h] <type> <radius>
-    plugin: WETool
-    main: false
-    permissions: worldedit.brush.sphere
-brushcylinder:
-    descriptio: Switch to the cylinder brush tool.
-    command: brush cylinder [-h] <type> <radius> [height]
-    plugin: WETool
-    main: false
-    permissions: worldedit.brush.cylinder
-brushclip:
-    description: Switch to the clipboard tool.
-    command: brush clipboard
-    plugin: WETool
-    main: false
-    permissions: worldedit.brush.clipboard
-brushsmooth:
-    description: Smooth the region.
-    command: brush smooth <radius> [iterations]
-    plugin: WETool
-    main: false
-    permissions: worldedit.brush.smooth
-info:
-    description: Switch to the info tool.
-    command: info
-    plugin: WETool
-    main: false
-    permissions: worldedit.tool.info
-tree:
-    description: Switch to the tree tool.
-    command: tree [type]
-    plugin: WETool
-    main: false
-    permissions: worldedit.tool.tree
-WEUtil:
-    description: Display WorldEdit Utility commands
-    command: help WEUtil
-    plugin: WorldEdit
-    main: true
-fixlava:
-    description: Fix lava to be stationary
-    command: fixlava <radius>
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.fixlava
-fixwater:
-    description: Fix water to be stationary
-    command: fixwater <radius>
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.fixwater
-removeabove:
-    description: Remove blocks above your head.
-    command: removeabove [size] [height]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.removeabove
-removebelow:
-    description: Remove blocks below your feet.
-    command: removebelow [size] [height]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.removebelow
-removenear:
-    description: Remove blocks near you.
-    command: removenear [block] [size]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.removenear
-replacenear:
-    description: Replace nearby blocks
-    command: replacenear <size> <from-id> <to-id>
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.replacenear
-snow:
-    description: Simulate snow cover
-    command: snow [radius]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.snow
-thaw:
-    description: Unthaw/remove snow
-    command: thaw [radius]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.thaw
-ex:
-    description: Extinguish nearby fire
-    command: ex, /extinguish [size]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.extinguish
-butcher:
-    description: Kill nearby mobs
-    command: butcher [radius]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.butcher
-remove:
-    description: Remove all entities of a type
-    command: remove, /rem <type> <radius>
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.remove
-fill:
-    description: Fill a hole
-    command: /fill <block> <radius> [depth]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.fill
-fillr:
-    description: Fill a hole recursively
-    command: /fillr <block> <radius>
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.fill.recursive
-drain:
-    description: Drain nearby water/lava pools
-    command: /drain [radius]
-    plugin: WEUtil
-    main: false
-    permissions: worldedit.drain
 
 distr:
     command: /distr [-c]
@@ -498,71 +32,83 @@ distr:
     plugin: WorldEdit
     main: false
     permissions: worldedit.analysis.distr
+
 count:
     command: //count <block>
     description: Counts the number of a type of block
     plugin: WorldEdit
     main: false
     permissions: worldedit.analysis.count
+
 searchitem:
     description: Search for an item
     command: search[item] [-bi] [query]
     plugin: WorldEdit
     main: false
+
 limit:
     description: Modify block change limit
     command: /limit [limit]
     plugin: WorldEdit
     main: false
     permissions: worldedit.limit
+
 snapshot:
     description: Use/list snapshots
     command: snapshot, snap [use <snapshot>] [list [num]]
     plugin: WorldEdit
     main: false
     permissions: worldedit.snapshots.list
+
 restore:
     description: Restore the selection from a snapshot
     command: restore [snapshot]
     plugin: WorldEdit
     main: false
     permissions: worldedit.snapshot.restore
+
 /:
     description: Toggle the super pickaxe pickaxe function
     command: /
     plugin: WorldEdit
     main: false
     permissions: worldedit.superpickaxe
+
 superpickaxesingle:
     description: Switch to single block super pickaxe mode
     command: sp single
     plugin: WorldEdit
     main: false
     permissions: worldedit.superpickaxe
+
 superpickaxearea:
     description: Switch to area super pickaxe mode
     command: sp area <range>
     plugin: WorldEdit
     main: false
     permissions: worldedit.superpickaxe.area
+
 superpickaxerecur:
     description: Switch to recursive super pickaxe mode
     command: sp recur <range>
     plugin: WorldEdit
     main: false
     permissions: worldedit.superpickaxe.recursive
+
 cs:
     description: Executes a script. 
     command: cs <script> [arguments]
     plugin: WorldEdit
     main: false
     permissions: worldedit.scripting.execute
+
 .s:
     description: Re-executes last script with new arguments.
     command: .s [arguments]
     plugin: WorldEdit
     main: false
     permissions: worldedit.scripting.execute
+
 script.js:
     description: Executes a JS script.
     command: <script>.js [arguments]

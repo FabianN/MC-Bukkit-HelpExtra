@@ -1,2 +1,8 @@
 Help file for WorldEdit(http://forums.bukkit.org/threads/edit-sec-worldedit-4-1-world-cuboid-editing-coming-soon-client-side-hud-see-inside.62/).
-Credit goes to Taeir(http://forums.bukkit.org/threads/info-help-0-1-1-the-smart-help-menu-493.6536/page-3#post-122403).
+
+weutil.yml has a permission entry that can be uncommented to use so you can hide that group.
+
+Credit for first version goes to Taeir(http://forums.bukkit.org/threads/info-help-0-1-1-the-smart-help-menu-493.6536/page-3#post-122403).
+
+Modifications done by:
+- FabianN

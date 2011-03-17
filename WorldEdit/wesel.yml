@@ -1,0 +1,106 @@
+WESel:
+    command: help WESel
+    description: Display WorldEdit Selection Commands
+    plugin: WorldEdit
+    main: true
+    permissions: worldedit.selection
+
+chunk:
+    command: /chunk
+    description: Set the selection to your current chunk
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.chunk
+
+pos1:
+    command: /pos1
+    description: Set position 1
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.pos
+
+pos2:
+    command: /pos2
+    description: Set position 2
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.pos
+
+hpos1:
+    command: /hpos1
+    description: Set position 1 to block you look at
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.hpos
+
+hpos2:
+    command: /hpos2
+    description: Set position 2 to block you look at
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.hpos
+
+wand:
+    command: /wand
+    description: Get the wand object
+    plugin: WESel
+    main: false
+    permissions: worldedit.wand
+
+toggleeditwand:
+    command: toggleeditwand
+    description: Toggle functionality of the edit wand
+    plugin: WESel
+    main: false
+    permissions: worldedit.wand.toggle
+
+contract:
+    command: /contract [amount] [reverse-amount] [direction]
+    description: Contract the selection area
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.contract
+
+outset:
+    command: /outset [-hv] [amount]
+    description: Outset the selection area
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.outset
+
+
+size:
+    command: /size
+    description: Get the size of selected region
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.size
+
+
+shift:
+    command: /shift [amount] [direction]
+    description: Shift the selection area
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.shift
+
+expand:
+    command: /expand [amount] [reverse-amount] [direction]
+    description: Expand the selection area
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.expand
+
+sel:
+    command: /sel [cuboid|poly]
+    description: Choose the region shape to use for selections
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection
+
+inset:
+    command: /inset [-hv] [amount]
+    description: Inset the selection area
+    plugin: WESel
+    main: false
+    permissions: worldedit.selection.inset
