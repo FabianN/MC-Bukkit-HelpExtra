@@ -1,0 +1,30 @@
+achievementshelp:
+    command: help achievements
+    description: List all commands from Achievements.
+    plugin: achievements
+    main: true
+    permissions: /ach
+achievements:
+    command: achievements
+    description: Lists your achievements.
+    plugin: achievements
+    main: false
+    permissions: /ach
+achievementslist:
+    command: listachievements
+    description: Lists all achievements.
+    plugin: achievements
+    main: false
+    permissions: /listach
+achievementscheck:
+    command: checkachievements
+    description: Checks if there are any achievements to be claimed (auto-checks every 5min).
+    plugin: achievements
+    main: false
+    permissions: /achadmin
+achievementsreload:
+    command: reloadachievements
+    description: Reload the achievements.txt file.
+    plugin: achievements
+    main: false
+    permissions: /achadmin
