@@ -1,0 +1,55 @@
+ECheats:
+    command: help ECheats
+    description: Display Available Cheats
+    plugin: Essentials
+    main: true
+#   permissions: essentials.ECheats
+
+essentialsgive:
+    command: give [player] [item] [amount]
+    description: Allows you to give another player a specified item.
+    plugin: ECheats
+    main: false
+    permissions: essentials.give
+
+essentialsitem:
+    command: i [player] [item] [amount]
+    description: Gives yourself a specified item.
+    plugin: ECheats
+    main: false
+    permissions: essentials.item
+
+essentialstime:
+    command: time [day|night]
+    description: Allows you to switch the world time between day and night.
+    plugin: ECheats
+    main: false
+    permissions: essentials.time
+
+essentialstree:
+    command: tree [tree|birch|redwood]
+    description: Spawns a specified tree 2 blocks in front of yourself.
+    plugin: ECheats
+    main: false
+    permissions: essentials.tree
+
+essentialsbigtree:
+    command: bigtree [tree|redwood]
+    description: Spawns a specified big tree 2 blocks in front of yourself.
+    plugin: ECheats
+    main: false
+    permissions: essentials.bigtree
+
+essentialsgod:
+    command: god
+    description: Makes you invulnerable to all damage types.
+    plugin: ECheats
+    main: false
+    permissions: essentials.god
+
+essentialsheal:
+    command: heal [player]
+    description: Allows you to completely heal yourself or a specified player.
+    plugin: ECheats
+    main: false
+    permissions: essentials.heal

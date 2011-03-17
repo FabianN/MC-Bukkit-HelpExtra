@@ -1,3 +1,12 @@
 Help file for Essentials (http://forums.bukkit.org/threads/gen-essentials-v2-0-286-rc2-collection-of-essential-plugins-in-one-package-527.1262/).
 
-Credit goes to Taeir(http://forums.bukkit.org/threads/info-help-0-1-1-the-smart-help-menu-493.6536/page-3#post-122403).
+
+
+A commented permission entry has been added to each group listing. To use,  uncomment the line and add the permissions to the groups and users you wish to allow to see that group listing.
+
+
+
+Credit for first version goes to Taeir(http://forums.bukkit.org/threads/info-help-0-1-1-the-smart-help-menu-493.6536/page-3#post-122403).
+
+Modifications done by:
+- FabianN

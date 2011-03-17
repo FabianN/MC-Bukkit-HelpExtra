@@ -1,0 +1,69 @@
+ESocial:
+    command: help ESocial
+    description: List all Social commands from Essentials
+    plugin: Essentials
+    main: true
+#   permission: exxentials.ESocial
+
+essentialsmsg:
+    command: tell [player] [message]
+    description: This allows you to private message another player.
+    plugin: ESocial
+    main: false
+    permissions: essentials.msg
+
+essentialsafk:
+    command: afk [reason]
+    description: Sets your status as AFK.
+    plugin: ESocial
+    main: false
+    permissions: essentials.afk
+
+essentialsrules:
+    command: rules [page]
+    description: Displays the rules.
+    plugin: ESocial
+    main: false
+    permissions: essentials.rules
+
+essentialsmotd:
+    command: motd
+    description: Displays the Message Of The Day.
+    plugin: ESocial
+    main: false
+    permissions: essentials.motd
+
+essentialsme:
+    command: me [message]
+    description: Allows you to emote.
+    plugin: ESocial
+    main: false
+    permissions: essentials.me
+
+essentialslist:
+    command: list
+    description: Lists the players online and how many slots are left.
+    plugin: ESocial
+    main: false
+    permissions: essentials.list
+
+essentialsmail:
+    command: mail [read|clear|send] [player] [message]
+    description: Access mailbox.
+    plugin: ESocial
+    main: false
+    permissions: essentials.mail
+
+essentialshelpop:
+    command: helpop [message]
+    description: Requests help from online admins/operators.
+    plugin: ESocial
+    main: false
+    permissions: essentials.helpop
+
+essentialswhois:
+    command: whois [nickname|playername]
+    description: Displays a players info.
+    plugin: ESocial
+    main: false
+    permissions: essentials.whois

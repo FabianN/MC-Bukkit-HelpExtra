@@ -1,0 +1,69 @@
+EMod:
+    command: help EMod
+    description: Display Essentials Moderator Commands
+    plugin: Essentials
+    main: true
+    permissions: essentials.ban
+
+essentialsban:
+    command: ban [playername]
+    description: Bans a specified player.
+    plugin: EMod
+    main: false
+    permissions: essentials.ban
+
+essentialsbanip:
+    command: banip [playername]
+    description: Bans the IP of a specified player.
+    plugin: EMod
+    main: false
+    permissions: essentials.banip
+
+essentialsmute:
+    command: mute [playername]
+    description: Mutes or un-mutes a specified player.
+    plugin: EMod
+    main: false
+    permissions: essentials.mute
+
+essentialskick:
+    command: kick [playername] [reason]
+    description: Kicks a specified player off the server.
+    plugin: EMod
+    main: false
+    permissions: essentials.kick
+
+essentialskickall:
+    command: kick [playername] [reason]
+    description: Kicks all players off the server.
+    plugin: EMod
+    main: false
+    permissions: essentials.kickall
+
+essentialsunban:
+    command: unban [playername]
+    description: Unbans a specified player.
+    plugin: EMod
+    main: false
+    permissions: essentials.unban
+
+essentialsunbanip:
+    command: unbanip [playername|IP address]
+    description: Unbans a specified players IP address.
+    plugin: EMod
+    main: false
+    permissions: essentials.unbanip
+
+essentialstjail:
+    command: tjail [playername]
+    description: Jail/unjail a player. Jailing prevents them from building and destroying blocks.
+    plugin: EMod
+    main: false
+    permissions: essentials.togglejail
+
+essentialssetjail:
+    command: setjail [jail name]
+    description: Set a jail point at your current location.
+    plugin: EMod
+    main: false
+    permissions: essentials.setjail

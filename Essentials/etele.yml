@@ -1,0 +1,83 @@
+ETele:
+    command: help ETele
+    description: Display Essentials Teleport Commands
+    plugin: Essentials
+    main: true
+#   permissions: essentials.ETele
+
+essentialstptoggle:
+    command: tptoggle
+    description: Toggles players ability to teleport or request teleport to/from you.
+    plugin: ETele
+    main: false
+    permissions: essentials.tptoggle
+
+essentialstpa:
+    command: tpa [player]
+    description: If not denied by tptoggle status, then asks the player if you can teleport to them.
+    plugin: ETele
+    main: false
+    permissions: essentials.tpa
+
+essentialstp:
+    command: tp [player]
+    description: Direct (you >> player) teleport unless denied by tptoggle status.
+    plugin: ETele
+    main: false
+    permissions: essentials.tp
+
+essentialstpo:
+    command: tpo
+    description: Overrides the tptoggle status and directly teleports you to the specified player.
+    plugin: ETele
+    main: false
+    permissions: essentials.tpo
+
+essentialstpahere:
+    command: tpahere [player]
+    description: If not denied by tptoggle status, then asks the specified player to accept transport to your location.
+    plugin: ETele
+    main: false
+    permissions: essentials.tpahere
+
+essentialstphere:
+    command: tphere, /s [player]
+    description: Direct (player >> you) teleport unless denied by tptoggle status.
+    plugin: ETele
+    main: false
+    permissions: essentials.tphere
+
+essentialstphere:
+    command: tpohere [player]
+    description: Overrides the tptoggle status and directly teleports a specified player to your location.
+    plugin: ETele
+    main: false
+    permissions: essentials.tpohere
+
+essentialstppos:
+    command: tppos [x] [y] [z]
+    description: Type in an <x> <y> <z> coordinate and off you go! The Y coordinate is your "Up in the Sky or Down near the Bedrock" location.
+    plugin: ETele
+    main: false
+    permissions: essentials.tppos
+
+essentialswarp:
+    command: warp [warpname]
+    description: Warps you to a defined area.
+    plugin: ETele
+    main: false
+    permissions: essentials.warp
+
+essentialssetwarp:
+    command: setwarp [warpname]
+    description: Sets a warp.
+    plugin: ETele
+    main: false
+    permissions: essentials.setwarp
+
+essentialsdelwarp:
+    command: delwarp [warpname]
+    description: Deletes a warp.
+    plugin: ETele
+    main: false
+    permissions: essentials.delwarp

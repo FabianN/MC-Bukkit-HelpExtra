@@ -1,0 +1,55 @@
+ELoc:
+    command: help ELoc
+    description: List all location commands from Essentials
+    plugin: Essentials
+    main: true
+#   permissions: essentials.eloc
+
+essentialsdepth:
+    command: depth
+    description: Displays your current block depth in relation to sea-level.
+    plugin: ELoc
+    main: false
+    permissions: essentials.depth
+
+essentialsgetpos:
+    command: getpos
+    description: Displays your current coordinate location in the world.
+    plugin: ELoc
+    main: false
+    permissions: essentials.getpos
+
+essentialscompass:
+    command: compass
+    description: Displays your current bearing in the world.
+    plugin: ELoc
+    main: false
+    permissions: essentials.compass
+
+essentialstop:
+    command: top
+    description: Teleports you to the highest block at your current location.
+    plugin: ELoc
+    main: false
+    permissions: essentials.top
+
+essentialsjump:
+    command: jump
+    description: Teleports you to the nearest block, in your line of sight (Crosshair).
+    plugin: ELoc
+    main: false
+    permissions: essentials.jump
+
+essentialsback:
+    command: back
+    description: Use this command after dying, it will transport you to a safe deathpoint.
+    plugin: ELoc
+    main: false
+    permissions: essentials.back
+
+essentialsworld:
+    command: world [nether|gamercide]
+    description: Allows you to teleport to any world by name, which is on the server.
+    plugin: ELoc
+    main: false
+    permissions: essentials.world
