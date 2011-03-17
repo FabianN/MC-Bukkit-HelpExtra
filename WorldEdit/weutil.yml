@@ -3,7 +3,7 @@ WEUtil:
     command: help WEUtil
     plugin: WorldEdit
     main: true
-#   permissions: worldedit.weutil
+    permissions: worldedit.weutil
 
 fixlava:
     description: Fix lava to be stationary

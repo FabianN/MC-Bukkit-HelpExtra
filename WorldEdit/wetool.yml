@@ -51,7 +51,7 @@ brushsphere:
     permissions: worldedit.brush.sphere
 
 brushcylinder:
-    descriptio: Switch to the cylinder brush tool.
+    description: Switch to the cylinder brush tool.
     command: brush cylinder [-h] <type> <radius> [height]
     plugin: WETool
     main: false
