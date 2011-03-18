@@ -2,7 +2,7 @@ WENav:
     description: Display WorldEdit Navigation Commands
     command: help WENav
     plugin: WorldEdit
-    main: true
+    main: false
     permissions: worldedit.navigation
 
 unstuck:

@@ -2,7 +2,7 @@ WEGen:
     description: Display WorldEdit Generation Commands
     command: help WEGen
     plugin: WorldEdit
-    main: true
+    main: false
     permissions: worldedit.generation
 
 hcyl:

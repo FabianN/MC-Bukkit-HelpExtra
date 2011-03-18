@@ -2,7 +2,7 @@ WETool:
     description: Display WorldEdit Tool and Brush commands
     command: help WETool
     plugin: WorldEdit
-    main: true
+    main: false
     permissions: worldedit.tool
 
 mat:

@@ -2,7 +2,7 @@ WESel:
     command: help WESel
     description: Display WorldEdit Selection Commands
     plugin: WorldEdit
-    main: true
+    main: false
     permissions: worldedit.selection
 
 chunk:

@@ -2,7 +2,7 @@ WEClip:
     command: help WEClip
     description: Display WorldEdit Clipboard Commands
     plugin: WorldEdit
-    main: true
+    main: false
     permissions: worldedit.clipboard
 
 clearclipboard:

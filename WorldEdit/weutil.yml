@@ -2,7 +2,7 @@ WEUtil:
     description: Display WorldEdit Utility commands
     command: help WEUtil
     plugin: WorldEdit
-    main: true
+    main: false
     permissions: worldedit.weutil
 
 fixlava:
