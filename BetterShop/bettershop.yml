@@ -1,0 +1,61 @@
+shophelp:
+    command: help Bettershop
+    description: Displays the Global Shop help.
+    main: true
+    plugin: Bettershop
+    permissions: BetterShop
+shoplist:
+    command: shoplist [pg#]
+    description: Shows a listing of items for sale.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop.user.list
+shopitems:
+    command: shopitems
+    description: Shows a compact list of items in shop.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop.user.check
+shopcheck:
+    command: shopcheck [item]
+    description: Look up a specific item.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop.user.check
+shopbuy:
+    command: shopbuy [item] (amount)
+    description: Buy an item in the shop. All is a valid amount.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop.user.buy
+shopsell:
+    command: shopsell [item] (amount)
+    description: Sell an item in the shop. All is a valid amount.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop.user.sell
+shopadd:
+    command: shopadd [item] [buy] [sell]
+    description: Add or update an item in the shop.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop.admin.add
+shopremove:
+    command: shopremove [item]
+    description: Remove an item from the shop.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop.admin.remove
+shopload:
+    command: shopload
+    description: Reload the prices and settings.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop.admin.load
+shopkits:
+    command: shopkits
+    description: Show a list of kits to purchase.
+    main: false
+    plugin: Bettershop
+    permissions: BetterShop
+
