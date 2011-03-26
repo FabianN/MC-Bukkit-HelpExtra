@@ -3,40 +3,40 @@ statshelp:
     description: List all commands from Stats.
     plugin: stats
     main: true
-    permissions: /stats
+    permissions: stats
 played:
     command: played
     description: Shows your total play-time.
     plugin: stats
     main: false
-    permissions: /stats
+    permissions: stats.view.playtime
 stats:
     command: stats
     description: Shows you a summary of your stats.
     plugin: stats
     main: true
-    permissions: /stats
+    permissions: stats.view.own
 statsplayer:
     command: stats [player]
     description: Shows you a summary of player's stats.
     plugin: stats
     main: false
-    permissions: /stats
+    permissions: stats.view.others
 statslist:
     command: stats list
     description: List players with viewable stats.
     plugin: stats
     main: false
-    permissions: /stats
+    permissions: stats.admin
 statsdebug:
     command: stats debug
     description: Prints stat messages to console.
     plugin: stats
     main: false
-    permissions: /statsadmin
+    permissions: stats.admin
 statsset:
     command: stats set [player] [category] [key] [value]
     description: Manually set stats.
     plugin: stats
     main: false
-    permissions: /statsadmin
+    permissions: stats.admin
