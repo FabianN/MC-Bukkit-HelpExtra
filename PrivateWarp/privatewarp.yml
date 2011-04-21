@@ -1,0 +1,77 @@
+PrivateWarpList:
+    command: "pw "
+    description: "Display your currently set private warps and categories. Only displays warps in the current category selected."
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pw"
+
+PrivateWarpSet:
+    command: "pw set <name>"
+    description: "Set/add/overwrite a private warp in your selected category"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pw"
+
+PrivateWarpDel:
+    command: "pw del <name>"
+    description: "Delete a private warp in your selected category"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pw"
+
+PrivateWarpGoTo:
+    command: "pw goto <name>"
+    description: "Use the warp , goto the location where you have set it (warp has to exist)"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pw"
+
+PrivateWarpCatSelect:
+    command: "pw catselect <name>"
+    description: "Select the category (has to exist). Leave empty to return to default"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pw"
+
+PrivateWarpCatCreate:
+    command: "pw catcreate <name>"
+    description: "Create categorie with given name"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pw"
+
+PrivateWarpCatDelete:
+    command: "pw catdelete <name>"
+    description: "Delete the categorie (including the underlying private warps)"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pw"
+
+PrivateWarpHelp:
+    command: "pw help"
+    description: "Displays usage and commands"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pw"
+
+PrivateWarpImposter:
+    command: "pwa"
+    description: "All the commands of /pw except you can pretend to be another player. For example /pwa <name> set home. Sets the warp home to the player <name>. Should be an admin/mod command on most servers."
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pwa"
+
+PrivateWarpTemplate:
+    command: "pwv"
+    description: "An admin can create a template(or set) of warp categories and names. These cannot be used(del, set) by the players. An admin can set a warp in the template to a player which the player can use. Should be an admin/mod command on most servers."
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pwv"
+
+PrivateWarpGive:
+    command: "pwv put <player> <warp>"
+    description: "Set the templated warp to the player"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pwv"
+
+PrivateWarpTake:
+    command: "pwv rem <player> <warp>"
+    description: "Removes the warp from the player"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pwv"
+
+PrivateWarpRecall:
+    command: "pwr <number> "
+    description: "Recall previous used warps. Start at 0 (0 is the most recent)"
+    plugin: "PrivateWarp"
+    permissions: "PrivateWarp.pwr"

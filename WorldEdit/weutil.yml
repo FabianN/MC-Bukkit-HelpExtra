@@ -1,0 +1,104 @@
+WEUtil:
+    description: Display WorldEdit Utility commands
+    command: help WEUtil
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.weutil
+
+fixlava:
+    description: Fix lava to be stationary
+    command: fixlava <radius>
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.fixlava
+
+fixwater:
+    description: Fix water to be stationary
+    command: fixwater <radius>
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.fixwater
+
+removeabove:
+    description: Remove blocks above your head.
+    command: removeabove [size] [height]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.removeabove
+
+removebelow:
+    description: Remove blocks below your feet.
+    command: removebelow [size] [height]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.removebelow
+
+removenear:
+    description: Remove blocks near you.
+    command: removenear [block] [size]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.removenear
+
+replacenear:
+    description: Replace nearby blocks
+    command: replacenear <size> <from-id> <to-id>
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.replacenear
+
+snow:
+    description: Simulate snow cover
+    command: snow [radius]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.snow
+
+thaw:
+    description: Unthaw/remove snow
+    command: thaw [radius]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.thaw
+
+ex:
+    description: Extinguish nearby fire
+    command: ex, /extinguish [size]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.extinguish
+
+butcher:
+    description: Kill nearby mobs
+    command: butcher [radius]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.butcher
+
+remove:
+    description: Remove all entities of a type
+    command: remove, /rem <type> <radius>
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.remove
+
+fill:
+    description: Fill a hole
+    command: /fill <block> <radius> [depth]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.fill
+
+fillr:
+    description: Fill a hole recursively
+    command: /fillr <block> <radius>
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.fill.recursive
+
+drain:
+    description: Drain nearby water/lava pools
+    command: /drain [radius]
+    plugin: WEUtil
+    main: false
+    permissions: worldedit.drain

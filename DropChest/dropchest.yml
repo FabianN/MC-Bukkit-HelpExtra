@@ -1,0 +1,45 @@
+dropchestadd:
+    command: dropchest add (radius)
+    description: After command rightclick on chest to add.
+    plugin: DropChest
+    permissions: dropchest.create
+dropchestremove:
+    command: dropchest remove [chestid]
+    description: Remove Chest.
+    plugin: DropChest
+    permissions: dropchest.remove
+dropchestlist:
+    command: dropchest list
+    description: List current dropchests.
+    plugin: DropChest
+    permissions: dropchest
+dropchestradius:
+    command: dropchest setradius [chestid] [radius]
+    description: Change the radius of a chest.
+    plugin: DropChest
+    permissions: dropchest.radius.set
+dropchestwhich:
+    command: dropchest which
+    description: R-Click on a chest to get info.
+    plugin: DropChest
+    permissions: dropchest.which
+dropchesttp:
+    command: dropchest tp [chestid]
+    description: Teleport to chest.
+    plugin: DropChest
+    permissions: dropchest.teleport
+dropchestname:
+    command: dropchest setname [chestid] [newid]
+    description: Change a chest's id.
+    plugin: DropChest
+    permissions: dropchest
+dropchestfilter:
+    command: dropchest filter [suck|push|pull]
+    description: R-Click w/item.
+    plugin: DropChest
+    permissions: dropchest.filter
+dropchestfinish:
+    command: dropchest filter finish
+    description: Finish editing chest filter.
+    plugin: DropChest
+    permissions: dropchest.filter

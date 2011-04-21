@@ -1,0 +1,203 @@
+GroupManager:
+    command: help GroupManager
+    description: Display GroupManager Help.
+    main: true
+    plugin: GroupManager
+gmmanuadd:
+    command: manuadd <player> <group>
+    description: Change player group to one desired.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manuadd
+gmmanudel:
+    command: manudel <player>
+    description: Take user to default group. Removes user specific permissions.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manudel
+gmmangadd:
+    command: mangadd <group>
+    description: Add group to the system.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mangadd
+gmmangdel:
+    command: mangdel <group>
+    description: Removes group from the system(all it's users become default).
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mangdel
+gmmanuaddp:
+    command: manuaddp <player> <permission>
+    description: Add permission diretly to the player.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manuaddp
+gmmanudelp:
+    command: manudelp <player> <permission>
+    description: Removes permission diretly from the player.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manudelp
+gmmanulistp:
+    command: manulistp <player>
+    description: List all permissions from a player.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manulistp
+gmmangcheckp:
+    command: mangcheckp <group> <permission>
+    description: Check if group has a permission, and where it comes from.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mangcheckp
+gmmangaddi:
+    command: mangaddi <group1> <group2>
+    description: Add a group to another group inheritance list.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mangaddi
+gmmangdeli:
+    command: mangdeli <group1> <group2>
+    description: Remove a group from another group inheritance list.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mangdeli
+gmmanuaddv:
+    command: manuaddv <user> <variable> <value>
+    description: Add, or replaces, a variable to a user (like prefix or suffix).
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manuaddv
+gmmanudelv:
+    command: manudelv <user> <variable>
+    description: Remove a variable from a user.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manudelv
+gmmanulistv:
+    command: manulistv <user>
+    description: List variables a user has (like prefix or suffix).
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manulistv
+gmmanucheckv:
+    command: manucheckv <user> <variable>
+    description: Verify a value of a variable of user, and where it comes from.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manucheckv
+gmmangaddv:
+    command: mangaddv <group> <variable> <value>
+    description: Add, or replaces, a variable to a group (like prefix or suffix).
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mangaddv
+gmmangdelv:
+    command: mangdelv <group> <variable>
+    description: Remove a variable from a group.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mangdelv
+gmmanglistv:
+    command: manglistv <group>
+    description: List variables a group has (like prefix or suffix).
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manglistv
+gmmangcheckv:
+    command: mangcheckv <group> <variabl>
+    description: Verify a value of a variable of group, and where it comes from.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mangcheckv
+gmmanwhois:
+    command: manwhois <player>
+    description: Tell the group that user belongs.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manwhois
+gmtempadd:
+    command: tempadd <player>
+    description: Creates a temporary permission copy for that user.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.tempadd
+gmtempdel:
+    command: tempdel <player>
+    description: Remove the temporary permission copy for player.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.tempdel
+gmtemplist:
+    command: templist
+    description: List players in overload-permissions mode made by /tempadd.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.templist
+gmtempdelall:
+    command: tempdelall
+    description: Remove all overrides made by command /tempadd.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.tempdelall
+gmmansave:
+    command: mansave
+    description: Save all permissions on file.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mansave
+gmmanload:
+    command: manload [world]
+    description: Reload current world. Or load given world.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manload 
+gmlistgroups:
+    command: listgroups
+    description: List the groups available.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.listgroups
+gmmanpromote:
+    command: manpromote <player> <group>
+    description: Promote a player in the same heritage line to a higher rank.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manpromote
+gmmandemote:
+    command: mandemote <player> <group>
+    description: Demote a player in the same heritage line to a lower rank.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mandemote
+gmmantogglevalidate:
+    command: mantogglevalidate
+    description: Toggle on/off the validating if player is online.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mantogglevalidate
+gmmantogglesave:
+    command: mantogglesave
+    description: Toggle on/off the autosave.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.mantogglesave
+gmmanworld:
+    command: manworld
+    description: Prints the selected world name.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manworld
+gmmanselect:
+    command: manselect <world>
+    description: Select a world to work with next commands.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manselect
+gmmanclear:
+    command: manclear
+    description: Clear world selection. Next commands will work on your world.
+    plugin: GroupManager
+    main: false
+    permissions: groupmanager.manclear

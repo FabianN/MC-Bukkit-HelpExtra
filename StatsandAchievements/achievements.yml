@@ -1,0 +1,30 @@
+achievementshelp:
+    command: help achievements
+    description: List all commands from Achievements.
+    plugin: achievements
+    main: true
+    permissions: achievements
+achievements:
+    command: achievements
+    description: Lists your achievements.
+    plugin: achievements
+    main: false
+    permissions: achievements.view.own
+achievementslist:
+    command: listachievements
+    description: Lists all achievements.
+    plugin: achievements
+    main: false
+    permissions: achievements.view.list
+achievementscheck:
+    command: checkachievements
+    description: Checks if there are any achievements to be claimed (auto-checks every 5min).
+    plugin: achievements
+    main: false
+    permissions: achievements.admin.check
+achievementsreload:
+    command: reloadachievements
+    description: Reload the achievements.txt file.
+    plugin: achievements
+    main: false
+    permissions: achievements.admin.reload

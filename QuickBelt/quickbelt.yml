@@ -1,0 +1,17 @@
+QuickBeltStatus:
+    command: "qb"
+    description: "QuickBelt Status"
+    plugin: "QuickBelt"
+    permissions: " "
+
+QuickBeltOn:
+    command: "qb on"
+    description: "Turn your QuickBelt on."
+    plugin: "QuickBelt"
+    permissions: " "
+
+QuickBeltOff:
+    command: "qb off"
+    description: "Turn your QuickBElt Off."
+    plugin: "QuickBelt"
+    permissions: " "

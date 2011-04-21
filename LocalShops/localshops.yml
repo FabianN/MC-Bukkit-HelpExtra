@@ -1,0 +1,102 @@
+localshophelp:
+    command: help localshop
+    description: Shows the help for creating a personal store.
+    plugin: Localshop
+    main: true
+    permissions: localshops
+localshopcreate:
+    command: shop create [ShopName]
+    description: Creates a 10x10x3 shop centered where you are.
+    plugin: Localshop
+    main: false
+    permissions: localshops.create
+localshopdelete:
+    command: shop destroy [ShopName]
+    description: Destroys your shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.destroy
+localshopaddall:
+    command: shop add all
+    description: Adds the block in your and all all of the same type in your inventory.
+    plugin: Localshop
+    main: false
+    permissions: localshops.manage
+localshopadd:
+    command: shop add [itemname] [amount]
+    description: Adds amount of named item to the shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.manage
+localshopremove:
+    command: shop remove [itemname]
+    description: Removes item from shop. Remaining inventory gets returned to player.
+    plugin: Localshop
+    main: false
+    permissions: localshops.manage
+localshoplist:
+    command: shop list (buy|sell|info)
+    description: Lists items in the current shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops
+localshopsell:
+    command: shop sell (#|all)
+    description: Sells block in hand to the shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.buysell
+localshopsellnamed:
+    command: shop [itemname] [amount|all]
+    description: Sells the named item to the shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.buysell
+localshopbuy:
+    command: shop buy [itemname] [amount]
+    description: Buys item from the shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.buysell
+localshopsetbuy:
+    command: shop set buy [itemname] [price] (stack size)
+    description: Sets buy price of the named item in the shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.manage
+localshopsetsell:
+    command: shop set sell [itemname] [price] (stack size)
+    description: Sets the sell price of the named item in the shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.manage
+localshopsetstock:
+    command: shop set max [itemname] [amount]
+    description: Sets the max stock level for a shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.manage
+localshopmanager:
+    command: shop set manager +player -player
+    description: Use +/- to add/remove managers who can add/remove items from the shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.manage
+localshopsetowner:
+    command: shop set owner [player]
+    description: Transfur ownership of the shop. Shopowner gets all profits from the shop.
+    plugin: Localshop
+    main: false
+    permissions: localshops.manage.owner
+localshopsetunlimited:
+    command: shop set unlimited [money|stock]
+    description: Sets a shop to have unlimited stock/money.
+    plugin: Localshop
+    main: false
+    permissions: localshops.admin
+localshopreload:
+    command: shop reload
+    description: Reloads the config files.
+    plugin: Localshop
+    main: false
+    permissions: localshops.reload

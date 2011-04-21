@@ -1,0 +1,21 @@
+VoxelMore:
+    description: Display Voxelmore Commands
+#    permissions:
+#    - voxelmore.help
+# Note that this is not a real permission. I just added this to choose
+# what groups can see the voxelmore commands.
+    command: help VoxelMore
+    plugin: VoxelMore
+    main: true
+more:
+    visible: true
+    description: Get another stack (or multiple stacks) of the item you are holding.
+    command: more [stacks] 
+    plugin: VoxelMore
+    main: false
+pick:
+    visible: true
+    description: Choose the data value of the item you are holding.
+    command: pick [value 0-15] 
+    plugin: VoxelMore
+    main: false

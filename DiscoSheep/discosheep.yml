@@ -1,0 +1,30 @@
+dscolor:
+    command: ds color
+    description: To toggle all sheeps changing colors.
+    plugin: DiscoSheep
+    permissions: discosheep.color
+dsstop:
+    command: ds stop
+    description: Stop the party.
+    plugin: DiscoSheep
+    permissions: discosheep.stop
+dsreload:
+    command: ds reload
+    description: Reload the DiscoSheep config.
+    plugin: DiscoSheep
+    permissions: discosheep.reload
+dsparty:
+    command: ds party
+    description: Give all players a party.
+    plugin: DiscoSheep
+    permissions: discosheep.party.many
+dspartysingle:
+    command: ds [player]
+    description: Gives chosen players a party.
+    plugin: DiscoSheep
+    permissions: discosheep.party
+dshelp:
+    command: ds help
+    description: More detailed DiscoSheep help, covers paramiters.
+    plugin: DiscoSheep
+    permissions: discosheep.help

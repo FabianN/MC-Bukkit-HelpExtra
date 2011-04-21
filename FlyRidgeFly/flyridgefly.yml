@@ -1,0 +1,41 @@
+FRFfly:
+    command: "letmefly"
+    description: "Allows an admin to toggle flight ability for all players."
+    plugin: "FlyRidgeFly!"
+    main: false
+
+FRFthrust:
+    command: "thrust (#)"
+    description: "Sets the number of blocks each flap moves you."
+    plugin: "FlyRidgeFly!"
+    main: false
+
+FRFconsume:
+    command: "toggelconsume"
+    description: "Turns feather consumption on or off."
+    plugin: "FlyRidgeFly!"
+    main: false
+
+FRFderp:
+    command: "derp"
+    description: "Toggle Derp Mode."
+    plugin: "FlyRidgeFly!"
+    main: false
+
+FRFgod:
+    command: "godsays (message)"
+    description: "Speak with the voice of God!"
+    plugin: "FlyRidgeFly!"
+    main: false
+
+FRFconfig:
+    command: "flyridgefly"
+    description: "Displays the current configuration."
+    plugin: "FlyRidgeFly!"
+    main: false
+
+FRFsave:
+    command: "flyridgefly save"
+    description: "Saves the current configuration."
+    plugin: "FlyRidgeFly!"
+    main: false

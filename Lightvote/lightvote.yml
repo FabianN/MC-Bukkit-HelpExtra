@@ -1,0 +1,19 @@
+LightVoteDay:
+    command: "lvt start"
+    description: "Start vote for day."
+    plugin: "LightVote"
+
+LightVoteNight:
+    command: "lvt start night"
+    description: "Start vote for night."
+    plugin: "LightVote"
+
+LightVoteYes:
+    command: "lvt yes"
+    description: "Vote yes."
+    plugin: "LightVote"
+
+LightVoteNo:
+    command: "lvt no"
+    description: "Vote no."
+    plugin: "LightVote"

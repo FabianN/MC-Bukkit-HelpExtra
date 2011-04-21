@@ -1,0 +1,13 @@
+bFlightGive:
+    command: "bgive"
+    description: "Gives you the items needed to fly."
+    plugin: "bFlight"
+    main: false
+    permissions: "bflight.bgive"
+
+bFlightFly:
+    command: "bfly"
+    description: "Toggles flying mode."
+    plugin: "bFlight"
+    main: false
+    permissions: "bflight.bfly"

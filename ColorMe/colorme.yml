@@ -1,0 +1,17 @@
+ColormeList:
+    command: "colorme list"
+    description: "Lists your color choices."
+    plugin: "ColorMe"
+    main: false
+
+ColormeColor:
+    command: "colorme <color> [name]"
+    description: "Set color of player's name if defined, otherwise set your name's color."
+    plugin: "ColorMe"
+    main: false
+
+ColormeReset:
+    command: "colorme <name>"
+    description: "Resets your name color."
+    plugin: "ColorMe"
+    main: false

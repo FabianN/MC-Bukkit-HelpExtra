@@ -1,0 +1,57 @@
+iConomyCheckBalance:
+    command: "money"
+    description: "Check your balance"
+    plugin: "iConomy"
+
+iConomyHelp:
+    command: "money ?"
+    description: "Displays help and info"
+    plugin: "iConomy"
+
+iConomyRank:
+    command: "money rank (player)"
+    description: "View rank on topcharts"
+    plugin: "iConomy"
+    permissions: "iConomy.rank"
+
+iConomyTopRanks:
+    command: "money top (amount)"
+    description: "Richest players listing"
+    plugin: "iConomy"
+    permissions: "iConomy.list"
+
+iConomyPay:
+    command: "money pay [player] [amount]"
+    description: "Send money to player"
+    plugin: "iConomy"
+    permissions: "iConomy.payment"
+
+iConomyGive:
+    command: "money grant [player] [amount]"
+    description: "Give money"
+    plugin: "iConomy"
+    permissions: "iConomy.admin.grant"
+
+iConomyTake:
+    command: "money grant [player] -[amount]"
+    description: "Take money"
+    plugin: "iConomy"
+    permissions: "iConomy.admin.grant"
+
+iConomySetBalance:
+    command: "money set [player] [amount]"
+    description: "Sets a player's account balance"
+    plugin: "iConomy"
+    permissions: "iConomy.admin.set"
+
+iConomyReset:
+    command: "money reset [player]"
+    description: "Resets a player's account"
+    plugin: "iConomy"
+    permissions: "iConomy.admin.reset"
+
+iConomyStats:
+    command: "money stats"
+    description: "Check all economic statistics"
+    plugin: "iConomy"
+    permissions: "iConomy.admin.stats"

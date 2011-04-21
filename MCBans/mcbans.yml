@@ -1,0 +1,90 @@
+mcbans:
+    command: help mcbans
+    description: List the MCBans commands.
+    plugin: mcbans
+    main: true
+    permissions: mcbans.admin
+mcbans:
+    command: help mcbans
+    description: List the MCBans commands.
+    plugin: mcbans
+    main: true
+    permissions: mcbans.mod
+banlocal:
+    command: ban [player] (ip) [reason]
+    description: Local (ip) ban.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.ban.local
+banglobal:
+    command: ban [player] [g|ipg] [reason]
+    description: Global (IP) Ban player.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.ban.global
+lookup:
+    command: lookup [player]
+    description: Lookup the player's ban history.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.ban.view
+kick:
+    command: kick [player]
+    description: Kicks the player from the server.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.kick
+unban:
+    command: unban [player]
+    description: Unbans the player from the server.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.unban
+tempban:
+    command: tempban [player] [#] [m|h|d|w]
+    description: Tempban player for duration in min(m), hr(h), day(d), or wk(w).
+    plugin: mcbans
+    main: false
+    permissions: mcbans.tempban
+vote:
+    command: vote [1|2]
+    description: Cast a vote, yes(1) or no(2).
+    plugin: mcbans
+    main: true
+    permissions: mcbans.vote
+votekick:
+    command: votekick [player]
+    description: Start a kick player vote.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.vote.kick
+votemsg:
+    command: votemsg [a message or question]
+    description: Start a message vote.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.vote.msg
+mcbansoffline:
+    command: mcbans-offline
+    description: Run MCBans in offline mode.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.offline
+mcbansonline:
+    command: mcbans-online
+    description: Run MCBans in online mode.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.online
+mcbansreload:
+    command: mcbans-reload
+    description: Re-detects if MCBans if online.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.reload
+mcbansclear:
+    command: mcbans-clear
+    description: Clear players cache.
+    plugin: mcbans
+    main: false
+    permissions: mcbans.clear

@@ -1,0 +1,101 @@
+Elevators:
+    command: help Elevators
+    description: Display Elevators Help.
+    main: true
+    plugin: Elevators
+elevcreate:
+    command: elev create
+    description: Creates a new elevator at your current position.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevremove:
+    command: elev remove
+    description: Removes an existing elevator from your current position.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevcall:
+    command: elev call|floor <Floorname>
+    description: creates a new floor with the given Floorname.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevup:
+    command: elev up
+    description: Creates a new UpBlock, right-click to select block after command,
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevdown:
+    command: elev down
+    description: Creates a new DownBlock, right-click to select block after command.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevextend:
+    command: elev extend
+    description: Extends a nearby floor by an additional CallBlock.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevgo:
+    command: elev go|direct <Floorname>
+    description: Creates a new link to an existing floor. Toggled by redstone input. Right-click a block.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevredstoneout:
+    command: elev redstoneout
+    description: Creates a redstoneoutput, right-click to select the output block after. Has to be a lever.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevglassdoor:
+    command: elev glassdoor
+    description: Type command and place glass blocks. A door will be created to the nearest floor. Use /elev finish to finish and disable glass block listener.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevglassremove:
+    command: elev glassremove <Floorname> 
+    description: Removes all glass blocks linked to the given floor.
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevfinish:
+    command: elev finish
+    description: Finishes an action (like glassdoor placement).
+    main: false
+    plugin: Elevators
+    permissions: elevators.builder
+elevCreatePW:
+    command: elev create [password <Password>] [users <Username1> <Username2> <UsernameN>]
+    description: Creates a new elevator at your current position, optional with password or user whitelist.
+    main: false
+    plugin: Elevators
+    permissions: elevators.advancedbuilder
+elevCallPW:
+    command: elev call|floor <Floorname> [password <Password>] [users <Username1> <Username2> <UsernameN>]
+    description: Creates a new floor with the given Floorname, optional with password or user whitelist.
+    main: false
+    plugin: Elevators
+    permissions: elevators.advancedbuilder
+elevPW:
+    command: elev pw|password [<Floorname>] [password <Password>]
+    description: Overrides password protection for the given floor or the whole elevator.
+    main: false
+    plugin: Elevators
+    permissions: elevators.advancedbuilder
+elevUser:
+    command: elev user [<Floorname>] [users <Username1> <Username2> <UsernameN>]
+    description: Overrides user whitelist for the given floor or the whole elevator.
+    main: false
+    plugin: Elevators
+    permissions: elevators.advancedbuilder
+elevGive:
+    command: elev give [<Username>]
+    description: Changes the owner of the elevator. Once changed, a reset is not possible.
+    main: false
+    plugin: Elevators
+    permissions: elevators.advancedbuilder

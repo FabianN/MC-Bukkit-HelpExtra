@@ -1,0 +1,41 @@
+petitionopen:
+    command: pe open <message>
+    description: Open a support ticket.
+    plugin: Petition
+    permissions: petition
+    main: true
+petitioncomment:
+    command: pe comment [#] <message>
+    description: Comment to a ticket.
+    plugin: Petition
+    permissions: petition
+petitionclose:
+    command: pe close [#] <message>
+    description: Close a ticket.
+    plugin: Petition
+    permissions: petition.moderate
+petitionlist:
+    command: pe list [#]
+    description: List petitions.
+    plugin: Petition
+    permissions: petition.moderate
+petitionview:
+    command: pe view [#]
+    description: View petition.
+    plugin: Petition
+    permissions: petition.moderate
+petitionassign:
+    command: pe assign [#] [player]
+    description: Assign a petition to an operator.
+    plugin: Petition
+    permissions: petition.moderate
+petitionunassign:
+    command: pe unassign [#]
+    description: Unassign a petition.
+    plugin: Petition
+    permissions: petition.moderate
+petitionwarp:
+    command: pe warp [#]
+    description: Warp to the petition's location.
+    plugin: Petition
+    permissions: petition.moderate

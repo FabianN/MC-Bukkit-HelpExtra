@@ -1,0 +1,42 @@
+LWC:
+    command: help lwc
+    description: List the help for LWC Plugin (Chest Protection)
+    plugin: LWC
+    main: true
+    permissions: lwc.protect
+lwccreatepublic:
+    command: lwc -c public
+    description: Create a public protection
+    plugin: LWC
+    main: false
+    permissions: lwc.protect
+lwccreatepassword:
+    command: lwc -c password [password]
+    description: Create a password-protected protection
+    plugin: LWC
+    main: false
+    permissions: lwc.protect
+lwccreateprivate:
+    command: lwc -c private
+    description:  Create a private protection
+    plugin: LWC
+    main: false
+    permissions: lwc.protect
+lwcmodify:
+    command: lwc -m
+    description: Modify an existing protection
+    plugin: LWC
+    main: false
+    permissions: lwc.protect
+lwcunlock:
+    command: lwc -u [password]
+    description: Unlock something (when asked)
+    plugin: LWC
+    main: false
+    permissions: lwc.protect
+lwcview:
+    command: lwc -i
+    description: View information on an already protected inventory
+    plugin: LWC
+    main: false
+    permissions: lwc.protect

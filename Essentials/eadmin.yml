@@ -1,0 +1,97 @@
+EAdmin:
+    command: help EAdmin
+    description: List all Essentials Admin Commands
+    plugin: Essentials
+    main: true
+    permissions: essentials.essentials
+
+essentialsnick:
+    command: nick [player] [nickname|off]
+    description: Allows you to give yourself or another player a nick name.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.nick
+
+essentialsreload:
+    command: essentials
+    description: Reloads your Essentials.jar configuration.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.essentials
+
+essentialsreloadall:
+    command: rel
+    description: Reloads all of your plugins. (Can crash server!)
+    plugin: EAdmin
+    main: false
+    permissions: essentials.reloadall
+
+essentialsgc:
+    command: gc
+    description: Displays chunk, memory, and world information.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.gc
+
+essentialsplugin:
+    command: plugin [list]
+    description: List plugins.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.plugin
+
+essentialsplugin:
+    command: plugin [enable|disable|reload] [plugin name]
+    description: Allows you to enable, disable, or reload a specified plugin.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.plugin
+
+essentialsspawnmob:
+    command: spawnmob [mob],[mount]:[size] [amount]
+    description: Allows you to spawn a specified mob with an optional mount.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.spawnmob
+
+essentialsclearinv:
+    command: clearinventory [player name]
+    description: Allows you to clear your own inventory or the inventory of a specified player.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.clearinventory
+
+essentialsbroadcast:
+    command: broadcast
+    description: Displays a specified message to all players on the server.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.broadcast
+
+essentialsburn:
+    command: burn [player] [sec]
+    description: Sets a player on fire for time.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.burn
+
+essentialsext:
+    command: ext [player]
+    description: Extinguish a player.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.ext
+
+essentialskill:
+    command: kill
+    description: Allows you to kill a specified player.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.kill
+
+essentialsping:
+    command: ping
+    description: Replys with a "Pong!". Used to make sure Essentials.jar is working correctly.
+    plugin: EAdmin
+    main: false
+    permissions: essentials.ping

@@ -1,0 +1,85 @@
+CommandBook:
+    command: help CommandBook
+    description: Display CommandBook Help.
+    main: true
+    plugin: CommandBook
+cbcmdbook:
+    command: cmdbook [version|reload]
+    description: 'CommandBook commands'
+    plugin: CommandBook
+    permissions: commandbook.reload
+cbitem:
+    command: item [-d] [target] <item[:data]> [amount]
+    description: 'Give yourself Items'
+    permissions: commandbook.give 
+    main: false
+    plugin: CommandBook
+cbgive:
+    command: give [-d] [target] <item[:data]> [amount]
+    description: 'Give an item'
+    permissions: commandbook.give
+    main: false
+    plugin: CommandBook
+cbwho:
+    command: who [filter]
+    description: 'Get the list of players'
+    permissions: commandbook.who
+    main: true
+    plugin: CommandBook
+cbmotd:
+    command: motd
+    description: 'Show the message of the day'
+    permissions: commandbook.motd 
+    main: false
+    plugin: CommandBook
+cbrules:
+    command: rules
+    description: 'Show the rules'
+    permissions: commandbook.rules 
+    main: false
+    plugin: CommandBook
+cbsetspawn:
+    command: setspawn
+    description: 'Set the spawn location'
+    permissions: commandbook.setspawn
+    main: false
+    plugin: CommandBook
+cbspawn:
+    command: spawn
+    description: 'Teleport to spawn'
+    permissions: commandbook.spawn
+    plugin: CommandBook
+cbtime:
+    command: time [world] <time|"current">
+    description: 'Set the time of your current world'
+    main: true
+    plugin: CommandBook
+cbmsg:
+    command: msg <target> <message...>
+    description: 'Send a private message to a user'
+    permissions: commandbook.msg 
+    plugin: CommandBook
+cbreply:
+    command: reply
+    description: 'Reply to the last user'
+    permissions: commandbook.msg
+    plugin: CommandBook
+cbwhereami:
+    command: whereami
+    description: 'Get your current location'
+    permissions: commandbook.whereami
+    plugin: CommandBook
+cbcompass:
+    command: compass
+    description: 'Get your compass direction'
+    permissions: commandbook.whereami.compass
+    plugin: CommandBook
+cbclear:
+    command: clear [-a] [target]
+    description: 'Clear your inventory'
+    permissions: commandbook.clear 
+    plugin: CommandBook
+cbping:
+    command: ping
+    description: 'Get back a dummy reply'
+    plugin: CommandBook

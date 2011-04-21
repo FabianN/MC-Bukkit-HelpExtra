@@ -1,0 +1,62 @@
+WEClip:
+    command: help WEClip
+    description: Display WorldEdit Clipboard Commands
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.clipboard
+
+clearclipboard:
+    description: Clear your clipboard
+    command: clearclipboard
+    plugin: WEClip
+    main: false
+    permissions: worldedit.clipboard.clear
+
+load:
+    description: Load a schematic into your clipboard
+    command: /load [filename]
+    plugin: WEClip
+    main: false
+    permissions: worldedit.clipboard.load
+
+save:
+    description: Save a schematic into your clipboard
+    command: /save [filename]
+    plugin: WEClip
+    main: false
+    permissions: worldedit.clipboard.save
+
+copy:
+    description: Copy the selection to the clipboard
+    command: /copy
+    plugin: WEClip
+    main: false
+    permissions: worldedit.clipboard.copy
+
+flip:
+    description: Flip the contents of the clipboard
+    command: /flip [dir]
+    plugin: WEClip
+    main: false
+    permissions: worldedit.clipboard.flip
+
+rotate:
+    description: Rotate the contents of the clipboard
+    command: /rotate [angle-in-degrees]
+    plugin: WEClip
+    main: false
+    permissions: worldedit.clipboard.rotate
+
+cut:
+    description: Cut the selection to the clipboard
+    command: /cut [leave-id]
+    plugin: WEClip
+    main: false
+    permissions: worldedit.clipboard.cut
+
+paste:
+    description: Paste the clipboard's contents
+    command: /paste [-ao]
+    plugin: WEClip
+    main: false
+    permissions: worldedit.clipboard.paste

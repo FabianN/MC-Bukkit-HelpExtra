@@ -1,0 +1,117 @@
+WorldEdit:
+    description: Display WorldEdit commands.
+    command: help WorldEdit
+    plugin: WorldEdit
+    main: true
+    permissions: worldedit
+
+chunkinfo:
+    description: Get information about the chunk that you are inside
+    command: chunkinfo
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.chunkinfo
+
+listchunks:
+    description: List chunks that your selection includes
+    command: listchunks
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.listchunks
+
+delchunks:
+    description: Delete chunks that your selection includes
+    command: delchunks
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.delchunks
+
+distr:
+    command: /distr [-c]
+    description: Get the distribution of blocks in the selection
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.analysis.distr
+
+count:
+    command: //count <block>
+    description: Counts the number of a type of block
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.analysis.count
+
+searchitem:
+    description: Search for an item
+    command: search[item] [-bi] [query]
+    plugin: WorldEdit
+    main: false
+
+limit:
+    description: Modify block change limit
+    command: /limit [limit]
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.limit
+
+snapshot:
+    description: Use/list snapshots
+    command: snapshot, snap [use <snapshot>] [list [num]]
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.snapshots.list
+
+restore:
+    description: Restore the selection from a snapshot
+    command: restore [snapshot]
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.snapshot.restore
+
+/:
+    description: Toggle the super pickaxe pickaxe function
+    command: /
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.superpickaxe
+
+superpickaxesingle:
+    description: Switch to single block super pickaxe mode
+    command: sp single
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.superpickaxe
+
+superpickaxearea:
+    description: Switch to area super pickaxe mode
+    command: sp area <range>
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.superpickaxe.area
+
+superpickaxerecur:
+    description: Switch to recursive super pickaxe mode
+    command: sp recur <range>
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.superpickaxe.recursive
+
+cs:
+    description: Executes a script. 
+    command: cs <script> [arguments]
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.scripting.execute
+
+.s:
+    description: Re-executes last script with new arguments.
+    command: .s [arguments]
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.scripting.execute
+
+script.js:
+    description: Executes a JS script.
+    command: <script>.js [arguments]
+    plugin: WorldEdit
+    main: false
+    permissions: worldedit.scripting.execute
