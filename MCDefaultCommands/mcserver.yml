@@ -1,0 +1,146 @@
+serverhelp:
+    command: help Server
+    description: Displays default Minecraft Server help.
+    main: true
+    plugin: Server
+    permissions: OP
+serverkick:
+    command: kick <player>
+    description: Removes a player from the server.
+    main: false
+    plugin: Server
+    permissions: OP
+serverban:
+    command: ban <player>
+    description: Bans a player from the server.
+    main: false
+    plugin: Server
+    permissions: OP
+serverpardon:
+    command: pardon <player>
+    description: Pardons a banned player so that they can connect again.
+    main: false
+    plugin: Server
+    permissions: OP
+serverbanip:
+    command: ban-ip <ip>
+    description: Bans an IP address from the server.
+    main: false
+    plugin: Server
+    permissions: OP
+serverpardonip:
+    command: pardon-ip <ip>
+    description: Pardons a banned IP address so that they can connect again.
+    main: false
+    plugin: Server
+    permissions: OP
+serverop:
+    command: op <player>
+    description: Turns a player into an op.
+    main: false
+    plugin: Server
+    permissions: OP
+serverdeop:
+    command: deop <player>
+    description: Removes op status from a player.
+    main: false
+    plugin: Server
+    permissions: OP
+servertp:
+    command: tp <player1> <player2>
+    description: Moves <player1> to the same location as <player2>.
+    main: false
+    plugin: Server
+    permissions: OP
+servergive:
+    command: give <player> <id> [<num>]
+    description: Gives <player> <num> (default 1) of the resource with data value <id>.
+    main: false
+    plugin: Server
+    permissions: OP
+servertell:
+    command: tell <player> <message>
+    description: Gives <player> <num> (default 1) of the resource with data value <id>.
+    main: false
+    plugin: Server
+    permissions: OP
+serverstop:
+    command: stop
+    description: Gracefully stops the server.
+    main: false
+    plugin: Server
+    permissions: OP
+serversaveall:
+    command: save-all
+    description: Forces a server-wide level save.
+    main: false
+    plugin: Server
+    permissions: OP
+serversaveoff:
+    command: save-off
+    description: Disables terrain saving (useful for backup scripts).
+    main: false
+    plugin: Server
+    permissions: OP
+serversaveon:
+    command: save-on
+    description: Re-enables terrain saving.
+    main: false
+    plugin: Server
+    permissions: OP
+serverlist:
+    command: list
+    description: Lists all currently connected players.
+    main: false
+    plugin: Server
+    permissions: OP
+serversay:
+    command: say <message>
+    description: Broadcasts a message to all players.
+    main: false
+    plugin: Server
+    permissions: OP
+serverwhitelist:
+    command: whitelist <on/off>
+    description: Enable or disable whitelisting (i.e. only listed players may join).
+    main: false
+    plugin: Server
+    permissions: OP
+serverwhitelistar:
+    command: whitelist <add/remove> <player>
+    description: Add or remove a player from the whitelist.
+    main: false
+    plugin: Server
+    permissions: OP
+serverwhitelistl:
+    command: whitelist list
+    description: Lists all currently whitelisted players.
+    main: false
+    plugin: Server
+    permissions: OP
+serverwhitelistr:
+    command: whitelist reload
+    description: Reload the whitelist from file.
+    main: false
+    plugin: Server
+    permissions: OP
+servertime:
+    command: time <add/set> <amount>
+    description: Add to or set the world time. Amount may be a number between 0 and 24000, inclusive, where 0 is dawn (i.e. clock is bisected; left side is day) and 12000 is noon.
+    main: false
+    plugin: Server
+    permissions: OP
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
