@@ -1,0 +1,60 @@
+plugmanhelp:
+    command: help PlugMan
+    description: Displays the PlugMan help.
+    main: true
+    plugin: PlugMan
+    permissions: plugman
+pmlist:
+    command: plugman list <Page>
+    description: lists all plugins loaded on the server. Page is optional
+    main: false
+    plugin: PlugMan
+    permissions: plugman.list
+pmlistv:
+    command: plugman vlist <Page>
+    description: lists all plugins loaded with their version next to them. Page is optional
+    main: false
+    plugin: PlugMan
+    permissions: plugman.list
+plugmanload:
+    command: plugman load <PluginName>
+    description: load a new plugin.
+    main: false
+    plugin: PlugMan
+    permissions: plugman.admin
+plugmandisable:
+    command: plugman disable <PluginName>
+    description: disables a plugin.
+    main: false
+    plugin: PlugMan
+    permissions: plugman.admin
+plugmanenable:
+    command: plugman enable <PluginName>
+    description: enables a plugin
+    main: false
+    plugin: PlugMan
+    permissions: plugman.admin
+plugmaninfo:
+    command: plugman info <PluginName>
+    description: shows the version, author, description and status of the plugin.
+    main: false
+    plugin: PlugMan
+    permissions: plugman.list
+plugmanreload:
+    command: plugman reload <PluginName>
+    description: disables and then re-enables a plugin.
+    main: false
+    plugin: PlugMan
+    permissions: plugman.admin
+plugmanusage:
+    command: plugman usage <PluginName>
+    description: gets all the commands a plugin has registered.
+    main: false
+    plugin: PlugMan
+    permissions: plugman.describe
+plugmandescribe:
+    command: plugman describe <CommandName> <PluginName>
+    description: describe a command a plugin has registered.
+    main: false
+    plugin: PlugMan
+    permissions: plugman.describe
