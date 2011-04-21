@@ -1,0 +1,203 @@
+generalhelp:
+    command: help General
+    description: Displays the General help.
+    main: true
+    plugin: General
+    permissions: plugman
+ggive:
+    command: give item[:data] [amount] [player]
+    description: Gives a player some amount of an item. The player defaults to you (it is required in the console), and amount defaults to 1. For a full stack, specify an amount of 0. The item can be either an ID or a name from items.db. The data can either be a number (such as a damage value) or a name from the variants section of items.yml. There cannot be a space between the colon and the data value.
+    main: false
+    plugin: General
+    permissions: general.give
+gitem:
+    command: item (or /i) item[:data] [amount] [player]
+    description: Gives a player some amount of an item.
+    main: false
+    plugin: General
+    permissions: general.give
+gtake:
+    command: take item[:data] [amount] [player]
+    description: Works exactly like the /give command, but in reverse. If the amount is not specified, it takes all occurrences of the specified item from your inventory.
+    main: false
+    plugin: General
+    permissions: general.take
+ggivetake:
+    command: give (or /item, /take) player item[:data] amount
+    description: Alternate forms to match the vanilla syntax.
+    main: false
+    plugin: General
+    permissions: general.take
+gitems:
+    command: items item1 item2 ... itemN
+    description: Give several items at once. You only get one of each item. If issued from the console, the first argument is who to give it to. If issued by a player, you can't specify who to give it to; everything will be given to you only. Any invalid items in the list are ignored without warning or feedback.
+    main: false
+    plugin: General
+    permissions: general.give.mass
+gclear:
+    command: clear [player] [pack|armo[u]r|quickbar]
+    description: Removes everything from the player's inventory, including their armour (if any).
+    main: false
+    plugin: General
+    permissions: general.clear
+gkit:
+    command: kit
+    description: Lists kits available to you.
+    main: false
+    plugin: General
+    permissions: general.kit
+gkitname:
+    command: kit <kit-name>
+    description: Gives you the named kit.
+    main: false
+    plugin: General
+    permissions: general.kit
+gtime:
+    command: time
+    description: Shows the current time.
+    main: false
+    plugin: General
+    permissions: general.time
+gtimesetname:
+    command: time [world] (day|night|dawn|dusk|morning|evening|sunset|sunrise|noon|midday|midnight)
+    description: Sets the time to a preset value.
+    main: false
+    plugin: General
+    permissions: general.time.set
+gtimeset:
+    command: time [world] [=](ticks|time)
+    description: Set the time to a specific point. You can specify either the actual ticks (a number from 0 to 23999) or the time in either 12-hour or 24-hour format. 12-hour format is like 2:45pm or 12:23am, where AM and PM are case-insensitive, noon is 12pm, and midnight is 12am. You can omit the minutes. Seconds are not supported. The 24-hour format is identified by the omission of the AM or PM, and midnight is 0:00; if you add the optional suffix h (case-insensitive), you can still omit the minutes.
+    main: false
+    plugin: General
+    permissions: general.time.set
+gtimeadd:
+    command: time [ world ] (+ | -)(number | time)
+    description: Fast-forward or rewind the time. You can either specify the number of ticks after the beginning of the day (there are 24000 ticks in a day), or specify a duration in the form 2h12m. You need only specify either hours or minutes.
+    main: false
+    plugin: General
+    permissions: general.time.set
+gtimesetc:
+    command: time (add|set) <time>
+    description: Vanilla-based syntax; only sets the current world (if used by a player) or the first world (if used from the console). Probably not very useful unless you have a world whose name is one of the preset time names.
+    main: false
+    plugin: General
+    permissions: general.time.set
+gtele:
+    command: teleport (or /tele) [player1 [,player2, ... ,playerN ]|*] (destination-player|x y z)
+    description: The first argument is who to teleport; it defaults to whoever is issuing the command (it's required if issued from the console). It can be a single player, a comma-separated list of players, or an asterisk to indicate all players. The last argument is the destination. It can be either a player or an xyz coordinate; the coordinates are separated by spaces.
+    main: false
+    plugin: General
+    permissions: general.teleport
+gtphere:
+    command: summon (or /tphere, /teleporthere) <player>
+    description: Teleports a player to your location.
+    main: false
+    plugin: General
+    permissions: general.teleport
+gspawn:
+    command: spawn [player]
+    description: Teleports you or another player to the spawn location in whichever world they currently occupy. The player is required if issued from the console.
+    main: false
+    plugin: General
+    permissions: general.spawn
+gspawnset:
+    command: spawn [world] set [player|x y z]
+    description: Sets the current spawn location in the specified world. The WORLD argument is permitted only in conjunction with specific coordinates. The PLAYER argument defaults to the player who issued the command.
+    main: false
+    plugin: General
+    permissions: general.spawn.set
+gspawnshow:
+    command: spawn [world] show
+    description: Shows the coordinates of the current spawn location in the specified world.
+    main: false
+    plugin: General
+    permissions: general.spawn
+gmsg:
+    command: tell (or /msg, /pm, /whisper) <player> <message>
+    description: Sends a private message to the specified player only.
+    main: false
+    plugin: General
+    permissions: general.tell
+gmsg:
+    command: afk (or /away) [message]
+    description: Sets or unsets your away message.
+    main: false
+    plugin: General
+    permissions: general.away
+gwho:
+    command: playerinfo (or /who, /whois, /whoami) [player]
+    description: Gives information about the specified player, which defaults to yourself.
+    main: false
+    plugin: General
+    permissions: general.who
+gonline:
+    command: playerlist (or /online)
+    description: Lists online players.
+    main: false
+    plugin: General
+    permissions: general.playerlist
+gpos:
+    command: getpos (or /compass, /where) [player]
+    description: Get location information about a player.
+    main: false
+    plugin: General
+    permissions: general.getpos
+ghelp:
+    command: general help [topic]
+    description: Display a help topic.
+    main: false
+    plugin: General
+gmotd:
+    command: general motd
+    description: Display the message of the day.
+    main: false
+    plugin: General
+gheal:
+    command: heal [player] [amount]
+    description: Heals the player (defaults to the player issuing the command) by the specified number of hearts, which is between -10 and 10. Half hearts are supported. You can use /heal -10 as a suicide command.
+    main: false
+    plugin: General
+    permissions: general.heal
+ghurt:
+    command: hurt [player] [amount]
+    description: Same as heal, but negates the amount. Eg, /hurt 10 is the same as /heal -10, and /hurt -2 is the same as /heal 2.
+    main: false
+    plugin: General
+    permissions: general.hurt
+gmob:
+    command: mob (or /mobspawn) [mob];[mount] [count]
+    description: Spawns a mob; the mob is either a mob name or number (0-14), or a mob name or number followed by a colon and the mob data.
+    main: false
+    plugin: General
+    permissions: general.mobspawn
+greaload:
+    command: general reload
+    description: Reload the configuration files.
+    main: false
+    plugin: General
+    permissions: general.admin
+gitemalias:
+    command: general item alias <alias> [item]
+    description: Shows or sets which item the alias points to. The item is parsed the same way as in the /give command, so you can set a new alias to an existing one. Removing one is like viewing, but you put a - in front (no space).
+    main: false
+    plugin: General
+    permissions: general.admin
+gitemvariant:
+    command: general item variant <item> [name]
+    description: Sets a variant name for the given item, which should be of the for item:data, or show all currently assigned names. For example, "general item variant wool:blue" will show all aliases for "blue" when used with "wool". With = you can specify a comma-separated list (no spaces), which will replace all existing aliases. The + or = is optional, but - is required to remove one.
+    main: false
+    plugin: General
+    permissions: general.admin
+gitemname:
+    command: general item name <item> [name]
+    description: Sets or shows the display name of the given item. The item is parsed exactly as in the /give command. To include spaces in the name, replace them with underscores ( _ ).
+    main: false
+    plugin: General
+    permissions: general.admin
+gitemnamesubset:
+    command: general item hook name:subset [item]
+    description: Shows or sets the item binding of the given hook.
+    main: false
+    plugin: General
+    permissions: general.admin
+
