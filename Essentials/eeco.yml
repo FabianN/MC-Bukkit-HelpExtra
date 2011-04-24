@@ -1,0 +1,41 @@
+EEco:
+    command: help EEco
+    description: List all economy commands from Essentials
+    plugin: Essentials
+    main: true
+#   permissions: essentials.eco
+
+essentialsbalance:
+    command: balance
+    description: States the current balance of a player. Defaults to self.
+    plugin: EEco
+    main: false
+    permissions: essentials.balance
+
+essentialseco:
+    command: eco
+    description: Manages the server economy
+    plugin: EEco
+    main: false
+    permissions: essentials.eco
+
+essentialspay:
+    command: pay
+    description: Pays another player from your balance.
+    plugin: EEco
+    main: false
+    permissions: essentials.pay
+
+essentialssell:
+    command: sell
+    description: Sells the item currently in your hand.
+    plugin: EEco
+    main: false
+    permissions: essentials.sell
+
+essentialssetworth:
+    command: setworth
+    description: Set the value of an item for sale, will add item if it doesn't exist.
+    plugin: EEco
+    main: false
+    permissions: essentials.setworth
