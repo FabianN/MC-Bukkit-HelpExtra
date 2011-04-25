@@ -1,0 +1,78 @@
+godhelp:
+    command: help godPowers
+    description: Displays the God Powers help.
+    main: true
+    plugin: godPowers
+    permissions: godPowers
+godmode:
+    command: godmode
+    description: Makes you invincible.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.godmode
+godmodeplayer:
+    command: godmode [player]
+    description: Makes the specified player invincible.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.godmode
+heal:
+    command: heal
+    description: Heals you.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.heal
+healplayer:
+    command: heal [player]
+    description: Heals the specified player.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.heal
+maim:
+    command: maim [player]
+    description: Beats the specified player within an inch of their life.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.maim
+slay:
+    command: slay [player]
+    description: Kills the specified player by no special means. They just drop dead.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.slay
+slaya:
+    command: slay [player] arrows or /slay [player] a
+    description: Kills the specified player by shooting them with flaming arrows!
+    main: false
+    plugin: godPowers
+    permissions: godPowers.slay
+slayf:
+    command: slay [player] fire or /slay [player] f
+    description: Light the player on fire. No guarantee they will die though.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.slay
+slayd:
+    command: slay [player] drop or /slay [player] d
+    description: Drop the player from an immense altitude where they will plummet to their death!
+    main: false
+    plugin: godPowers
+    permissions: godPowers.slay
+die:
+    command: die
+    description: Kills you.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.die
+jesus:
+    command: jesus
+    description: Allows you to walk on water like Jesus. Also allows walking on lava. Not so Jesus-like, but it looks cool.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.jesus
+inferno :
+    command: inferno 
+    description: Use your godly rage to burn the ground behind you! (!!!Warning, this will place fire ANYWHERE you walk, so be careful of flammable materials!!!)
+    main: false
+    plugin: godPowers
+    permissions: godPowers.inferno
