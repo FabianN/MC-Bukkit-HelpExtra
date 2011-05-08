@@ -1,0 +1,36 @@
+spleef define:
+    command: spleef define [arena]
+    description: Defines the selected arena
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.admin
+spleef game:
+    command: spleef creategame [game][arena]
+    description: Creates a game
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.member
+spleef delgame:
+    command: spleef deletegame [game]
+    description: Deletes [game]
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.member
+spleef join:
+    command: spleef join [game]
+    description: Joins [game]
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.member
+spleef leave:
+    command: spleef leave
+    description: Leaves the spleef game
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.member
+spleef list:
+    command: spleef list
+    description: Lists all arenas and games
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.member
