@@ -1,0 +1,54 @@
+tgmail:
+    command: help Mail
+    description: Display ThunderGhast Mail Help
+    plugin: Mail
+    main: true
+    permissions: thunderghast
+tgmailcheck:
+    command: tgcheck
+    description: Checks for unread mail
+    plugin: Mail
+    main: false
+    permissions: thunderghast
+tgmailbox:
+    command: tgmailbox [boxname]
+    description: Opens mailbox.
+    plugin: Mail
+    main: true
+    permissions: thunderghast
+tgmailread:
+    command: tgread <mailid>
+    description: Shows the message in the given mailid.
+    plugin: Mail
+    main: true
+    permissions: thunderghast
+tgmailstore:
+    command: tgstore <mailid> <boxname>
+    description: Stores mail in the given box.
+    plugin: Mail
+    main: true
+    permissions: thunderghast
+tgmailreply:
+    command: tgreply <mailid> <message>
+    description: Sends a reply.
+    plugin: Mail
+    main: true
+    permissions: thunderghast
+tgmailsend:
+    command: tgmail <target> <subject> <message...>
+    description: Sends mail to target.
+    plugin: Mail
+    main: true
+    permissions: thunderghast
+tgmailsendlong:
+    command: tglongmail <target> <subject>
+    description: Sends a long message to target by taking input from chat. Use command again to end the message.
+    plugin: Mail
+    main: true
+    permissions: thunderghast
+tgmaildelete:
+    command: tgdelete <mailid>
+    description: Delete's the message.
+    plugin: Mail
+    main: true
+    permissions: thunderghast
