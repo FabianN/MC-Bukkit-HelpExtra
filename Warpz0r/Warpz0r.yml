@@ -1,0 +1,76 @@
+Warpz0rWarp:
+    command: warp <name>
+    description: Warp to specified warp point.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.warp
+
+Warpz0rWarpTo:
+    command: warpto <player> <name>
+    description: Warp target player to specified warp point.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.warpto
+
+Warpz0rList:
+    command: listwarps
+    description: List all available warp points.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.list
+
+Warpz0rSet:
+    command: setwarp <name> (cost)
+    description: Create a named warp at your current location (with the specified cost to use it).
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.set
+
+Warpz0rRemove:
+    command: removewarp <name>
+    description: Remove specified warp.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.remove
+
+Warpz0rHome:
+    command: home
+    description: Warp to your set home.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.home
+
+Warpz0rSetHome:
+    command: sethome
+    description: Set your home.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.sethome
+
+Warpz0rCompass:
+    command: wz compass
+    description: Set your compass to point to your home.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.compasshome
+
+Warpz0rCompassWarp:
+    command: wz compass <warp>
+    description: Set your compass to point to <warp>.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.compasswarp
+
+Warpz0rCompassReset:
+    command: wz compass reset
+    description: Set your compass to point to spawn.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.compassreset
+
+Warpz0rClearHome:
+    command: clearhome <player>
+    description: Set specified player's home to their current world's spawn point.
+    plugin: Warpz0r
+    main: false
+    permissions: warpz0r.compasshome
