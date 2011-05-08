@@ -1,0 +1,11 @@
+SCDreload:
+    Command: scdreload
+    description: "Reloads the SCD config."
+    plugin: "Self-ClosingDoors"
+    permissions: "scd.config.reload"
+
+SCDset:
+    command: "scset <seconds>"
+    description: "Set a door's duration to kep open until it gets closed automatically (0 = never close)."
+    plugin: "Self-ClosingDoors"
+    permissions: "scd.door.edit"
