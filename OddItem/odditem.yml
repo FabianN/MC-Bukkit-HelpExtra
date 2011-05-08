@@ -1,0 +1,33 @@
+OddItemUsage:
+    command: odditem
+    description: Show OddItem usage info.
+    plugin: OddItem
+    main: true
+
+OddItemAlias:
+    command: odditem aliases <item>
+    description: List aliases for <item>.
+    plugin: OddItem
+    main: false
+    permissions: odditem.item.aliases
+
+OddItemInfo:
+    command: odditem info
+    description: Show number of items loaded.
+    plugin: OddItem
+    main: false
+    permissions: odditem.item.info
+
+OddItemList:
+    command: odditem list
+    description: Lists {name=id, name=id} list of items currently loaded.
+    plugin: OddItem
+    main: false
+    permissions: odditem.item.list
+
+OddItemreload:
+    command: odditem reload
+    description: Reloads item.txt
+    plugin: OddItem
+    main: false
+    permissions: odditem.item.reload
