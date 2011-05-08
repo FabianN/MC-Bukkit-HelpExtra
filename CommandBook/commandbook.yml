@@ -3,83 +3,267 @@ CommandBook:
     description: Display CommandBook Help.
     main: true
     plugin: CommandBook
+cbintro:
+    command: intro
+    description: Replay's the server's intro.mid file.
+    permissions: commandbook.intro
+    main: false
+    plugin: CommandBook
 cbcmdbook:
     command: cmdbook [version|reload]
-    description: 'CommandBook commands'
+    description: CommandBook commands.
     plugin: CommandBook
     permissions: commandbook.reload
 cbitem:
-    command: item [-d] [target] <item[:data]> [amount]
-    description: 'Give yourself Items'
+    command: item [-d] <item[:data]> [amount]
+    description: Give yourself items.
     permissions: commandbook.give 
     main: false
     plugin: CommandBook
 cbgive:
     command: give [-d] [target] <item[:data]> [amount]
-    description: 'Give an item'
+    description: Give another item.
     permissions: commandbook.give
     main: false
     plugin: CommandBook
 cbwho:
-    command: who [filter]
-    description: 'Get the list of players'
+    command: list [filter]
+    description: Get the list of players
     permissions: commandbook.who
     main: true
     plugin: CommandBook
 cbmotd:
     command: motd
-    description: 'Show the message of the day'
+    description: Show the message of the day
     permissions: commandbook.motd 
     main: false
     plugin: CommandBook
 cbrules:
     command: rules
-    description: 'Show the rules'
+    description: Show the rules
     permissions: commandbook.rules 
+    main: false
+    plugin: CommandBook
+cbkit:
+    command: kit <kit> [target]
+    description: Get a kit. Don't user arguments to list kits.
+    permissions: commandbook.kit
+    main: false
+    plugin: CommandBook
+cbmore:
+    command: more [-a] [-i] [target]
+    description: Make held stack have 64 items. -a for all, -i for infinate stack
+    permissions: commandbook.more
     main: false
     plugin: CommandBook
 cbsetspawn:
     command: setspawn
-    description: 'Set the spawn location'
+    description: Set the spawn location
     permissions: commandbook.setspawn
     main: false
     plugin: CommandBook
+cbtime:
+    command: time
+    description: Get the current time
+    main: true
+    plugin: CommandBook
+cbsettime:
+    command: time [-l] [world] <time>
+    description: Set the time of your current world. -l to lock time
+    permissions: commandbook.time
+    main: false
+    plugin: CommandBook
+cbspawnmob:
+    command: spawnmob [-d] [-i] [-r] [-p] <mob> [count] [destination]
+    description: Spawn mobs. -d for 1 health, -i to ignite mob, -r to rocket mob, -p to power creepers.
+    permissions: commandbook.spawnmob
+    main: false
+    plugin: CommandBook
+cbweather:
+    command: weather <stormy|sunny> [duration] [world]
+    description: Set the weather. Use -1 duration for natural time.
+    permissions: commandbook.weather
+    main: false
+    plugin: CommandBook
+cbthunder:
+    command: thunder <on|off> [duration] [world]
+    description: Enable thunder during storms. Use -1 duration for natural time.
+    permissions: commandbook.weather.thunder
+    main: false
+    plugin: CommandBook
+
 cbspawn:
     command: spawn
-    description: 'Teleport to spawn'
+    description: Teleport to spawn
     permissions: commandbook.spawn
+    main: true
     plugin: CommandBook
-cbtime:
-    command: time [world] <time|"current">
-    description: 'Set the time of your current world'
+cbteleport:
+    command: tp [target] <destination>
+    description: Teleport to a destination
+    permissions: commandbook.teleport
+    main: false
+    plugin: CommandBook
+cbtphere:
+    command: tphere <target>
+    description: Teleport another player to you.
+    permissions: commandbook.teleport.other
+    main: false
+    plugin: CommandBook
+cbplace:
+    command: place <target>
+    description: Teleport another player to the location you are looking at.
+    permissions: commandbook.teleport.other
+    main: false
+    plugin: CommandBook
+cbreturn:
+    command: return
+    description: Return to your last location
+    permissions: commandbook.return
+    main: false
+    plugin: CommandBook
+cbcall:
+    command: call <target>
+    description: Request a teleport from someone
+    permissions: commandbook.call
+    main: false
+    plugin: CommandBook
+
+cbsay:
+    command: say <message...>
+    description: Send a message.
+    permissions: commandbook.say
+    main: true
+    plugin: CommandBook
+cbme:
+    command: me <message...>
+    description: Send an action message.
+    permissions: commandbook.say.me
     main: true
     plugin: CommandBook
 cbmsg:
     command: msg <target> <message...>
-    description: 'Send a private message to a user'
+    description: Send a private message to a user.
     permissions: commandbook.msg 
     plugin: CommandBook
 cbreply:
     command: reply
-    description: 'Reply to the last user'
+    description: Reply to the last user.
     permissions: commandbook.msg
     plugin: CommandBook
+cbmute:
+    command: mute <target>
+    description: Mute a player
+    permissions: commandbook.mute
+    main: false
+    plugin: CommandBook
+cbunmute:
+    command: unmute <target>
+    description: Unmute a player
+    permissions: commandbook.mute
+    main: false
+    plugin: CommandBook
+
 cbwhereami:
     command: whereami
-    description: 'Get your current location'
+    description: Get your current location
     permissions: commandbook.whereami
+    main: true
     plugin: CommandBook
 cbcompass:
     command: compass
-    description: 'Get your compass direction'
+    description: Get your compass direction
     permissions: commandbook.whereami.compass
+    main: true
     plugin: CommandBook
 cbclear:
     command: clear [-a] [target]
-    description: 'Clear your inventory'
+    description: Clear your inventory
     permissions: commandbook.clear 
+    main: false
     plugin: CommandBook
+cbslap:
+    command: slap [-h|-v] [-d] [-s] [target]
+    description: Slap a player. -h/-v=hard/veryhard, -d=drop health by 1, -s=silent
+    permissions: commandbook.slap
+    main: false
+    plugin: CommandBook
+cbrocket:
+    command: rocket [-h] [-s] [target]
+    description: Rocket a player. -h=rocket, -s=silent
+    permissions: commandbook.rocket
+    main: false
+    plugin: CommandBook
+cbbarrage:
+    command: barrage [-s] [target]
+    description: Barrage target with arrows. -s=silent
+    permissions: commandbook.barrage
+    main: false
+    plugin: CommandBook
+cbshock:
+    command: shock [-s] [-k] [-a] [target]
+    description: Shocks a player. -s=silent, -k=kill
+    permissions: commandbook.shock
+    main: false
+    plugin: CommandBook
+cbthor:
+    command: thor <target>
+    description: Give Thor's hammer.
+    permissions: commandbook.thor
+    main: false
+    plugin: CommandBook
+cbthor:
+    command: unthor <target>
+    description: Revoke Thor's hammer.
+    permissions: commandbook.thor
+    main: false
+    plugin: CommandBook
+
 cbping:
     command: ping
-    description: 'Get back a dummy reply'
+    description: Server reponds with pong.
+    main: false
+    plugin: CommandBook
+cbwhois:
+    command: whois <target>
+    description: Get info about the player.
+    permissions: commandbook.whois
+    main: true
+    plugin: CommandBook
+cbdebug:
+    command: debug <info|clock>
+    description: Debugging commands
+    permissions: commandbook.debug
+    main: false
+    plugin: CommandBook
+
+cbkick:
+    command: kick <target> [reason...]
+    description: Kick a player
+    permissions: commandbook.kick
+    main: false
+    plugin: CommandBook
+cbban:
+    command: ban [-e] <target> [reason...]
+    description: Ban a player. -e=use exact naming
+    permissions: commandbook.bans.ban
+    main: false
+    plugin: CommandBook
+cbunban:
+    command: unban <target> [reason...]
+    description: Unban a player.
+    permissions: commandbook.bans.unban
+    main: false
+    plugin: CommandBook
+cbisbanned:
+    command: isbanned <target>
+    description: Checks to see if player is banned
+    permissions: commandbook.bans.isbanned
+    main: false
+    plugin: CommandBook
+cbbans:
+    command: bans <load|save>
+    description: Load/Save bans.
+    permissions: commandbook.bans
+    main: false
     plugin: CommandBook
