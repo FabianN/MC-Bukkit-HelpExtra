@@ -8,70 +8,76 @@ mmeject:
     description: Ejects the given player from a minecart, if they are in one. 
     plugin: MinecartMania
     main: false
-    permissions: OP
+    permissions: minecartmania.commands.eject
 mmpermeject:
     command: permeject <player>
     description: Ejects the given player from a minecart, and prevents them from re-entering any minecart. This resets if the command is used again for the given player, or if the server is restarted. 
     plugin: MinecartMania
     main: false
-    permissions: OP
+    permissions: minecartmania.commands.permeject
 mmclearemptycarts:
     command: clearemptycarts [-d]
     description: Removes all empty minecarts from the server. If -d (destroy) is set, they will not be returned to their owners. 
     plugin: MinecartMania
     main: false
-    permissions: OP
+    permissions: minecartmania.commands.clearemptycarts
 mmclearpoweredcarts:
     command: clearpoweredcarts [-d]
     description: Removes all powered minecarts from the server. If -d (destroy) is set, they will not be returned to their owners. 
     plugin: MinecartMania
     main: false
-    permissions: OP
+    permissions: minecartmania.commands.clearpoweredcarts
 mmclearstoragecarts:
     command: clearstoragecarts [-d]
     description: Removes all storage minecarts from the server. If -d (destroy) is set, they will not be returned to their owners. 
     plugin: MinecartMania
     main: false
-    permissions: OP
+    permissions: minecartmania.commands.clearstoragecarts
 mmclearoccupiedcarts:
     command: clearoccupiedcarts [-d]
     description: Removes all occupied minecarts from the server, dropping players where they stand. If -d (destroy) is set, they will not be returned to their owners. 
     plugin: MinecartMania
     main: false
-    permissions: OP
+    permissions: minecartmania.commands.clearoccupiedcarts
 mmsetconfigkey:
     command: setconfigkey <[key]> <[value]>
     description: Sets the given configuration key to the given value. The key name and value are case-sensitive, and must be wrapped in brackets. 
     plugin: MinecartMania
     main: false
-    permissions: OP
+    permissions: minecartmania.commands.setconfigkey
 mmmomentum:
     command: momentum
     description: Shows the momentum of the minecart the player is in. 
     plugin: MinecartMania
     main: false
+    permissions: minecartmania.commands.momentum
 mmgetconfigkey:
     command: getconfigkey <[Key]>
     description: Shows the value of the given configuration key. The Key is case-sensitive and must be wrapped in brackets. 
     plugin: MinecartMania
     main: false
+    permissions: minecartmania.commands.getconfigkey
 mmlistconfigkeys:
     command: listconfigkeys [page number]
     description: Lists all of the config keys, in a page by page format 
     plugin: MinecartMania
     main: false
+    permissions: minecartmania.commands.listconfigkeys
 mmtrucompass:
     command: trucompass
     description: Shows the true (Notch) direction that the player is facing. 
     plugin: MinecartMania
     main: false
+    permissions: minecartmania.commands.trucompass
 mmst:
     command: st <any word> [-s]
     description: Sets the station value for the player. It must be followed by any string, with numbers and letters. The -s flag saves the value so that it is not reset after 1 station.
     plugin: MinecartMania
     main: false
+    permissions: minecartmania.commands.st
 mmthrottle:
     command: throttle <percent>
     description: Autocart Only. Changes the momentum of the minecart. 100% is normal max speed. Can not exceed 500%. 
     plugin: MinecartMania
     main: false
+    permissions: minecartmania.commands.throttle
