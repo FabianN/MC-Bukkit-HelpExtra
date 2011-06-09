@@ -1,8 +1,14 @@
+OddItem:
+    command: help OddItem
+    description: Display OddItem Help.
+    main: true
+    plugin: OddItem
+
 OddItemUsage:
     command: odditem
     description: Show OddItem usage info.
     plugin: OddItem
-    main: true
+    main: false
 
 OddItemAlias:
     command: odditem aliases <item>
