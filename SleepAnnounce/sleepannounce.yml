@@ -1,0 +1,18 @@
+SleepAnnounce:
+    command: help SleepAnnounce
+    description: Display SleepAnnounce Help.
+    main: true
+    plugin: SleepAnnounce
+    permissions: sleep
+sasleeping:
+    command: sleeping 
+    description: list sleeping players - aliases /sl /slp /sleep
+    plugin: SleepAnnounce
+    main: false
+    permissions: sleep.list
+saannounce:
+    command: announce [sleep|awake] 
+    description: toggle/set asleep and awake announcements
+    plugin: SleepAnnounce
+    main: false
+    permissions: sleep.announce
