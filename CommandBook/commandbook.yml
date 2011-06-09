@@ -65,6 +65,7 @@ cbsetspawn:
 cbtime:
     command: time
     description: Get the current time
+    permissions: commandbook.time.check
     main: true
     plugin: CommandBook
 cbsettime:

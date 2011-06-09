@@ -22,5 +22,6 @@ chperform:
 chalias:
     command: alias </name> </command>
     description: Make an alias for a given command
+    permissions: commandhelper.useralias
     plugin: CommandHelper
     main: false
