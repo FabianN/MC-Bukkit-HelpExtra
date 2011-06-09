@@ -1,0 +1,44 @@
+WeatherPlugin:
+    command: help WeatherPlugin
+    description: Display WeatherPlugin Help.
+    main: true
+    plugin: WeatherPlugin
+    permissions: weatherplugin
+wpalias:
+    command: w [params]
+    description: alias for /weather
+    main: true
+    plugin: WeatherPlugin
+    permissions: weatherplugin.weather
+wpsunny:
+    command: weather sunny 
+    description: for stopping storm and thunder
+    plugin: WeatherPlugin
+    main: false
+    permissions: weatherplugin.weather
+wpstorm:
+    command: weather storm
+    description: for starting the storm
+    plugin: WeatherPlugin
+    main: false
+    permissions: weatherplugin.weather
+wpthunder:
+    command: weather thunder
+    description: for starting the thunder
+    plugin: WeatherPlugin
+    main: false
+    permissions: weatherplugin.weather
+wpwpghtningpl:
+    command: lightning [player]
+    description: strike lightning where you're looking, or optionally at a player
+    plugin: WeatherPlugin
+    permissions: weatherplugin.lightning
+    main: false
+wpwpghtning:
+    command: l
+    description: alias for /lightning
+    plugin: WeatherPlugin
+    permissions: weatherplugin.lightning
+    main: false
+
+
