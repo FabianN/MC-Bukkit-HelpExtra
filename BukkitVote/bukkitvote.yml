@@ -1,0 +1,78 @@
+helpBukkitVote:
+    visible: true
+    description: Help for BukkitVote
+    command: help Vote
+    plugin: Vote
+    main: true
+BVoteDay:
+    command: vote day
+    description: Vote for day
+    permissions: bukkitvote.vote.day
+    main: false
+    plugin: Vote
+BVoteNight:
+    command: vote night
+    description: Vote for night
+    permissions: bukkitvote.vote.night
+    main: false
+    plugin: Vote
+BVoteEDay:
+    command: vote eternalday
+    description: Vote for eternal day
+    permissions: bukkitvote.vote.eternalday
+    main: false
+    plugin: Vote
+BVoteENight:
+    command: vote eternalnight
+    description: Vote for eternal night
+    permissions: bukkitvote.vote.eternalnight
+    main: false
+    plugin: Vote
+BVoteStorm:
+    command: vote storm
+    description: Vote to toggle rain/snow
+    permissions: bukkitvote.vote.storm
+    main: false
+    plugin: Vote
+BVoteThunder:
+    command: vote thunder
+    description: Vote to toggle a thundestorm
+    permissions: bukkitvote.vote.thunder
+    main: false
+    plugin: Vote
+BVoteMute:
+    command: vote mute <player>
+    description: Vote to mute <player>
+    permissions: bukkitvote.vote.mute
+    main: false
+    plugin: Vote
+BVoteUnMute:
+    command: vote unmute <player>
+    description: Vote to unmute <player>
+    permissions: bukkitvote.vote.unmute
+    main: false
+    plugin: Vote
+BVoteKick:
+    command: vote kick <player>
+    description: Vote to kick <player>
+    permissions: bukkitvote.vote.kick
+    main: false
+    plugin: Vote
+BVoteBan:
+    command: vote ban <player>
+    description: Vote to ban <player>
+    permissions: bukkitvote.vote.ban
+    main: false
+    plugin: Vote
+BVoteUnMute:
+    command: bvunmute <player>
+    description: Unmute a player that has been voted muted (OPs only)
+    permissions: bukkitvote.op.unmute
+    main: false
+    plugin: Vote
+BVoteFVote:
+    command: fvote <command>
+    description: Start a vote to force a specific command (OPs only)
+    permissions: bukkitvote.op.fvote
+    main: false
+    plugin: Vote
