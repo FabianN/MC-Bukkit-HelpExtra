@@ -1,0 +1,28 @@
+Landmarks:
+    command: help Landmarks
+    description: Display Landmarks Help.
+    main: true
+    plugin: Landmarks
+lmadd:
+    command: landmark add [name]
+    description: set a new landmark to your current position
+    permissions: landmarks.add
+    main: false
+    plugin: Landmarks
+lmmodify:
+    command: landmark modify [name]
+    description: update an existing landmark to your current position
+    plugin: Landmarks
+    permissions: landmarks.modify
+lmset:
+    command: landmark set [name]
+    description: updates existing landmark, or creates one if none exists with [name]
+    permissions: landmarks.add
+    main: false
+    plugin: Landmarks
+lmdelete:
+    command: landmark [delete|del|remove]
+    description: remove existing landmark
+    permissions: landmarks.remove
+    main: false
+    plugin: Landmarks
