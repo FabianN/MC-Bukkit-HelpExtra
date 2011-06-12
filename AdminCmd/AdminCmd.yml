@@ -1,0 +1,109 @@
+AdminCmd:
+    command: help AdminCmd
+    description: Display AdminCmd help.
+    main: true
+    plugin: AdminCmd
+actimeset:
+    command: time day|night|dusk|dawn|<raw>
+    description: Set world time to a given timestamp/alias.
+    plugin: AdminCmd
+actimeday:
+    command: day
+    description: Short for /time day.
+    plugin: AdminCmd
+acplayerlist:
+    command: playerlist
+    description: Lists all online players.
+    plugin: AdminCmd
+acplayerheal:
+    command: heal [player]
+    description: Heal yourself. Or, specify a [player].
+    plugin: AdminCmd
+acplayerkill:
+    command: kill [playername]
+    description: Kill yourself, or kill a special friend!
+    plugin: AdminCmd
+acrepair:
+    command: repair
+    description: Repair if possible the item in hand.
+    plugin: AdminCmd
+acrepairall:
+    command: repairall
+    description: Repair if possible the item in hand.
+    plugin: AdminCmd
+acplayerloc:
+    command: loc [player]
+    description: Display your or [player]s location.
+    plugin: AdminCmd
+acitemmore:
+    command: "more [#]"
+    description: "[#] more of what you're holding, 64 default."
+    plugin: AdminCmd
+acitem:
+    command: "item [name|id] [#] <player> <damage>"
+    description: Gives the player item of choice.
+    plugin: AdminCmd
+acaddbl:
+    command: addblacklist [name|id]
+    description: BlackList an item.
+    plugin: AdminCmd
+acrmbl:
+    command: rmblacklist [name|id]
+    description: Remove the item from the blackList.
+    plugin: AdminCmd
+acitemcolor:
+    command: color [color-name|color-id|help]
+    description: Changes the color of a colorable item in hand.
+    plugin: AdminCmd
+actpto:
+    command: tp [player]
+    description: Teleports you to [player].
+    plugin: AdminCmd
+actp2p:
+    command: t2p [player] [dest_player]
+    description: Teleport [player] to [dest_player]
+    plugin: AdminCmd
+actphere:
+    command: tphere [player]
+    description: Teleport [player] here.
+    plugin: AdminCmd
+actpthere:
+    command: tploc [x] [y] [z]
+    description: Teleport yourself to the co-ordinates x,y,z.
+    plugin: AdminCmd
+acplayermsg:
+    command: msg [playername] [msg text]
+    description: Sends a private message to another player.
+    plugin: AdminCmd
+acpclear:
+    command: clear [player]
+    description: Clear the inventory of [player]
+    plugin: AdminCmd
+acwclear:
+    command: clearw
+    description: Clear the weather.
+    plugin: AdminCmd
+acwstorm:
+    command: storm [minutes]
+    description: Make the weather stormy for [minutes] duration.
+    plugin: AdminCmd
+acwstrike:
+    command: strike [player]
+    description: Strike [player] with a lighting bolt.
+    plugin: AdminCmd
+acthor:
+    command: thor
+    description: Control the thunder!
+    plugin: AdminCmd
+acaddalias:
+    command: aa [alias] [id|name]
+    description: Add an [alias] for the item [id|name].
+    plugin: AdminCmd
+acrmalias:
+    command: rmalias [alias]
+    description: Delete the alias.
+    plugin: AdminCmd
+acmob:
+    command: "mob [mobname] [#]"
+    description: Spawn the given quantity of [mob].
+    plugin: AdminCmd
