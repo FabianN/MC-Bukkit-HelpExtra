@@ -1,0 +1,60 @@
+CommandSigns:
+    command: help commandsigns
+    description: Displays CommandSigns commands.
+    main: true
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-enable:
+    command: commandsign enable
+    description: Enables the next command sign you right-click on.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-enable-uses:
+    command: commandsign enable
+    description: Enables the next command sign you right-click on with a number of uses.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-enable-xyz:
+    command: commandsign enable
+    description: Enables the command sign at x,y,z.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-enable-uses-xyz:
+    command: commandsign enable
+    description: Enables the command sign at x,y,z with a number of uses.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-enable-xyz-world:
+    command: commandsign enable
+    description: Enables the command sign in world at x,y,z.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-enable-xyz-world:
+    command: commandsign enable
+    description: Enables the command sign in world at x,y,z.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-enable-uses-xyz-world:
+    command: commandsign enable
+    description: Enables the command sign in world at x,y,z with a number of uses.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-disable:
+    command: commandsign disable
+    description: Disables the next command sign you right-click on.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
+commandsign-disable-xyz:
+    command: commandsign disable
+    description: Disables the command sign at x,y,z.
+    main: false
+    plugin: CommandSigns
+    permissions: commandSigns.super
