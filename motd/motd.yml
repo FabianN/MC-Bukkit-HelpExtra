@@ -1,0 +1,63 @@
+motdWho:
+    command: "who"
+    description: "bring up the online players list"
+    plugin: "motd"
+    permissions: "motd.who.use"
+
+    
+motdRtpRequest:
+    command: "rtp [playername]"
+    description: "creates a teleport request to [playername]"
+    plugin: "motd"
+    permissions: "motd.rtp.request"
+
+motdRtpYes:
+    command: "rtp [yes]"
+    description: "allow player to teleport to you"
+    plugin: "motd"
+    permissions: "motd.rtp.yes"    
+    
+    
+motdVtimeRequest:
+    command: "vtime [dawn | day | evening | night]"
+    description: "initiate vote to change the time"
+    plugin: "motd"
+    permissions: "motd.vtime.use"    
+
+motdVtimeYes:
+    command: "vtime [yes]"
+    description: "agree with vote to change the time"
+    plugin: "motd"
+    permissions: "motd.vtime.use"    
+    
+    
+motdIp:
+    command: "ip"
+    description: "shows the ip of the player"
+    plugin: "motd"
+    permissions: "motd.ip.use"
+    
+motdMotd:
+    command: "motd"
+    description: "bring up the message of the day"
+    plugin: "motd"
+    permissions: "motd.motd.use"    
+    
+motdRules:
+    command: "rules"
+    description: "bring up the rules"
+    plugin: "motd"
+    permissions: "motd.rules.use"
+
+    
+motdReload:
+    command: "reload"
+    description: "reload the plugin"
+    plugin: "motd"
+    permissions: "motd.reload"
+
+motdEdit:
+    command: "motd edit [property] [value]"
+    description: "edit the motd.yml directly"
+    plugin: "motd"
+    permissions: "motd.edit"    

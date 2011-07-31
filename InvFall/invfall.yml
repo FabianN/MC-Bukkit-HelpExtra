@@ -1,0 +1,23 @@
+InvFallToggle:
+    command: "invfall"
+    description: "toggles invfall for yourself"
+    plugin: "InvFall"
+    permissions: "invfall.invfall"
+
+InvFallTogglePlayer:
+    command: "invfall player [name]"
+    description: "toggles invfall for player with [name]"
+    plugin: "InvFall"
+    permissions: "invfall.player"
+
+InvFallToggleFreefall:
+    command: "invfall freefall"
+    description: "toggles freefall for yourself"
+    plugin: "InvFall"
+    permissions: "invfall.freefall"
+
+InvFallSetSlots:
+    command: "invfall setslots [slot numbers]"
+    description: "enables invfall only for the specified [slot numbers]"
+    plugin: "InvFall"
+    permissions: "invfall.setslots"
