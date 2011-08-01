@@ -14,7 +14,7 @@ actimeday:
     command: day
     description: Short for /time day.
     plugin: AdminCmd
-		permissions: admincmd.time.day
+    permissions: admincmd.time.day
 
 acitemitem:
     command: item [name|alias|item id]:<damage> <#> <player>
@@ -23,10 +23,10 @@ acitemitem:
     permissions: admincmd.item.add    
 
 acitemdrop:
-    command: item [name|alias|item id]:<damage> <#> <player>
+    command: drop [name|alias|item id]:<damage> <#> <player>
     description: Drops given amount <#> of an [item] to the <player>. Defaults to yourself.
     plugin: AdminCmd
-    permissions: admincmd.item.add 
+    permissions: admincmd.item.drop 
 
 acitemaddbl:
     command: addblacklist [name|alias|item id]
@@ -245,7 +245,7 @@ acrplayerunmute:
     permissions: admincmd.player.mute
     
 acrplayernopickup:
-    command: npickup [playername]
+    command: nopickup [playername]
     description: The [player] will not pickup any item. Useful when invisible, or to punish an user. Tape it again to disable it. Defaults to yourself if no player is given.
     plugin: AdminCmd 
     permissions: admincmd.player.np    
