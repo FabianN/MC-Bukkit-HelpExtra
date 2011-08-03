@@ -256,9 +256,15 @@ acweatherclear:
     plugin: AdminCmd
     permissions: admincmd.weather.clear
 
+acweatherrain:
+    command: rain [minutes]
+    description: "Set the weather to rain for [minutes].\n Defaults to 10 mins"
+    plugin: AdminCmd
+    permissions: admincmd.weather.rain
+
 acweatherstorm:
     command: storm [minutes]
-    description: "Make the weather stormy for [minutes]\n duration."
+    description: "Make the weather stormy for [minutes]\n duration. Defaults to 10 mins"
     plugin: AdminCmd
     permissions: admincmd.weather.storm
 
@@ -353,7 +359,7 @@ acservernews:
     permissions: admincmd.server.news
 
 acserverexec:
-    command: exec [ScriptName]
-    description: "Possibility to execute some scripts and\n commands (batch on windows and bash on Unix) using a simple\n file. If not set, it lists every script that you have access to."
+    command: exec [ScriptName|-reloadall]
+    description: "Possibility to execute some scripts\n and commands (batch on windows and bash on Unix) using a simple\n file. If not set, it lists every script that you have access to."
     plugin: AdminCmd
     permissions: admincmd.server.exec
