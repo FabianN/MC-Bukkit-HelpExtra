@@ -1,0 +1,16 @@
+RealTimeSet:
+    command: help RealTimeSet
+    description: Display the Help-file of RealTimeSet.
+    main: true
+
+RealTimeSetrtime:
+    command: rtime
+    description: Shows the current time(Alias /rtime get).
+    main: false
+    permissions: realTimeSet.get
+
+RealTimeSetrtimeset:
+    command: rtime set [hh:mm]
+    description: "Sets the time to [hh:mm] using 24h format\n (e.g. 13:55)."
+    main: false
+    permissions: realTimeSet.set
