@@ -1,0 +1,26 @@
+OddGive:
+    command: help OddGive
+    description: Display OddGive Help.
+    main: true
+    plugin: OddGive
+
+OddIGiveI:
+    command: i [item] [quantity]
+    description: Gives you [quantity] of [item].
+    plugin: OddGive
+    main: false
+    permissions: oddgive.i
+
+OddGiveI0:
+    command: i0 [player list] [item list]
+    description: "Clears inventory of [player list]\n and removes all [item list].(All items if just /i0)"
+    plugin: OddGive
+    main: false
+    permissions: oddgive.i0
+
+OddGiveGive:
+    command: give [player] [item] [quantity]
+    description: "Gives [player] [quantity] of \n [item]."
+    plugin: OddGive
+    main: false
+    permissions: oddgive.give
