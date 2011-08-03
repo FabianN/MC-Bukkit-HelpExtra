@@ -1,60 +1,69 @@
-plugmanhelp:
+PlugMan:
     command: help PlugMan
-    description: Displays the PlugMan help.
+    description: Displays the help-text of PlugMan.
     main: true
     plugin: PlugMan
-    permissions: plugman
-pmlist:
+    permissions: plugman.admin
+
+PlugManList:
     command: plugman list <Page>
-    description: lists all plugins loaded on the server. Page is optional
-    main: false
+    description: "Lists all plugins loaded on the server.\n Page is optional"
     plugin: PlugMan
+    main: false
     permissions: plugman.list
-pmlistv:
+
+PlugManVlist:
     command: plugman vlist <Page>
-    description: lists all plugins loaded with their version next to them. Page is optional
-    main: false
+    description: "Lists all plugins loaded with their ver-\n sion next to them. Page is optional."
     plugin: PlugMan
+    main: false
     permissions: plugman.list
-plugmanload:
-    command: plugman load <PluginName>
-    description: load a new plugin.
-    main: false
+
+PlugManLoad:
+    command: plugman load [PluginName] 
     plugin: PlugMan
+    description: Loads a new given [plugin].
+    main: false
     permissions: plugman.admin
-plugmandisable:
-    command: plugman disable <PluginName>
-    description: disables a plugin.
-    main: false
+
+PlugManDisable:
+    command: plugman disable [PluginName] 
+    description: Disables the given [plugin].
     plugin: PlugMan
+    main: false
     permissions: plugman.admin
-plugmanenable:
-    command: plugman enable <PluginName>
-    description: enables a plugin
-    main: false
+
+PlugManEnable:
+    command: plugman enable [PluginName] 
+    description: Enables the given [plugin].
     plugin: PlugMan
+    main: false
     permissions: plugman.admin
-plugmaninfo:
-    command: plugman info <PluginName>
-    description: shows the version, author, description and status of the plugin.
-    main: false
+
+PlugManInfo:
+    command: plugman info [PluginName] 
+    description: "Shows the version, author,\n description and status of the given [plugin]."
     plugin: PlugMan
+    main: false
     permissions: plugman.list
-plugmanreload:
-    command: plugman reload <PluginName>
-    description: disables and then re-enables a plugin.
-    main: false
+
+PlugManReload:
+    command: plugman reload [PluginName]
+    description: "Disables and then re-enables\n the given [plugin]."
     plugin: PlugMan
+    main: false
     permissions: plugman.admin
-plugmanusage:
-    command: plugman usage <PluginName>
-    description: gets all the commands a plugin has registered.
-    main: false
+
+PlugManUsage:
+    command: plugman usage [PluginName]
+    description: "Gets all the commands the given\n [plugin] has registered."
     plugin: PlugMan
+    main: false
     permissions: plugman.describe
-plugmandescribe:
-    command: plugman describe <CommandName> <PluginName>
-    description: describe a command a plugin has registered.
-    main: false
+
+PlugManDescribe:
+    command: plugman describe [CommandName] [PluginName] 
+    description: "Describe a\n [command] a [plugin] has registered."
     plugin: PlugMan
+    main: false
     permissions: plugman.describe
