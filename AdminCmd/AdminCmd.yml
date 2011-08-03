@@ -190,65 +190,71 @@ acplayerinv:
     plugin: AdminCmd
     permissions: admincmd.player.invisible
 
-acrplayerspy:
+acplayerspy:
     command: spy
     description: You receive every private message.
     plugin: AdminCmd
     permissions: admincmd.player.spy
 
-acrplayerfireball:
+acplayerfireball:
     command: fireball [power] [player]
     description: Makes you/[player] like a Ghast (you throw fireball that explode when touch something). Power= 1.0xGhast by default.
     plugin: AdminCmd
     permissions: admincmd.player.fireball
 
-acrplayerip:
+acplayerip:
     command: ip [player]
     description: Shows your IP/given [palyers] IP.
     plugin: AdminCmd
     permissions: admincmd.player.ip
 
-acrplayerpban:
+acplayerpban:
     command: pban [player] <message>
     description: "Ban the given [player], you can\n personify the kick [message]."
     plugin: AdminCmd
     permissions: admincmd.player.ban
 
-acrplayerunban:
+acplayerunban:
     command: unban [player]
     description: Unban the given banned [player].
     plugin: AdminCmd
     permissions: admincmd.player.ban
 
-acrplayerfly:
+acplayerfly:
     command: fly [power] <playername>
     description: "You/the given <player> can now\n fly when keep pressing the sneaking key (SHIFT). Press and\n hold the sneaking key, Jump, your are flying. Power=Velocity, defaults to 1.75."
     plugin: AdminCmd
     permissions: admincmd.player.fly
 
-acrplayerfreeze:
+acplayerfreeze:
     command: freeze [playername]
     description: "Freeze the [player], he can't move,\n can't interact with the world. He can only chat."
     plugin: AdminCmd
     permissions: admincmd.player.freeze
 
-acrplayermute:
+acplayermute:
     command: mute [playername]
     description: "Mute the given [player]. He can't chat\n until you unmute him."
     plugin: AdminCmd
     permissions: admincmd.player.mute
 
-acrplayerunmute:
+acplayerunmute:
     command: unmute [playername]
     description: Unmute the given muted player.
     plugin: AdminCmd
     permissions: admincmd.player.mute
 
-acrplayernopickup:
+acplayernopickup:
     command: nopickup [playername]
     description: "The [player] will not pickup any item. Useful when invisible, or to punish an user. Tape it again to\n disable it. Defaults to yourself if no player is given."
     plugin: AdminCmd
     permissions: admincmd.player.np
+
+acplayerroll:
+    command: roll [dice]
+    description: "Roll a [x]-sided dice. Deafult: 6"
+    plugin: AdminCmd
+    permissions: admincmd.player.roll
 
 acweatherclear:
     command: clearw
@@ -329,7 +335,7 @@ acmoblimit:
     permissions: admincmd.mob.limit
 
 acsetspawn:
-    command: setspawn
+    command: setspawn <radius>
     description: Set the spawn location of the current world.
     plugin: AdminCmd
     permissions: admincmd.spawn.set
@@ -359,7 +365,13 @@ acservernews:
     permissions: admincmd.server.news
 
 acserverexec:
-    command: exec [ScriptName|-reloadall]
-    description: "Possibility to execute some scripts\n and commands (batch on windows and bash on Unix) using a simple\n file. If not set, it lists every script that you have access to."
+    command: exec [ScriptName|-reload all/ScriptName]
+    description: "Possibility to exe-\n cute some scripts and commands (batch on windows and bash\n on Unix) using a simple file. If not set, it lists every script\n that you have access to."
     plugin: AdminCmd
     permissions: admincmd.server.exec
+
+acserverextinguish:
+    command: extinguish [range]
+    description: "Extinguish the fire in the wanted range.\n Max 50, Default 20. Alias: /ex"
+    plugin: AdminCmd
+    permissions: amdincmd.server.extinguish

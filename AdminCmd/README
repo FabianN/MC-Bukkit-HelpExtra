@@ -6,3 +6,5 @@ Credit goes to tbielawa (https://github.com/tbielawa).
 Updated by Lathanael (http://forums.bukkit.org/threads/admn-gen-admincmd-5-6-10-time-give-tp-repair-heal-kill-warp-weather-afk-multi-lingual-1000.10770/page-17#post-529991)
 
 Updated to AdminCmd v5.6.18, removed some unnecessary whitespace, made it look a little better when viewing In-Game (NB! set useWordWrap to false in the Help.yml! This gives a better readable output)
+
+Updated to v5.6.20
