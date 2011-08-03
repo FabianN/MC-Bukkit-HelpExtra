@@ -1,0 +1,19 @@
+SphereWorld:
+    command: help SphereWorld
+    description: Displays the SphereWorld help.
+    plugin: SphereWorld
+    main: true
+
+SphereWorld_cr:
+    command: cr
+    description: Regenerates the Chunk you are staying on.
+    plugin: SphereWorld
+    main: false
+    permissions: OP
+    
+SphereWorld_sphere:
+    command: sphere
+    description: Gives you information about the Sphere you are in.
+    plugin: SphereWorld
+    main: false
+    
