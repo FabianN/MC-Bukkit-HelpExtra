@@ -1,0 +1,17 @@
+plugins_info:
+    command: help plugins_info
+    description: Displays the plugins_info Help.
+    main: true
+    plugin: plugins_info
+
+plugins_info_pl:
+    command: pl
+    description: "List of all Plugin installed on a server. Alias: /plugin"
+    main: false
+    plugin: plugins_info
+    
+plugins_info_plname:
+    command: pl [name]
+    description: "Shows the available information of plugin [name].\n Alias: /plugin [name]"
+    main: false
+    plugin: plugins_info
