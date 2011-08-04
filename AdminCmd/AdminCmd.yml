@@ -375,3 +375,9 @@ acserverextinguish:
     description: "Extinguish the fire in the wanted range.\n Max 50, Default 20. Alias: /ex"
     plugin: AdminCmd
     permissions: amdincmd.server.extinguish
+
+acservereareload:
+    command: areload [PluginName]
+    description: "Reload the given [plugin] OR AdminCmd\n if not set. Alias: /ar. The parameter is CASE SENSITIVE!"
+    plugin: AdminCmd
+    permissions: amdincmd.server.reload
