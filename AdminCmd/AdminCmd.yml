@@ -354,19 +354,19 @@ acservermemory:
 
 acservermotd:
     command: motd [message]
-    description: "You can set the current motd in the locale \n file where: %player = new connected player's name,\n %nb = (number of player connected - invisibles players). You can use color by typing & before the number of the color.\n If no [message] is given it shows the current MOTD."
+    description: "You can set the current motd or show it if\n no [message] is given. For more Info do /help acmotd"
     plugin: AdminCmd
     permissions: admincmd.server.motd
 
 acservernews:
     command: news [message]
-    description: "You can set the current news in the locale \n file where: %player = new connected player's name,\n %nb = (number of player connected - invisibles players). You can use color by typing & before the number of the color.\n If no [message] is given it shows the current NEWS."
+    description: "You can set the current news. Formatting\n as motd! If no [message] is given it shows the current NEWS."
     plugin: AdminCmd
     permissions: admincmd.server.news
 
 acserverexec:
     command: exec [ScriptName|-reload all/ScriptName]
-    description: "Possibility to exe-\n cute some scripts and commands (batch on windows and bash\n on Unix) using a simple file. If not set, it lists every script\n that you have access to."
+    description: "Execute some\n scripts and commands (batch or bash on Unix) using a simple\n file. If not set, it lists all scripts you have access to."
     plugin: AdminCmd
     permissions: admincmd.server.exec
 
@@ -376,8 +376,20 @@ acserverextinguish:
     plugin: AdminCmd
     permissions: amdincmd.server.extinguish
 
-acservereareload:
+acserverareload:
     command: areload [PluginName]
     description: "Reload the given [plugin] OR AdminCmd\n if not set. Alias: /ar. The parameter is CASE SENSITIVE!"
     plugin: AdminCmd
     permissions: amdincmd.server.reload
+
+acserverundo:
+    command: undo
+    description: "Undo the /air or /ex done before (retain every\n change made). Alias: /past"
+    plugin: AdminCmd
+    permissions: amdincmd.server.replace
+
+acserverair:
+    command: air [Block] <radius>
+    description: "Replace the wanted [block] by air. De-\n faults to <radius> 10, CAUTION: It's the radius of a sphere\n not a circle"
+    plugin: AdminCmd
+    permissions: amdincmd.server.replace
