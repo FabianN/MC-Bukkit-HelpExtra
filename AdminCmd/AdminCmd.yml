@@ -393,3 +393,9 @@ acserverair:
     description: "Replace the wanted [block] by air. De-\n faults to <radius> 10, CAUTION: It's the radius of a sphere\n not a circle"
     plugin: AdminCmd
     permissions: amdincmd.server.replace
+
+acserverreloadall:
+    command: reloadall
+    description: "Reload the server. Alias: /arall"
+    plugin: AdminCmd
+    permissions: admincmd.server.reload
