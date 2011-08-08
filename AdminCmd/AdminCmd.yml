@@ -5,8 +5,8 @@ AdminCmd:
     plugin: AdminCmd
 
 actimeset:
-    command: time day|night|dusk|dawn|<raw>
-    description: "Set world time to a given\n timestamp/alias."
+    command: time day|night|dusk|dawn|<raw>|pause|unpause
+    description: "Set world time\n to a given timestamp/alias."
     plugin: AdminCmd
     permissions: admincmd.time.set
 
@@ -51,6 +51,12 @@ acitemrepair:
     description: Repair if possible the item in hand.
     plugin: AdminCmd
     permissions: admincmd.item.rapair
+
+acitemmoreall:
+    command: moreall
+    description: "Set the amount of every item in the inventory to the max."
+    plugin: AdminCmd
+    permissions: admincmd.item.more
 
 acrepairall:
     command: repairall [player_name]
@@ -256,6 +262,12 @@ acplayerroll:
     plugin: AdminCmd
     permissions: admincmd.player.roll
 
+acplayerafk:
+    command: afk
+    description: "Set yourself AFK."
+    plugin: AdminCmd
+    permissions: admincmd.player.afk
+
 acweatherclear:
     command: clearw
     description: Clear the weather.
@@ -399,3 +411,9 @@ acserverreloadall:
     description: "Reload the server. Alias: /arall"
     plugin: AdminCmd
     permissions: admincmd.server.reload
+
+cserverrepeat:
+    command: repeat
+    description: "Repeat the last command you issued with the same\n parameters. Alias: /rp"
+    plugin: AdminCmd
+    permissions: admincmd.server.repeat
