@@ -5,11 +5,11 @@ AdminCmd:
     plugin: AdminCmd
 
 actimeset:
-    command: time day|night|dusk|dawn|<raw>
-    description: Set world time to a given timestamp/alias.
+    command: time day|night|dusk|dawn|<raw>|pause|unpause
+    description: "Set world time\n to a given timestamp/alias."
     plugin: AdminCmd
     permissions: admincmd.time.set
-    
+
 actimeday:
     command: day
     description: Short for /time day.
@@ -20,92 +20,98 @@ acitemitem:
     command: item [name|alias|item id]:<damage> <#> <player>
     description: To give a given amount <#> of an [item] to the <player>. Defaults to yourself.
     plugin: AdminCmd
-    permissions: admincmd.item.add    
+    permissions: admincmd.item.add
 
 acitemdrop:
     command: drop [name|alias|item id]:<damage> <#> <player>
-    description: Drops given amount <#> of an [item] to the <player>. Defaults to yourself.
+    description: "Drops given\n amount <#> of an [item] to the <player>. Defaults to yourself."
     plugin: AdminCmd
-    permissions: admincmd.item.drop 
+    permissions: admincmd.item.drop
 
 acitemaddbl:
     command: addblacklist [name|alias|item id]
     description: Blacklist an [item].
     plugin: AdminCmd
     permissions: admincmd.item.blacklist
-    
+
 acrmbl:
     command: rmblacklist [name|alias|item id]
     description: Remove the item from the blacklist.
-    plugin: AdminCmd 
-    permissions: admincmd.item.blacklist    
+    plugin: AdminCmd
+    permissions: admincmd.item.blacklist
 
 acitemmore:
     command: more <#>
-    description: Add <#> of the item in your hand to the item in hand, else if no <#>, set the amount of this item to 64.
-    plugin: AdminCmd    
+    description: "Add <#> of the item in your hand to the item in\n hand, else if no <#>, set the amount of this item to 64."
+    plugin: AdminCmd
     permissions: admincmd.item.more
-    
+
 acitemrepair:
     command: repair
     description: Repair if possible the item in hand.
     plugin: AdminCmd
     permissions: admincmd.item.rapair
-    
+
+acitemmoreall:
+    command: moreall
+    description: "Set the amount of every item in the inventory to the max."
+    plugin: AdminCmd
+    permissions: admincmd.item.more
+
 acrepairall:
     command: repairall [player_name]
-    description: Repair all items in the inventory of the [player], defaults to yourself.
+    description: "Repair all items in the inventory of\n the [player], defaults to yourself."
     plugin: AdminCmd
     permissions: admincmd.item.rapair.other
 
 acitemcolor:
     command: color [color-name|color-id|?]
-    description: Changes the color of a colorable item in hand. Type /color ? to list available colors.
+    description: "Changes the color of a\n colorable item in hand. Type /color ? to list available colors."
     plugin: AdminCmd
     permissions: admincmd.item.color
 
 acaddalias:
     command: aa [alias] [item id|name|alias
-    description: Add an [alias] for the item [item id|name|alias].
+    description: "Add an [alias] for the item\n [item id|name|alias]."
     plugin: AdminCmd
     permissions: admincmd.item.alias
-    
+
 acrmalias:
     command: rmalias [alias]
     description: Delete the alias.
-    plugin: AdminCmd    
-    permissions: admincmd.item.alias    
-    
+    plugin: AdminCmd
+    permissions: admincmd.item.alias
+
 actpto:
     command: tp [player]
     description: Teleports you to [player].
     plugin: AdminCmd
     permissions: admincmd.tp.to
-    
+
 actp2p:
     command: t2p [player] [dest_player]
-    description: Teleport [player] to [dest_player].
+    description: "Teleport [player] to\n [dest_player]."
     plugin: AdminCmd
     permissions: admincmd.tp.players
-    
+
 actphere:
     command: tphere [player]
     description: Teleport [player] to your current location.
     plugin: AdminCmd
     permissions: admincmd.tp.from
-    
+
 actploc:
     command: tploc [x] [y] [z]
     description: Teleport yourself to the coordinates x,y,z.
     plugin: AdminCmd
     permissions: admincmd.tp.location
-    
+
 actphome:
     command: home [homeName]
     description: Teleports you to your [home](if set). If no name defaults to worldname.
     plugin: AdminCmd
     permissions: admincmd.tp.home
-        
+
 actpsethome:
     command: sethome [homeName]
     description: Set your home, where you can Teleport to later. If no [name] given defaults to current world.
@@ -116,20 +122,20 @@ actphomelist:
     command: listhomes
     description: List all homes.
     plugin: AdminCmd
-    permissions: admincmd.tp.home    
-    
+    permissions: admincmd.tp.home
+
 actphomeremove:
     command: rmhome [name]
     description: Delete the given [home].
     plugin: AdminCmd
-    permissions: admincmd.tp.home     
-    
+    permissions: admincmd.tp.home
+
 acplayerlist:
     command: playerlist
     description: Lists all online players.
     plugin: AdminCmd
     permissions: admincmd.player.list
-    
+
 acplayerloc:
     command: loc [player]
     description: Display your or [player]s location.
@@ -144,198 +150,270 @@ acplayerkill:
 
 acplayerclear:
     command: clear [playername]
-    description: Clear the inventory of the [player], defaults to yourself.
+    description: "Clear the inventory of the [player],\n defaults to yourself."
     plugin: AdminCmd
-    permissions: admincmd.player.clear    
-    
+    permissions: admincmd.player.clear
+
 acplayerheal:
     command: heal [player]
     description: Heal yourself. Or, specify a [player].
     plugin: AdminCmd
     permissions: admincmd.player.heal
-    
+
 acplayergod:
     command: god [player]
-    description: make you or a [player] like god, no more damage. Type it again to disable god mode.
+    description: "Make you or a [player] like god, no more\n damage. Type it again to disable god mode."
     plugin: AdminCmd
     permissions: admincmd.player.god
 
 acplayerkick:
     command: kick [player] [message]
-    description: Kick the given [player], you can personify the kick [message].
+    description: "Kick the given [player], you can\n personify the kick [message]."
     plugin: AdminCmd
     permissions: admincmd.player.kick
-    
+
 acplayerkickall:
     command: kickall [message]
-    description: Kick the all connected player, you can personify the kick [message].
+    description: "Kick the all connected player, you can\n personify the kick [message]."
     plugin: AdminCmd
-    permissions: admincmd.player.kick    
-    
+    permissions: admincmd.player.kick
+
 acplayermsg:
     command: msg [playername] [msg text]
-    description: Sends a private message to another player.
+    description: "Sends a private message to\n another player."
     plugin: AdminCmd
     permissions: admincmd.player.msg
 
 acplayervulcan:
     command: vulcan [power] [player]
-    description: Makes you or [player] like Vulcan, explosion at see. Power=4.0xTNTPower by default.
+    description: "Makes you or [player] like Vulcan,\n explosion at see. Power=4.0xTNTPower by default."
     plugin: AdminCmd
     permissions: admincmd.player.vulcan
-    
+
 acplayerinv:
     command: inv <player>
     description: Makes you/[player] invisible.
-    plugin: AdminCmd 
+    plugin: AdminCmd
     permissions: admincmd.player.invisible
-    
-acrplayerspy:
+
+acplayerspy:
     command: spy
     description: You receive every private message.
-    plugin: AdminCmd 
-    permissions: admincmd.player.spy    
-    
-acrplayerfireball:
+    plugin: AdminCmd
+    permissions: admincmd.player.spy
+
+acplayerfireball:
     command: fireball [power] [player]
     description: Makes you/[player] like a Ghast (you throw fireball that explode when touch something). Power= 1.0xGhast by default.
-    plugin: AdminCmd 
-    permissions: admincmd.player.fireball  
+    plugin: AdminCmd
+    permissions: admincmd.player.fireball
 
-acrplayerip:
+acplayerip:
     command: ip [player]
     description: Shows your IP/given [palyers] IP.
-    plugin: AdminCmd 
+    plugin: AdminCmd
     permissions: admincmd.player.ip
 
-acrplayerpban:
+acplayerpban:
     command: pban [player] <message>
-    description: Ban the given [player], you can personify the kick [message].
-    plugin: AdminCmd 
+    description: "Ban the given [player], you can\n personify the kick [message]."
+    plugin: AdminCmd
     permissions: admincmd.player.ban
-    
-acrplayerunban:
+
+acplayerunban:
     command: unban [player]
     description: Unban the given banned [player].
-    plugin: AdminCmd 
-    permissions: admincmd.player.ban    
+    plugin: AdminCmd
+    permissions: admincmd.player.ban
 
-acrplayerfly:
+acplayerfly:
     command: fly [power] <playername>
-    description: You/the given <player> can now fly when keep pressing the sneaking key (SHIFT). Press and hold the sneaking key, Jump, your are flying. Power=Velocity, defaults to 1.75.
-    plugin: AdminCmd 
-    permissions: admincmd.player.fly        
+    description: "You/the given <player> can now\n fly when keep pressing the sneaking key (SHIFT). Press and\n hold the sneaking key, Jump, your are flying. Power=Velocity, defaults to 1.75."
+    plugin: AdminCmd
+    permissions: admincmd.player.fly
 
-acrplayerfreeze:
+acplayerfreeze:
     command: freeze [playername]
-    description: Freeze the [player], he can't move, can't interact with the world. He can only chat.
-    plugin: AdminCmd 
-    permissions: admincmd.player.freeze     
+    description: "Freeze the [player], he can't move,\n can't interact with the world. He can only chat."
+    plugin: AdminCmd
+    permissions: admincmd.player.freeze
 
-acrplayermute:
+acplayermute:
     command: mute [playername]
-    description: Mute the given [player]. He can't chat until you unmute him.
-    plugin: AdminCmd 
-    permissions: admincmd.player.mute  
+    description: "Mute the given [player]. He can't chat\n until you unmute him."
+    plugin: AdminCmd
+    permissions: admincmd.player.mute
 
-acrplayerunmute:
+acplayerunmute:
     command: unmute [playername]
     description: Unmute the given muted player.
-    plugin: AdminCmd 
+    plugin: AdminCmd
     permissions: admincmd.player.mute
-    
-acrplayernopickup:
+
+acplayernopickup:
     command: nopickup [playername]
-    description: The [player] will not pickup any item. Useful when invisible, or to punish an user. Tape it again to disable it. Defaults to yourself if no player is given.
-    plugin: AdminCmd 
-    permissions: admincmd.player.np    
-    
+    description: "The [player] will not pickup any item. Useful when invisible, or to punish an user. Tape it again to\n disable it. Defaults to yourself if no player is given."
+    plugin: AdminCmd
+    permissions: admincmd.player.np
+
+acplayerroll:
+    command: roll [dice]
+    description: "Roll a [x]-sided dice. Deafult: 6"
+    plugin: AdminCmd
+    permissions: admincmd.player.roll
+
+acplayerafk:
+    command: afk
+    description: "Set yourself AFK."
+    plugin: AdminCmd
+    permissions: admincmd.player.afk
+
 acweatherclear:
     command: clearw
     description: Clear the weather.
     plugin: AdminCmd
     permissions: admincmd.weather.clear
 
+acweatherrain:
+    command: rain [minutes]
+    description: "Set the weather to rain for [minutes].\n Defaults to 10 mins"
+    plugin: AdminCmd
+    permissions: admincmd.weather.rain
+
 acweatherstorm:
     command: storm [minutes]
-    description: Make the weather stormy for [minutes] duration.
+    description: "Make the weather stormy for [minutes]\n duration. Defaults to 10 mins"
     plugin: AdminCmd
     permissions: admincmd.weather.storm
-    
+
 acweatherstrike:
     command: strike [player]
     description: Strike yourself/[player] with a lighting bolt.
     plugin: AdminCmd
     permissions: admincmd.weather.strike
-    
+
 acweatherthor:
     command: thor [player]
-    description: You gain the power of thor, when you click a block it's striked by the thunder. 
+    description: "You gain the power of thor, when you click a\n block it's striked by the thunder."
     plugin: AdminCmd
     permissions: admincmd.weather.thor
-    
+
 acweatherfreeze:
     command: wfreeze
-    description: Freeze the weather, if executed by a player, only the weather of the current world, if launched by the console, of every world. Tape it again to disable it. 
+    description: "Freeze the weather, if executed by a player, only\n the weather of the current world, if launched by the console,\n of every world. Type it again to disable it."
     plugin: AdminCmd
-    permissions: admincmd.weather.freeze    
- 
+    permissions: admincmd.weather.freeze
+
 acwarplwp:
     command: lwp
     description: List all warp points.
     plugin: AdminCmd
     permissions: admincmd.warp.tp
-    
+
 acwarpwp:
     command: wp [WarpPointName]
     description: Create a warp point using your current position and the given [WarpPointName].
     plugin: AdminCmd
     permissions: admincmd.warp.create
-    
+
 acwarprwp:
     command: rwp [WarpPointName]
-    description: Delete the given [WarpPointName].
+    description: Delete the given [WarpPoint].
     plugin: AdminCmd
     permissions: admincmd.warp.create
-    
+
 acwarptwp:
     command: twp [WarpPointName] [player]
     description: Teleport yourself or another [player] to the warp point.(NB! You need permission to teleport someone else.)
     plugin: AdminCmd
     permissions: admincmd.warp.tp
-    
+
 acmobspawn:
     command: mob [mobname] [#]
     description: Spawn the given [#] of [mob].
     plugin: AdminCmd
     permissions: admincmd.mob.spawn
-    
+
 acmobkill:
     command: mobkill [Type]
-    description: Kill the wanted mob. [Type:]all||animals||monsters||mobname
+    description: "Kill the wanted mob. Type: all || animals ||\n monsters || mobname"
     plugin: AdminCmd
-    permissions: admincmd.mob.kill 
+    permissions: admincmd.mob.kill
 
 acmoblimit:
     command: moblimit [world] [limit(#)|none]
-    description: Set the mob spawn limit(none= no limit) for the chosen [world].
+    description: "Set the mob spawn limit\n (none: no limit) for the chosen [world]."
     plugin: AdminCmd
-    permissions: admincmd.mob.limit     
-    
+    permissions: admincmd.mob.limit
+
 acsetspawn:
-    command: setspawn
+    command: setspawn <radius>
     description: Set the spawn location of the current world.
     plugin: AdminCmd
     permissions: admincmd.spawn.set
 
 acspawn:
     command: spawn
-    description: Teleport yourself to the spawn location of the current world.
+    description: "Teleport yourself to the spawn location of the\n current world."
     plugin: AdminCmd
     permissions: admincmd.spawn.tp
-    
-acmemory:
+
+acservermemory:
     command: memory
-    description: Shows the used memory.
+    description: "List all the worlds, the memory used, the memory \n max, number of chuncks and entities by worlds."
     plugin: AdminCmd
     permissions: admincmd.server.memory
+
+acservermotd:
+    command: motd [message]
+    description: "You can set the current motd or show it if\n no [message] is given. For more Info do /help acmotd"
+    plugin: AdminCmd
+    permissions: admincmd.server.motd
+
+acservernews:
+    command: news [message]
+    description: "You can set the current news. Formatting\n as motd! If no [message] is given it shows the current NEWS."
+    plugin: AdminCmd
+    permissions: admincmd.server.news
+
+acserverexec:
+    command: exec [ScriptName|-reload all/ScriptName]
+    description: "Execute some\n scripts and commands (batch or bash on Unix) using a simple\n file. If not set, it lists all scripts you have access to."
+    plugin: AdminCmd
+    permissions: admincmd.server.exec
+
+acserverextinguish:
+    command: extinguish [range]
+    description: "Extinguish the fire in the wanted range.\n Max 50, Default 20. Alias: /ex"
+    plugin: AdminCmd
+    permissions: amdincmd.server.extinguish
+
+acserverareload:
+    command: areload [PluginName]
+    description: "Reload the given [plugin] OR AdminCmd\n if not set. Alias: /ar. The parameter is CASE SENSITIVE!"
+    plugin: AdminCmd
+    permissions: amdincmd.server.reload
+
+acserverundo:
+    command: undo
+    description: "Undo the /air or /ex done before (retain every\n change made). Alias: /past"
+    plugin: AdminCmd
+    permissions: amdincmd.server.replace
+
+acserverair:
+    command: air [Block] <radius>
+    description: "Replace the wanted [block] by air. De-\n faults to <radius> 10, CAUTION: It's the radius of a sphere\n not a circle"
+    plugin: AdminCmd
+    permissions: amdincmd.server.replace
+
+acserverreloadall:
+    command: reloadall
+    description: "Reload the server. Alias: /arall"
+    plugin: AdminCmd
+    permissions: admincmd.server.reload
+
+cserverrepeat:
+    command: repeat
+    description: "Repeat the last command you issued with the same\n parameters. Alias: /rp"
+    plugin: AdminCmd
+    permissions: admincmd.server.repeat

@@ -1,43 +1,42 @@
-TimeShiftDay:
-    command: "shift day"
-    description: "Changes time to day"
-    plugin: "TimeShift"
-    permissions: "timeshift.shift"
+TimeShift:
+    command: help TimeShift
+    description: Displays the Help of TimeShift.
+    plugin: TimeShift
+    main: true
+    permissions: timeshift.shift
 
-TimeShiftNight:
-    command: "shift night"
-    description: "Changes time to night"
-    plugin: "TimeShift"
-    permissions: "timeshift.shift"
+TimeShiftShift:
+    command: shift [time] [world]
+    description: "Changes time to [day|night|sunrise|sunset] in [world]. Defaults to current world."
+    plugin: TimeShift
+    permissions: timeshift.shift
+
+TimeShiftSetrise:
+    command: shift setrise
+    description: "Current world loops both sunrise and sunset\n without day or night. Frequent time changes may cause lag."
+    plugin: TimeShift
+    permissions: timeshift.shift
 
 TimeShiftStop:
-    command: "shift stop"
-    description: "Stops time"
-    plugin: "TimeShift"
-    permissions: "timeshift.shift"
+    command: shift stop
+    description: Stops time.
+    plugin: TimeShift
+    permissions: timeshift.shift
 
 TimeShiftCancel:
-    command: "time "
-    description: "Cancels shift"
-    plugin: "TimeShift"
-    permissions: "timeshift.shift"
+    command: time 
+    description: Cancels shift.
+    plugin: TimeShift
+    permissions: timeshift.shift
 
-TimeShiftStartDay:
-    command: "shift startup day"
-    description: "Set server startup to day"
-    plugin: "TimeShift"
-    permissions: "timeshift.startup"
-
-TimeShiftStartNight:
-    command: "shift startup night"
-    description: "Set server startup to night"
-    plugin: "TimeShift"
-    permissions: "timeshift.startup"
+TimeShiftStart:
+    command: shift startup [time] [world]
+    description: Set server startup to [day|night|sunrise|sunset] in [world].
+    plugin: TimeShift
+    permissions: timeshift.startup
 
 TimeShiftStartStop:
-    command: "shift startup stop"
-    description: "Set server startup to stopped time"
-    plugin: "TimeShift"
-    permissions: "timeshift.startup"
-
-
+    command: shift startup stop [world]
+    description: "Set server startup to stopped\n time in [world]."
+    plugin: TimeShift
+    permissions: timeshift.startup
