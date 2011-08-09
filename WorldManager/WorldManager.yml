@@ -1,0 +1,40 @@
+WorldManager:
+    command: help WorldManager
+    description: Displays the Worldmanager help.
+    plugin: WorldManager
+    main: true
+
+WorldManager_create:
+    command: worldcreate [type] [name] <seed>
+    description: "Creates a world of given\n [type] and [name]. Type=normal,skylands or nether."
+    plugin: WorldManager
+    main: false
+    permissions: wm.create
+
+WorldManager_load:
+    command: worldload [type] [name]
+    description: "Loads a world in the server direc-\n tory."
+    plugin: WorldManager
+    main: false
+    permissions: wm.load
+
+WorldManager_remove:
+    command: worldremove [name]
+    description: Unloads a world.(Does not delete it!)
+    plugin: WorldManager
+    main: false
+    permissions: wm.remove
+
+WorldManager_list:
+    command: worldlist
+    description: Lists the currently loaded worlds.
+    plugin: WorldManager
+    main: false
+    permissions: wm.list    
+
+WorldManager_join:
+    command: worldjoin [name]
+    description: "Teleports you to world [name]. Alias: /join\n [name]"
+    plugin: WorldManager
+    main: false
+    permissions: wm.join

@@ -1,0 +1,47 @@
+GlowstoneLanterns:
+    command: help GlowstoneLanterns
+    description: Display GlowstoneLanterns Help.
+    main: true
+    plugin: GlowstoneLanterns
+
+GlowstoneLanterns_gl:
+    command: gl
+    description: Dis-/Enables Glowstone Lanterns
+    main: false
+    plugin: GlowstoneLanterns
+    permissions: glowstonelanterns.gl
+
+GlowstoneLanterns_glpb:
+    command: gl l [lantern-id]
+    description: Enables the prebuild lantern with the given [id], /gl l disables it.
+    main: false
+    plugin: GlowstoneLanterns
+    permissions: glowstonelanterns.gl
+
+GlowstoneLanterns_gl_list:
+    command: gl list l
+    description: Lists the available prebuild lanterns.
+    main: false
+    plugin: GlowstoneLanterns
+    permissions: glowstonelanterns.gl
+
+GlowstoneLanterns_gl_info:
+    command: gl info
+    description: Shows status of GlowStoneLanterns (i.e. Disabled or Enabled)
+    main: false
+    plugin: GlowstoneLanterns
+    permissions: glowstonelanterns.info
+
+GlowstoneLanterns_gl_save:
+    command: gl save
+    description: Saves the lanterns list.
+    main: false
+    plugin: GlowstoneLanterns
+    permissions: glowstonelanterns.save
+
+GlowstoneLanterns_gl_save:
+    command: gl version
+    description: View the current version of GlowstoneLanterns
+    main: false
+    plugin: GlowstoneLanterns
+    permissions: glowstonelanterns.gl
