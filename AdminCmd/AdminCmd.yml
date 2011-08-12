@@ -130,6 +130,12 @@ actphomeremove:
     plugin: AdminCmd
     permissions: admincmd.tp.home
 
+actptoggle:
+    command: tptoggle <yes>
+    description: "De-/Activate the Tp Request System for you.\n You will receive a request that you can accept with '/tpt yes' if activated."
+    plugin: AdminCmd
+    permissionsions: admincmd.tp.toggle
+
 acplayerlist:
     command: playerlist
     description: Lists all online players.
@@ -215,8 +221,8 @@ acplayerip:
     permissions: admincmd.player.ip
 
 acplayerpban:
-    command: pban [player] <message>
-    description: "Ban the given [player], you can\n personify the kick [message]."
+    command: pban [player] <message> <time>
+    description: "Ban the given [player] for\n <time> minutes, you can personify the kick [message]."
     plugin: AdminCmd
     permissions: admincmd.player.ban
 
@@ -239,8 +245,8 @@ acplayerfreeze:
     permissions: admincmd.player.freeze
 
 acplayermute:
-    command: mute [playername]
-    description: "Mute the given [player]. He can't chat\n until you unmute him."
+    command: mute [playername] <time>
+    description: "Mute the given [player] for <time>\n minutes. He can't chat until you unmute him."
     plugin: AdminCmd
     permissions: admincmd.player.mute
 
