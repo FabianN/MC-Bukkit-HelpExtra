@@ -82,6 +82,12 @@ acrmalias:
     plugin: AdminCmd
     permissions: admincmd.item.alias
 
+acitemkit:
+    command: kit [kit] <player>
+    description: "Add the wanted [kit] to the given <players>\n inventory."
+    plugin: AdminCmd
+    permissions: admincmd.item.add
+
 actpto:
     command: tp [player]
     description: Teleports you to [player].
@@ -136,6 +142,12 @@ actptoggle:
     plugin: AdminCmd
     permissionsions: admincmd.tp.toggle
 
+actptoggle:
+    command: tpsee
+    description: "En-/Disable the 'teleport at see' mode, left click and you are teleported where you are looking at."
+    plugin: AdminCmd
+    permissionsions: admincmd.tp.see
+
 acplayerlist:
     command: playerlist
     description: Lists all online players.
@@ -155,8 +167,8 @@ acplayerkill:
     permissions: admincmd.player.kill
 
 acplayerclear:
-    command: clear [playername]
-    description: "Clear the inventory of the [player],\n defaults to yourself."
+    command: clear [playername] <material>
+    description: "Clear the inventory of the\n [player], defaults to yourself. You can specify the\n <item/block> to be removed."
     plugin: AdminCmd
     permissions: admincmd.player.clear
 
@@ -418,8 +430,14 @@ acserverreloadall:
     plugin: AdminCmd
     permissions: admincmd.server.reload
 
-cserverrepeat:
+acserverrepeat:
     command: repeat
     description: "Repeat the last command you issued with the same\n parameters. Alias: /rp"
     plugin: AdminCmd
     permissions: admincmd.server.repeat
+
+acserveruptime:
+    command: uptime
+    description: "Shows the Server uptime since the last restart."
+    plugin: AdminCmd
+    permissions: admincmd.server.uptime
