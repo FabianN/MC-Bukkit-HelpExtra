@@ -347,8 +347,8 @@ acwarptwp:
     permissions: admincmd.warp.tp
 
 acmobspawn:
-    command: mob [mobname] [#]
-    description: Spawn the given [#] of [mob].
+    command: mob [mobname:mount] [#] [distance]
+    description: "Spawn the given [#] of\n [mob] in the given [distance] from you. It is possible to spawn\n mounted mobs with ':', e.g /mob Spider:Zombie"
     plugin: AdminCmd
     permissions: admincmd.mob.spawn
 
@@ -366,7 +366,7 @@ acmoblimit:
 
 acsetspawn:
     command: setspawn <radius>
-    description: Set the spawn location of the current world.
+    description: "Set the spawn location with the given\n <radius> of the current world."
     plugin: AdminCmd
     permissions: admincmd.spawn.set
 
