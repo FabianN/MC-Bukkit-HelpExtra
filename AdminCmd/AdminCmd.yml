@@ -281,8 +281,8 @@ acplayerroll:
     permissions: admincmd.player.roll
 
 acplayerafk:
-    command: afk
-    description: "Set yourself AFK."
+    command: afk [reason]
+    description: "Set yourself AFK. You can give a [reason]."
     plugin: AdminCmd
     permissions: admincmd.player.afk
 
@@ -441,3 +441,9 @@ acserveruptime:
     description: "Shows the Server uptime since the last restart."
     plugin: AdminCmd
     permissions: admincmd.server.uptime
+
+acserveraversion:
+    command: aversion [Plugin]
+    description: "Display the version of the given [plugin] OR\n AdminCmd if not set. The [Plugin name] is CASE SENSITIVE!"
+    plugin: AdminCmd
+    permissions: admincmd.server.version
