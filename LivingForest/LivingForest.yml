@@ -1,0 +1,24 @@
+LivingForest:
+    command: help LF
+    description: Display LivingForest (tree auto-replant) commands.
+    plugin: LivingForest
+    permissions: livingforest.chat.me.disable
+    main: true
+
+Disable:
+    command: lf chat.me.disable
+    description: Disable auto-replanting (only affects you).
+    plugin: LivingForest
+    permissions: livingforest.chat.me.disable
+
+Enable:
+    command: lf chat.me.enable
+    description: Enable auto-replanting (only affects you).
+    plugin: LivingForest
+    permissions: livingforest.chat.me.enable
+
+Reload:
+    command: lf global [enable|disable|reload]
+    description: Enable, disable, or reload settings.
+    plugin: LivingForest
+    permissions: livingforest.chat.global.reload

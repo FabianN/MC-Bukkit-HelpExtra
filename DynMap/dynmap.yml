@@ -1,0 +1,60 @@
+Help:
+    command: help DynMap
+    description: Display DynMap commands.
+    plugin: DynMap
+    main: true
+    permissions: dynmap.help
+
+Reload:
+    command: dynmap reload
+    description: Reload settings.
+    permissions: dynmap.reload
+    plugin: DynMap
+
+Hide:
+    command: dynmap hide ([player])
+    description: Hide yourself or someone else from the map.
+    permissions: dynmap.hide.self
+    plugin: DynMap
+
+Show:
+    command: dynmap show ([player])
+    description: Reveal yourself or someone else on the map.
+    permissions: dynmap.show.self
+    plugin: DynMap
+
+Render:
+    command: dynmap render
+    description: Render the tile where you are.
+    permissions: dynmap.render
+    plugin: DynMap
+
+FullRender:
+    command: dynmap fullrender
+    description: Render the entire world.
+    permissions: dynmap.fullrender
+    plugin: DynMap
+
+RadiusRender:
+    command: dynmap radiusrender [radius]
+    description: Render everything within the specified radius.
+    permissions: dynmap.radiusrender
+    plugin: DynMap
+
+CancelRender:
+    command: dynmap cancelrender [world]
+    description: Cancel an ongoing render process.
+    permissions: dynmap.cancelrender
+    plugin: DynMap
+
+Stats:
+    command: dynmap stats ([world])
+    description: Show rendering stats.
+    permissions: dynmap.stats
+    plugin: DynMap
+
+ResetStats:
+    command: dynmap resetstats ([world])
+    description: Reset rendering stats.
+    permissions: dynmap.resetstats
+    plugin: DynMap

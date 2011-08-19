@@ -1,0 +1,18 @@
+OtherBlocks:
+    command: help OtherBlocks
+    description: Display OtherBlocks (custom block drop) commands.
+    plugin: OtherBlocks
+    permissions: otherblocks
+    main: true
+
+Reload:
+    command: obr
+    description: Reload settings.
+    plugin: OtherBlocks
+    permissions: otherblocks
+
+OBShow:
+    command: ob show [name]
+    description: Show settings for a given block/creature.
+    plugin: OtherBlocks
+    permissions: otherblocks
