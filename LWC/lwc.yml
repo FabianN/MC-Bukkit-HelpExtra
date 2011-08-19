@@ -1,42 +1,131 @@
 LWC:
-    command: help lwc
-    description: List the help for LWC Plugin (Chest Protection)
+    command: help LWC
+    description: Display LWC (chest protection) commands.
     plugin: LWC
     main: true
     permissions: lwc.protect
-lwccreatepublic:
-    command: lwc -c public
-    description: Create a public protection
-    plugin: LWC
-    main: false
-    permissions: lwc.protect
-lwccreatepassword:
-    command: lwc -c password [password]
-    description: Create a password-protected protection
-    plugin: LWC
-    main: false
-    permissions: lwc.protect
+
 lwccreateprivate:
-    command: lwc -c private
-    description:  Create a private protection
+    command: cprivate
+    description: Lock something for private use.
     plugin: LWC
-    main: false
     permissions: lwc.protect
+
 lwcmodify:
-    command: lwc -m
-    description: Modify an existing protection
+    command: cmodify [username|-username]
+    description: Add or remove user from existing lock.
     plugin: LWC
-    main: false
     permissions: lwc.protect
+
+lwcremove:
+    command: cremove
+    description: Remove a lock.
+    plugin: LWC
+    permissions: lwc.protect
+
+lwccreatepublic:
+    command: cpublic
+    description: Lock something for public use (nobody else can lock it).
+    plugin: LWC
+    permissions: lwc.protect
+
+lwccreatepassword:
+    command: cpassword [password]
+    description: Lock something with a password.
+    plugin: LWC
+    permissions: lwc.protect
+
 lwcunlock:
-    command: lwc -u [password]
-    description: Unlock something (when asked)
+    command: cunlock [password]
+    description: Unlock something password-protected.
     plugin: LWC
-    main: false
     permissions: lwc.protect
+
 lwcview:
-    command: lwc -i
-    description: View information on an already protected inventory
+    command: cinfo
+    description: View lock information.
     plugin: LWC
-    main: false
     permissions: lwc.protect
+
+lwclimits:
+    command: climits
+    description: View your lock limits (if applicable).
+    plugin: LWC
+    permissions: lwc.protect
+
+lwcforceowner:
+    command: lwc admin forceowner [player]
+    description: Change the owner of a lock.
+    plugin: LWC
+    permissions: lwc.admin.forceowner
+
+lwcfind:
+    command: lwc admin find [player] ([pagenum])
+    description: List a player's lock entries.
+    plugin: LWC
+    permissions: lwc.admin.find
+
+lwcview:
+    command: lwc admin view [id]
+    description: View lock's inventory from afar.
+    plugin: LWC
+    permissions: lwc.admin.view
+    visible: false
+
+lwcremove:
+    command: lwc admin remove [id]
+    description: Remove a lock.
+    plugin: LWC
+    permissions: lwc.admin.remove
+
+lwcpurge:
+    command: lwc admin purge [player]
+    description: Remove all of a player's locks.
+    plugin: LWC
+    permissions: lwc.admin.purge
+
+lwccleanup:
+    command: lwc admin cleanup
+    description: Try to clean up the LWC database.
+    plugin: LWC
+    permissions: lwc.admin.cleanup
+
+lwcversion:
+    command: lwc admin version
+    description: Show LWC version (and latest available).
+    plugin: LWC
+    permissions: lwc.admin.version
+
+lwcupdate:
+    command: lwc admin update
+    description: Update LWC to the latest version.
+    plugin: LWC
+    permissions: lwc.admin.update
+
+lwcreport:
+    command: lwc admin report
+    description: View LWC performance report.
+    plugin: LWC
+    permissions: lwc.admin.report
+    visible: false
+
+lwcconvert:
+    command: lwc admin convert [chesprotect|chastity]
+    description: Convert another plugin's database to LWC.
+    plugin: LWC
+    permissions: lwc.admin.convert
+    visible: false
+
+lwcclearprot:
+    command: lwc admin clear protections
+    description: Wipe the LWC database (?).
+    plugin: LWC
+    permissions: lwc.admin.clear
+    visible: false
+
+lwcclearrt:
+    command: lwc admin clear rights
+    description: Wipe the LWC database (?).
+    plugin: LWC
+    permissions: lwc.admin.clear
+    visible: false
