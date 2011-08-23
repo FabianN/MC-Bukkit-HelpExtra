@@ -2,4 +2,4 @@ Help file support for PlugMan - Console and In-Game Plugin Manager (http://forum
 
 03.08.2011:
 Updated by Lathanael(https://github.com/Lathanael)
-NB!: Set 'useWordWarp' to false to get a better result viewing the help ingame!
+NB!: Set 'useWordWarp' to false and entriesPerPage to 9 to get a better result viewing the help ingame!

@@ -5,6 +5,7 @@ Credit goes to tbielawa (https://github.com/tbielawa).
 
 Updated by Lathanael (https://github.com/Lathanael)
 
-Updated to AdminCmd v5.6.18, removed some unnecessary whitespace, made it look a little better when viewing In-Game (NB! set useWordWrap to false in the Help.yml! This gives a better readable output)
+Updated to AdminCmd v5.6.18, removed some unnecessary whitespace, made it look a little better when viewing In-Game. 
+NB! set useWordWrap to false in the Help.yml and entriesPerPage to 9! This gives a better readable output.
 
-Update: All commands included up to v5.7.15
+Update: All commands included up to v5.8
