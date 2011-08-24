@@ -1,0 +1,18 @@
+Help:
+    command: help CrowdControl
+    description: Display CrowdControl commands.
+    plugin: CrowdControl
+    main: true
+    permissions: crowdcontrol
+
+Nuke:
+    command: crowd nuke ([world]) [all|type]
+    description: Remove mobs.
+    permissions: crowdcontrol
+    plugin: CrowdControl
+
+Reload:
+    command: crowd reloadConfig
+    description: Reload mob settings.
+    permissions: crowdcontrol
+    plugin: CrowdControl

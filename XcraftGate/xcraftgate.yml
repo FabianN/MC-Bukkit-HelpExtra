@@ -1,0 +1,183 @@
+Help:
+    command: help XcraftGate
+    description: Display XcraftGate gate commands.
+    plugin: XcraftGate
+    main: true
+    permissions: XcraftGate.gate
+
+GCreate:
+    command: gate create [name]
+    description: Create new gate at your position (facing arrival direction).
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.create
+
+GMove:
+    command: gate move [name]
+    description: Move gate to your position (facing arrival direction).
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.create
+
+GDelete:
+    command: gate delete [name]
+    description: Delete gate.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.delete
+
+GLink:
+    command: gate link [name1] [name2]
+    description: Create link from name1 to name2.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.link
+
+GLoop:
+    command: gate loop [name1] [name2]
+    description: Create bidirectional link.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.loop
+
+GUnlink:
+    command: gate unlink [name]
+    description: Unlink gate.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.unlink
+
+GUnloop:
+    command: gate unloop [name1] [name2]
+    description: Unloop two gates (if applicable).
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.unloop
+
+GInfo:
+    command: gate info [name]
+    description: Show gate info.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.info
+
+GList:
+    command: gate list
+    description: List all gates in all worlds.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.info
+
+GListNear:
+    command: gate listnear [radius]
+    description: List gates nearby.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.info
+
+GListSolo:
+    command: gate listsolo
+    description: List all unlinked gates.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.info
+
+GWarp:
+    command: gate warp [name]
+    description: Teleport to the specified gate.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.warp
+
+GReload:
+    command: gate reload
+    description: Reload all gates from gates.yml.
+    plugin: XcraftGate
+    permissions: XcraftGate.gate.reload
+
+List:
+    command: gworld list
+    description: List active worlds.
+    plugin: GWorld
+    permissions: XcraftGate.world.list
+
+Info:
+    command: gworld info [world]
+    description: Show world info.
+    plugin: GWorld
+    permissions: XcraftGate.world.info
+
+ListPlayers:
+    command: gworld listplayers [world]
+    description: List players currently in world.
+    plugin: GWorld
+    permissions: XcraftGate.world.list
+
+Create:
+    command: gworld create [world] ([normal|nether|skylands] [seed])
+    description: Add new world to server.
+    plugin: GWorld
+    permissions: XcraftGate.world.create
+
+Delete:
+    command: gworld delete [world]
+    description: Delete world.
+    plugin: GWorld
+    permissions: XcraftGate.world.delete
+
+WarpTo:
+    command: gworld warpto [world]
+    description: Teleport to world.
+    plugin: GWorld
+    permissions: XcraftGate.world.warp
+
+SetBorder:
+    command: gworld setborder [world] [#]
+    description: Set max X/Z coordinates for world.
+    plugin: GWorld
+    permissions: XcraftGate.world.setborder
+
+SetCreatureLimit:
+    command: gworld setcreaturelimit [world] [#]
+    description: Limit number of creatures which can spawn.
+    plugin: GWorld
+    permissions: XcraftGate.world.setcreaturelimit
+
+AllowAnimals:
+    command: gworld allowanimals [world] [true|false]
+    description: Toggle animal spawning.
+    plugin: GWorld
+    permissions: XcraftGate.world.allowanimals
+
+AllowMonsters:
+    command: gworld allowmonsters [world] [true|false]
+    description: Toggle monster spawning (peaceful mode).
+    plugin: GWorld
+    permissions: XcraftGate.world.allowmonsters
+
+SuppressHealthRegain:
+    command: gworld suppresshealthregain [world] [true|false]
+    description: Toggle peaceful mode's auto-heal.
+    plugin: GWorld
+    permissions: XcraftGate.world.suppresshealthregain
+
+AllowPVP:
+    command: gworld allowpvp [world] [true|false]
+    description: Toggle world PvP (conflicts with WorldGuard regions).
+    plugin: GWorld
+    permissions: XcraftGate.world.pvp
+
+AllowWeatherChange:
+    command: gworld allowweatherchange [world] [true|false]
+    description: Toggle spontaneous weather.
+    plugin: GWorld
+    permissions: XcraftGate.world.weather
+
+SetWeather:
+    command: gworld setweather [world] [sun|storm]
+    description: Set world's cloudiness.
+    plugin: GWorld
+    permissions: XcraftGate.world.weather
+    visible: false
+
+SetTime:
+    command: gworld settime [world] [sunrise|noon|sunset|midnight]
+    description: Set world's current time.
+    plugin: GWorld
+    permissions: XcraftGate.world.time
+    visible: false
+
+TimeFrozen:
+    command: gworld timefrozen [world] [true|false]
+    description: Toggle the world's passage of time (breaks redstone circuits?).
+    plugin: GWorld
+    permissions: XcraftGate.world.time
+    visible: false
