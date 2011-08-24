@@ -82,6 +82,12 @@ acrmalias:
     plugin: AdminCmd
     permissions: admincmd.item.alias
 
+acitemkit:
+    command: kit [kit] <player>
+    description: "Add the wanted [kit] to the given <players>\n inventory."
+    plugin: AdminCmd
+    permissions: admincmd.item.add
+
 actpto:
     command: tp [player]
     description: Teleports you to [player].
@@ -130,6 +136,24 @@ actphomeremove:
     plugin: AdminCmd
     permissions: admincmd.tp.home
 
+actptoggle:
+    command: tptoggle <yes>
+    description: "De-/Activate the Tp Request System for you.\n You will receive a request that you can accept with '/tpt yes' if activated."
+    plugin: AdminCmd
+    permissionsions: admincmd.tp.toggle
+
+actpsee:
+    command: tpsee
+    description: "En-/Disable the 'teleport at see' mode, left click and you are teleported where you are looking at."
+    plugin: AdminCmd
+    permissionsions: admincmd.tp.see
+
+actpback:
+    command: back
+    description: "Return to the location you where at before you tele-\n ported/warped"
+    plugin: AdminCmd
+    permissionsions: admincmd.tp.back
+
 acplayerlist:
     command: playerlist
     description: Lists all online players.
@@ -149,8 +173,8 @@ acplayerkill:
     permissions: admincmd.player.kill
 
 acplayerclear:
-    command: clear [playername]
-    description: "Clear the inventory of the [player],\n defaults to yourself."
+    command: clear [playername] <material>
+    description: "Clear the inventory of the\n [player], defaults to yourself. You can specify the\n <item/block> to be removed."
     plugin: AdminCmd
     permissions: admincmd.player.clear
 
@@ -215,8 +239,8 @@ acplayerip:
     permissions: admincmd.player.ip
 
 acplayerpban:
-    command: pban [player] <message>
-    description: "Ban the given [player], you can\n personify the kick [message]."
+    command: pban [player] <message> <time>
+    description: "Ban the given [player] for\n <time> minutes, you can personify the kick [message]."
     plugin: AdminCmd
     permissions: admincmd.player.ban
 
@@ -239,8 +263,8 @@ acplayerfreeze:
     permissions: admincmd.player.freeze
 
 acplayermute:
-    command: mute [playername]
-    description: "Mute the given [player]. He can't chat\n until you unmute him."
+    command: mute [playername] <time>
+    description: "Mute the given [player] for <time>\n minutes. He can't chat until you unmute him."
     plugin: AdminCmd
     permissions: admincmd.player.mute
 
@@ -263,10 +287,16 @@ acplayerroll:
     permissions: admincmd.player.roll
 
 acplayerafk:
-    command: afk
-    description: "Set yourself AFK."
+    command: afk [reason]
+    description: "Set yourself AFK. You can give a [reason]."
     plugin: AdminCmd
     permissions: admincmd.player.afk
+
+acplayerbreak:
+    command: break [player]
+    description: "En-/Disables the 'Super-breaker' mode for\n the [player], defaults to yourself."
+    plugin: AdminCmd
+    permissions: admincmd.player.break
 
 acweatherclear:
     command: clearw
@@ -329,8 +359,8 @@ acwarptwp:
     permissions: admincmd.warp.tp
 
 acmobspawn:
-    command: mob [mobname] [#]
-    description: Spawn the given [#] of [mob].
+    command: mob [mobname:mount] [#] [distance]
+    description: "Spawn the given [#] of\n [mob] in the given [distance] from you. It is possible to spawn\n mounted mobs with ':', e.g /mob Spider:Zombie"
     plugin: AdminCmd
     permissions: admincmd.mob.spawn
 
@@ -348,7 +378,7 @@ acmoblimit:
 
 acsetspawn:
     command: setspawn <radius>
-    description: Set the spawn location of the current world.
+    description: "Set the spawn location with the given\n <radius> of the current world."
     plugin: AdminCmd
     permissions: admincmd.spawn.set
 
@@ -412,8 +442,32 @@ acserverreloadall:
     plugin: AdminCmd
     permissions: admincmd.server.reload
 
-cserverrepeat:
+acserverrepeat:
     command: repeat
     description: "Repeat the last command you issued with the same\n parameters. Alias: /rp"
     plugin: AdminCmd
     permissions: admincmd.server.repeat
+
+acserveruptime:
+    command: uptime
+    description: "Shows the Server uptime since the last restart."
+    plugin: AdminCmd
+    permissions: admincmd.server.uptime
+
+acserveraversion:
+    command: aversion [Plugin]
+    description: "Display the version of the given [plugin]\n OR AdminCmd if not set. The [Plugin name] is CASE SENSITIVE!"
+    plugin: AdminCmd
+    permissions: admincmd.server.version
+
+acserverlist:
+    command: list [mode]
+    description: "Lists the available abilities (God, fly etc.) if no\n [mode] given, else lists the users having the given [mode]."
+    plugin: AdminCmd
+    permissions: admincmd.server.list
+
+acserverhelp:
+    command: help [page#]
+    description: "Displays page [#] of the AdminCmd help or page 1."
+    plugin: AdminCmd
+    permissions: admincmd.server.help

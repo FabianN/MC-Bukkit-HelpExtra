@@ -1,0 +1,6 @@
+BukkitUpdater:
+    command: u2d help
+    description: Display the help of BukkitUpdater.
+    main: true
+    plugin: BukkitUpdater
+    permissions: BukkitUpdater.usage
