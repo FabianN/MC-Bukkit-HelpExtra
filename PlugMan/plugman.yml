@@ -1,9 +1,8 @@
 PlugMan:
     command: help PlugMan
     description: Displays the help-text of PlugMan.
-    main: true
     plugin: PlugMan
-    permissions: plugman.admin
+    main: true
 
 PlugManList:
     command: plugman list <Page>
@@ -11,28 +10,28 @@ PlugManList:
     plugin: PlugMan
     main: false
     permissions: plugman.list
-
+    
 PlugManVlist:
     command: plugman vlist <Page>
     description: "Lists all plugins loaded with their ver-\n sion next to them. Page is optional."
     plugin: PlugMan
     main: false
     permissions: plugman.list
-
+    
 PlugManLoad:
     command: plugman load [PluginName] 
-    plugin: PlugMan
     description: Loads a new given [plugin].
+    plugin: PlugMan
     main: false
     permissions: plugman.admin
-
+    
 PlugManDisable:
     command: plugman disable [PluginName] 
     description: Disables the given [plugin].
     plugin: PlugMan
     main: false
     permissions: plugman.admin
-
+    
 PlugManEnable:
     command: plugman enable [PluginName] 
     description: Enables the given [plugin].
@@ -65,5 +64,5 @@ PlugManDescribe:
     command: plugman describe [CommandName] [PluginName] 
     description: "Describe a\n [command] a [plugin] has registered."
     plugin: PlugMan
-    main: false
+    main: false    
     permissions: plugman.describe

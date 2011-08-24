@@ -2,4 +2,4 @@ Help file for TimeShift(http://forums.bukkit.org/threads/timeshift-1-4-4-1-chang
 Credit goes to Bjourk(http://forums.bukkit.org/threads/info-help-0-2-the-smart-help-menu-531.6536/page-4#post-132609).
 
 Updated by Lathanael(https://github.com/Lathanael)
-NB!: Set 'useWordWarp' to false to get a better result viewing the help ingame!
+NB!: Set 'useWordWarp' to false and entriesPerPage to 9 to get a better result viewing the help ingame!
