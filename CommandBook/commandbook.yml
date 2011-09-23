@@ -63,9 +63,9 @@ cbsetspawn:
     main: false
     plugin: CommandBook
 cbtime:
-    command: time
-    description: Get the current time
-    permissions: commandbook.time.check
+    command: time [-l]
+    description: Get the current time [or lock it]
+    permissions: commandbook.time
     main: true
     plugin: CommandBook
 cbsettime:
@@ -75,7 +75,7 @@ cbsettime:
     main: false
     plugin: CommandBook
 cbspawnmob:
-    command: spawnmob [-d] [-i] [-r] [-p] <mob> [count] [destination]
+    command: spawnmob [-d] [-i] [-r] [-p] <mob>[|rider] [count] [destination]
     description: Spawn mobs. -d for 1 health, -i to ignite mob, -r to rocket mob, -p to power creepers.
     permissions: commandbook.spawnmob
     main: false
@@ -92,7 +92,6 @@ cbthunder:
     permissions: commandbook.weather.thunder
     main: false
     plugin: CommandBook
-
 cbspawn:
     command: spawn
     description: Teleport to spawn
@@ -213,13 +212,12 @@ cbthor:
     permissions: commandbook.thor
     main: false
     plugin: CommandBook
-cbthor:
+cbunthor:
     command: unthor <target>
     description: Revoke Thor's hammer.
     permissions: commandbook.thor
     main: false
     plugin: CommandBook
-
 cbping:
     command: ping
     description: Server reponds with pong.
@@ -266,5 +264,11 @@ cbbans:
     command: bans <load|save>
     description: Load/Save bans.
     permissions: commandbook.bans
+    main: false
+    plugin: CommandBook
+cbmidi:
+    command: midi
+    description: Stop all midi music
+    permissions: commandbook.midi
     main: false
     plugin: CommandBook
