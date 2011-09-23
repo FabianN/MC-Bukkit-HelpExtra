@@ -1,0 +1,69 @@
+HelpHome:
+    command: help HomeSpawnPlus
+    description: Display HomeSpawnPlus commands.
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.home.use
+    main: true
+
+Home:
+    command: home
+    description: Teleport to your home (world-specific).
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.home.use
+
+HomeOther:
+    command: home [player] ([world])
+    description: Teleport to someone else's home.
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.home.other
+
+Set:
+    command: sethome
+    description: Set your home location (world-specific).
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.sethome.use
+
+SetOther:
+    command: sethome [player]
+    description: Set someone else's home (world-specific).
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.sethome.other
+
+Delete:
+    command: home delete
+    description: Unset your home (world-specific).
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.sethome.use
+    visible: false
+
+Spawn:
+    command: spawn
+    description: Teleport to spawn location (world-specific).
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.spawn.use
+
+SetSpawn:
+    command: setspawn
+    description: Set spawn location for this world.
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.setspawn.use
+
+GroupSpawn:
+    command: groupspawn
+    description: Teleport to your group spawn (world-specific).
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.groupspawn.use
+    visible: false
+
+SetGroupSpawn:
+    command: setgroupspawn [group]
+    description: Set a group's spawn location (world-specific).
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.command.setgroupspawn.use
+    visible: false
+
+Reload:
+    command: hsp rc
+    description: Reload settings.
+    plugin: HomeSpawnPlus
+    permissions: HomeSpawnPlus.admin

@@ -1,0 +1,12 @@
+Help:
+    command: help LogOres
+    description: Display LogOres commands.
+    plugin: LogOres
+    main: true
+    permissions: logores.admin
+
+Reload:
+    command: LogOres reload
+    description: Reload settings.
+    plugin: LogOres
+    permissions: logores.admin
