@@ -1,0 +1,137 @@
+WorldBorder:
+    command: help WorldBorder
+    description: Display WorldBorder Help.
+    main: true
+    plugin: WorldBorder
+wbset:
+    command: wb set <radius>
+    description: set world border, centered on you.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.set
+wbwset:
+    command: wb [worldname] set <radius> <x> <z>
+    description: set [worldname] border, centered on ,<x>,<z>.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.set
+wbradius:
+    command: wb [worldname] radius <radius>
+    description: change border radius for [worldname].
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.radius
+wbclr:
+    command: wb [worldname] clear
+    description: remove border for [worldname].
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.clear
+wbclrall:
+    command: wb clear all
+    description: remove all borders for all worlds.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.clear
+wblist:
+    command: wb list
+    description: show full border information for all worlds.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.list
+wbsqr:
+    command: wb shape square
+    description: set the border shape to "square".
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.shape
+wbrnd:
+    command: wb shape round
+    description: set the border shape to "round".
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.shape
+wbwsqr:
+    command: wb wshape square
+    description: Override the shape for this world only to "square".
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.wshape
+wbwrnd:
+    command: wb wshape round
+    description: Override the shape for this world onlyc to "round".
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.wshape
+wbkncbck:
+    command: wb knockback <distance>
+    description: how far to move the player back inside the border.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.knockback
+wbgetmsg:
+    command: wb getmsg
+    description: display the message shown to people who cross the border.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.getmsg
+wbsetmsg:
+    command: wb setmsg <message>
+    description: change the border message.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.setmsg
+wbdelay:
+    command: wb delay <amount>
+    description: the number of server ticks it will wait between border checks.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.delay
+wbfill:
+    command: wb [worldname] fill [freq] [pad]
+    description: generate all missing chunks for this world out to border
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.fill
+wbrld:
+    command: wb reload
+    description: re-load data from config.yml.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.reload
+wbdbg:
+    command: wb debug <on|off>
+    description: turn console debug output on or off.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.debug
+wbwhoosh:
+    command: wb whoosh <on|off>
+    description: turn knockback "whoosh" effect on or off.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.whoosh
+wbtrim:
+    command: wb [worldname] trim [freq] [pad]
+    description: Trim off extra chunks for this world beyond the border.
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.trim
+wbtrimcnfm:
+    command: wb trim confirm
+    description: delete's all chunks outside of the border
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.trim
+wbtrimpas:
+    command: wb trim pause
+    description: pauses the trim operation
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.trim
+wbtrimcnc:
+    command: wb trim cancel
+    description: cancels the trim operation
+    plugin: WorldBorder
+    main: false
+    permissions: worldborder.trim

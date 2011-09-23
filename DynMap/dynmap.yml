@@ -1,0 +1,132 @@
+Help:
+    command: help DynMap
+    description: Display DynMap commands.
+    plugin: DynMap
+    main: true
+    permissions: dynmap.help
+
+Reload:
+    command: dynmap reload
+    description: Reload settings.
+    permissions: dynmap.reload
+    plugin: DynMap
+
+Hide:
+    command: dynmap hide
+    description: Hide yourself from the map.
+    permissions: dynmap.hide.self
+    plugin: DynMap
+
+Show:
+    command: dynmap show
+    description: Reveal yourself on the map.
+    permissions: dynmap.show.self
+    plugin: DynMap
+
+Hideoth:
+    command: dynmap hide [player]
+    description: Hide someone else from the map.
+    permissions: dynmap.hide.oth
+    plugin: DynMap
+
+Showoth:
+    command: dynmap show [player]
+    description: Reveal someone else on the map.
+    permissions: dynmap.show.other
+    plugin: DynMap
+
+Render:
+    command: dynmap render
+    description: Render the tile where you are.
+    permissions: dynmap.render
+    plugin: DynMap
+
+FullRender:
+    command: dynmap fullrender [world]
+    description: Render the entire [world].
+    permissions: dynmap.fullrender
+    plugin: DynMap
+
+RadiusRender:
+    command: dynmap radiusrender [radius]
+    description: Render everything within the specified radius.
+    permissions: dynmap.radiusrender
+    plugin: DynMap
+
+CancelRender:
+    command: dynmap cancelrender [world]
+    description: Cancel an ongoing render process.
+    permissions: dynmap.cancelrender
+    plugin: DynMap
+
+Stats:
+    command: dynmap stats ([world])
+    description: Show rendering stats.
+    permissions: dynmap.stats
+    plugin: DynMap
+
+ResetStats:
+    command: dynmap resetstats ([world])
+    description: Reset rendering stats.
+    permissions: dynmap.resetstats
+    plugin: DynMap
+
+dynmarkeradd:
+    command: dmarker add id:<ID>/<label> icon:<icon>
+    description: Adds a new marker at the player's current location, with a given ID, label and optional icon.
+    permissions: dynmap.marker.add
+    plugin: DynMap
+    
+dynmarkermove:
+    command: dmarker movehere <label>/<ID>
+    description: Updates the location of the marker to the player's current location.
+    permissions: dynmap.marker.movehere
+    plugin: DynMap
+
+dynmarkerupdate:
+    command: dmarker update id:<ID>/<label> icon:<newicon> newlabel:<newlabel>
+    description: update the icons and or label of the marker
+    permissions: dynmap.marker.update
+    plugin: DynMap
+    
+dynmarkerdelete:
+    command: dmarker delete id:<ID>/<label>
+    description: deletes the marker
+    permissions: dynmap.marker.delete
+    plugin: DynMap
+    
+dynmarkerlist:
+    command: dmarker list
+    description: lists the attributes of all the defined markers
+    permissions: dynmap.marker.list
+    plugin: DynMap
+    
+dynmarkericons:
+    command: dmarker icons
+    description: lists the attributes of all the icons
+    permissions: dynmap.marker.icons
+    plugin: DynMap
+    
+dynmarkeraddset:
+    command: dmarker addset id:<ID>/<label> hide:<hide-by-def> prio:<priority>
+    description: add new marker set with given ID/ID & Label
+    permissions: dynmap.marker.addset
+    plugin: DynMap
+
+dynmarkerupdateset:
+    command: dmarker updateset id:<ID>/<label> newlabel:<new-label> hide:<hide-by-def> prio:<priority>
+    description: update the marker set
+    permissions: dynmap.marker.updateset
+    plugin: DynMap
+      
+dynmarkerdeleteset:
+    command: dmarker deleteset id:<ID>/<label>
+    description: deletes the marker set
+    permissions: dynmap.marker.deleteset
+    plugin: DynMap
+
+dynmarkerlistset:
+    command: dmarker listsets
+    description: lists all markers
+    permissions: dynmap.marker.listsets
+    plugin: DynMap
