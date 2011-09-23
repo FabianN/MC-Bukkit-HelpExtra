@@ -1,21 +1,26 @@
+MagicCarpet:
+    command: help MagicCarpet
+    description: Display MagicCarpet Help.
+    main: true
+    plugin: MagicCarpet
 mc:
     command: mc [size]
-    description: Spawns or removes a [size (3, 5, 7)] glass carpet under your feet
+    description: Spawns/removes a [size (3, 5, 7, ...)] glass carpet.
     plugin: MagicCarpet
     main: true
     permissions: magiccarpet.mc
 ml:
     command: ml
-    descrioption: Replaces or removes the center block of the magic carpet with glowstone
+    description: Replaces or removes the center block of the magic carpet with glowstone
     plugin: MagicCarpet
-    permissions: magiccarpet.mc
+    permissions: magiccarpet.ml
 carpetswitch:
-    command: carpetswitch
-    description: Lets you move the carpet down by looking down
-    plugin: MagicCarpet
-    permissions: magiccarpet.mc
-mcs:
     command: mcs
-    description: Lets you move the carpet down by crouching
+    description: Switches ability to go down while on the magic carpet
     plugin: MagicCarpet
-    permissions: magiccarpet.mc
+    permissions: magiccarpet.mcs
+mr:
+    command: mr
+    description: Reloads magic carpet
+    plugin: MagicCarpet
+    permissions: magiccarpet.mr
