@@ -91,6 +91,12 @@ expand:
     main: false
     permissions: worldedit.selection.expand
 
+expandvert:
+    command: /expand vert
+    descrption: Expands the selection area from sky to bedrock
+    plugin: WESel
+    main: false
+    permissions: worldedit selection.expand
 sel:
     command: /sel [cuboid|poly]
     description: Choose the region shape to use for selections
