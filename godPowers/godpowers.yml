@@ -3,7 +3,6 @@ godhelp:
     description: Displays the God Powers help.
     main: true
     plugin: godPowers
-    permissions: godPowers
 godmode:
     command: godmode
     description: Makes you invincible.
@@ -76,3 +75,39 @@ inferno :
     main: false
     plugin: godPowers
     permissions: godPowers.inferno
+superjump:
+    command: superjump
+    description: If nothing in your way you will jump to obscene heights.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.superjump
+zeus:
+    command: zeus 
+    description: Creates lightning wherever you swing your arm
+    main: false
+    plugin: godPowers
+    permissions: godPowers.zeus
+gaia:
+    command: gaia
+    description: Creates growth and prosperity where you walk
+    main: false
+    plugin: godPowers
+    permissions: godPowers.gaia
+vulcan:
+    command: vulcan
+    description: Shoot fireballs like a boss
+    main: false
+    plugin: godPowers
+    permissions: godPowers.vulcan
+demigod:
+    command: demigod
+    description: Reduce damage by 80%
+    main: false
+    plugin: godPowers
+    permissions: godPowers.demigod
+hades:
+    command: hades
+    description: Convert all blocks to netharack that are touched.
+    main: false
+    plugin: godPowers
+    permissions: godPowers.hades

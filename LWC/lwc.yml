@@ -6,8 +6,8 @@ LWC:
     permissions: lwc.protect
 
 lwccreateprivate:
-    command: cprivate
-    description: Lock something for private use.
+    command: cprivate <g:[groups/users]>
+    description: Lock something for private use by only specified users/groups, exclude g for just creator.
     plugin: LWC
     permissions: lwc.protect
 
@@ -53,6 +53,47 @@ lwclimits:
     plugin: LWC
     permissions: lwc.protect
 
+lwclistusers:
+    command: lwc -o [page]
+    description: Displays everyone who has access to a specific private protection.
+    plugin: LWC
+    permissions: lwc.protect
+    
+lwcremovemodes:
+    command: lwc -r modes
+    description: Removes any modes enabled on you
+    plugin: LWC
+    permissions: lwc.protect
+
+lwcmodepersist:
+    command: lwc mode persist
+    description: Allows you to use a single command a multitude of times.
+    plugin: LWC
+    permissions: lwc.protect
+    
+lwcdroptranssel:
+    command: lwc mode droptransfer select
+    description: Allows you to select a chest to use for drop transfer.
+    plugin: LWC
+    permissions: lwc.protect
+    
+lwcdroptransonoff:
+    command: lwc mode droptransfer [on/off]
+    description: Enables or disables drop transfer.
+    plugin: LWC
+    permissions: lwc.protect
+    
+lwcdroptransferstat:
+    command: lwc mode droptransfer status
+    description: Views the status of drop transferring.
+    plugin: LWC
+    permissions: lwc.protect
+
+lwcmenustyle:
+    command: lwc menu [basic/advanced]
+    description: Changes the LWC stock help menu style
+    plugin: LWC
+    permissions: lwc.admin
 lwcforceowner:
     command: lwc admin forceowner [player]
     description: Change the owner of a lock.
