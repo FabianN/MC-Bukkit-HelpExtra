@@ -1,0 +1,42 @@
+mvpc:
+    command: mvp create <PORTALNAME> <DESTINATION>
+    description: Create a new Portal entry from the players selected area to specified Destination.
+    permissions: multiverse.portal.create
+    main: false
+    plugin: Multiverse-Portals
+mvps:
+    command: mvp select <PORTALNAME>
+    description:  select a created portal, this is used to then set the destination or further settings regarding the portal.
+    permissions: multiverse.portal.select
+    main: false
+    plugin: Multiverse-Portals
+mvpmodify:
+    command: mvp modify [property] [value] -p [portal]
+    description:  Modify vallues on the selected portal.
+    permissions: multiverse.portal.modify
+    main: false
+    plugin: Multiverse-Portals
+mvpr:
+    command: mvp remove <PORTALNAME>
+    description:  remove a portal from the configuration.
+    permissions: multiverse.portal.remove
+    main: false
+    plugin: Multiverse-Portals
+mvplist:
+    command: mvplist <WORLD>
+    description:  list all portals on the server or <WORLD>.
+    permissions: multiverse.portal.list
+    main: false
+    plugin: Multiverse-Portals
+mvpinfo:
+    command: mvp info <PORTAL>
+    description: Displays information about a portal
+    permissions: multiverse.portal.info
+    main: false
+    plugin: Multiverse-Portals
+mvpdebug:
+    command: mvp debug [on/off]
+    description: See details of entered portals
+    permissions: multiverse.portal.debug
+    main: false
+    plugin: Multiverse-Portals

@@ -1,40 +1,40 @@
 GianTrees:
     command: help GiantTrees
     description: "Displays the GiantTrees help. Alias: /gt help"
-    plugin: Giant Trees
+    plugin: GiantTrees
     main: true
 
 GiantTreesGT:
     command: gianttree
     description: "Displays usage of Giant Trees. Alias:/gt, /gtree"
-    plugin: Giant Trees
+    plugin: GiantTrees
     main: false
     permissions: gianttrees.build
     
 GiantTreesBuildCustom:
     command: gt [height] [width] <logtype> <leaftype> <density>
     description: "Spawns a\n giant Tree with given parameters. <x> can be omitted."
-    plugin: Giant Trees
+    plugin: GiantTrees
     main: false
     permissions: gianttrees.custom
 
 GiantTreesUndo:
     command: gt undo
     description: "Removes the Giant Tree [you] did build and are\n standing next to."
-    plugin: Giant Trees
+    plugin: GiantTrees
     main: false
     permissions: gianttrees.build
 
 GiantTreesReload:
     command: gt reload
     description: Reloads the settings.txt of Giant Trees. 
-    plugin: Giant Trees
+    plugin: GiantTrees
     main: false
     permissions: gianttrees.reload
 
 GiantTreesBuild:
     command: gt [height] [width]
     description: "Spawns a giant Tree with given [height]\n and [width]."
-    plugin: Giant Trees
+    plugin: GiantTrees
     main: false
     permissions: gianttrees.build

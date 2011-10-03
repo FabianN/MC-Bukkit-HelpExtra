@@ -1,0 +1,18 @@
+mvnplink:
+    command: mvnp link [FROM-WORLD) (TO-WORLD)
+    description: Sets the destination world of nether portals in another
+    permissions: multiverse.netherportals.link
+    main: false
+    Plugin: Multiverse-NetherPortals
+mvnpunlink:
+    command: mvnp unlink [FROM-WORLD)
+    description: Removes a nether portal world link
+    permissions: multiverse.netherportals.unlink
+    main: false
+    Plugin: Multiverse-NetherPortals
+mvpshowlink:
+    command: mvnp show [page #]
+    description: Displays your portal links
+    permissions: multiverse.netherportals.show
+    main: false
+    plugin: Multiverse-NetherPortals

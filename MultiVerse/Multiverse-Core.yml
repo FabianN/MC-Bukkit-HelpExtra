@@ -1,0 +1,142 @@
+MultiVerse:
+    command: help MultiVerseCore
+    description: Display MultiVerse-Core Help.
+    main: true
+    plugin: Multiverse-Core
+MultiVersePortals:
+    command: help MultiVersePortals
+    description: Display MultiVerse-Portals Help.
+    main: false
+    plugin: Multiverse-Portals
+MultiVerseNPortals:
+    command: help MultiVerseNetherPortals
+    description: Display MultiVerse-NetherPortals Help.
+    main: false
+    plugin: Multiverse-NetherPortals
+mvcreate:
+    command: mv create <WORLDNAME> <ENVIRONMENT> -s <SEED> -g <GENERATOR>
+    description: Create a new world.
+    permissions: multiverse.core.create
+    main: false
+    plugin: Multiverse-Core
+mvimport:
+    command: mv import <WORLDNAME> <ENVIRONMENT> <GENERATOR>
+    description: Import existing worlds.
+    permissions: multiverse.core.import
+    main: false
+    plugin: Multiverse-Core
+mvremove:
+    command: mv remove <WORLDNAME>
+    description: Remove a World from config files, preventing it from loading on next server start.
+    permissions: multiverse.core.remove
+    main: false
+    plugin: Multiverse-Core
+mvreload:
+    command: mv reload
+    description: Reloads world.yml and config.yml
+    permissions: multiverse.core.reload
+    main: false
+    plugin: Multiverse-Core
+mvunload:
+    command: mv unload <WORLDNAME>
+    description: Unloads a world from the Bukkit server.
+    permissions: multiverse.core.unload
+    main: false
+    plugin: Multiverse-Core
+mvdelete:
+    command: mv delete <WORLDNAME>
+    description: Removes the world config files, and DELETES THE FILES.
+    permissions: multiverse.core.delete
+    main: false
+    plugin: Multiverse-Core
+mvconfirm:
+    command: mv confirm
+    description: Confirms a requested action. Only use when asked to.
+    permissions: multiverse.core.confirm
+    main: false
+    plugin: Multivserse
+mvpurge:
+    command: mv purge [world/all] [all/animals/monsters/MOBNAME]
+    description: Removes requested entities from selected worlds.
+    permissions: multivsere.core.purge
+    main: false
+    plugin: Multiverse-Core
+mvmodifyset:
+    command: mv modify set [property] [world]
+    description: Modifies a world's variables.
+    permissions: multiverse.core.modify
+    main: false
+    plugin: Multiverse-Core
+mvmodifyaddrem:
+    command: mv modify (add/remove) [property] [world]
+    description: Adds or removes variables to a world's property.
+    permissions: multiverse.core.modify
+    main: false
+    plugin: Multiverse-Core
+mvmodifyclear:
+    command: mv modify clear [property] [world]
+    description: Clears all value from a list property
+    permissions: multiverse.core.modify
+    main: false
+    plugin: Multiverse-Core
+mvenviroment:
+    command: mv env
+    description: Displays the valid enviroments
+    permissions: multiverse.core.list.enviroments
+    main: false
+    plugin: Multiverse-Core
+    
+mvtp:
+    command: mvtp <WORLDNAME>
+    description: Teleports Player to the <WORLDNAME>.
+    permissions: multiverse.teleport.self
+    main: true
+    plugin: Multiverse-Core
+mvtpother:
+    command: mvtp <PLAYER> <WORLDNAME>
+    description: Teleports <PLAYER> to the <WORLDNAME>.
+    permissions: multiverse.teleport.other
+    main: true
+    plugin: Multiverse-Core
+mvsetspawn:
+    command: mv setspawn
+    description: Set the MultiVerse spawn of the world the player is in.
+    permissions: multiverse.core.spawn.set
+    main: false
+    plugin: Multiverse-Core
+mvspawn:
+    command: mv spawn
+    description: Teleport the user to the spawn of the world they are in.
+    permissions: multiverse.core.spawn.self
+    main: false
+    plugin: Multiverse-Core
+mvspawnother:
+    command: mv spawn <PLAYER>
+    description: Teleport the <PLAYER>  to the spawn of the world they are in.
+    permissions: multiverse.core.spawn.other
+    main: false
+    plugin: Multiverse-Core
+mvwho:
+    command: mv who <WORLD/a>
+    description: Displays who is in which worlds.
+    permissions: multiverse.core.list.who
+    main: false
+    plugin: Multiverse-Core
+mvlist:
+    command: mv list
+    description: Display loaded worlds to the player.
+    permissions: multiverse.core.list.worlds
+    main: true
+    plugin: Multiverse-Core
+mvinfo:
+    command: mv info [world] [page #]
+    description: Displays information about the world you are in or pass in.
+    permissions: multiverse.core.info
+    main: false
+    plugin: Multiverse-Core
+mvcoord:
+    command: mv coord
+    description: Displays your current coordinates
+    permissions: multiverse.core.coord
+    main: false
+    plugin: Multiverse-Core

@@ -1,0 +1,210 @@
+Help:
+    command: help PermissionsEx
+    description: Display PermissionsEx commands.
+    plugin: PermissionsEx
+    main: true
+    permissions: permissions.help
+
+Reload:
+    command: pex reload
+    description: Reload permissions.
+    plugin: PermissionsEx
+    permissions: permissions.manage.reload
+
+Permconfig:
+    command: pex config <node> [value]
+    description: Print node value from plugin config, specify value to change.
+    plugin: PermissionsEx
+    permissions: permissions.manage.config
+ 
+Permhiearch:
+    command: pex hierarchy
+    description: Prints complete user/group hierarchy
+    plugin: PermissionsEx
+    permissions: permissions.manage.users
+    
+Permdump:
+    command: pex dump <backend> <filename>
+    description: Dumps users/groups to selected format
+    plugin: PermissionsEx
+    permissions: permissions.manage.dump
+  
+Permdebug:
+    command: pex toggle debug
+    description: Prints to server log
+    plugin: PermissionsEx
+    permissions: permissions.manage
+
+Permwoldlist:
+    command: pex worlds
+    description: List all worlds loaded in server.
+    plugin: PermissionsEx
+    permissions: permissions.manage.worlds
+
+Permworldinheritance:
+    command: pex world <world>
+    description: Print <world> inheritance info
+    plugin: PermissionsEx
+    permissions: permissions.manage.worlds
+
+Permworldinheritanceset:
+    command: pex world <world> inherit <parentWorlds>
+    description: Set parent world(s) for <world> space multiple entries with a comma.
+    plugin: PermissionsEx
+    permissions: permissions.manage
+
+Permdefaultgrouplist:
+    command: pex default group [world]
+    description: List default group for the specified [world]
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.inheritance
+
+Permdefaultgroupset:
+    command: pex set default group <group> [world]
+    description: Set the default group for the specified [world]
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.inheritance
+
+UserList:
+    command: pex users list
+    description: List all users.
+    plugin: PermissionsEx
+    permissions: permissions.manage.users
+
+Permlistperms:
+    command: pex user <user> list [world]
+    description: List the <user>'s permissions in (optional) world
+    plugin: PermissionsEx
+    permissions: permissions.manage.users.permissions
+    
+Permpresufix:
+    command: pex user <user> [prefix/suffix] [new pre/suff]
+    description: Changes the [prefix/suffix] for <user> if a new is specified or just lists the existing one.
+    plugin: PermissionsEx
+    permissions: permissions.manage.users
+    
+PermUserdel:
+    command: pex user <user> delete
+    description: Remove the user from permissions.
+    plugin: PermissionsEx
+    permissions: permissions.manage.users.permissions
+    
+PermUseraddremperm:
+    command: pex user <user> [add/remove] <permission> [world]
+    description: Add or remove permission to <user> in optional [world]
+    plugin: PermissionsEx
+    permissions: permissions.manageusers.permissions
+
+UserGroupList:
+    command: pex user [user] group list
+    description: List user's groups.
+    plugin: PermissionsEx
+    permissions: permissions.manage.membership
+
+Permusergroupadd:
+    command: pex user <user> group add <group>
+    description: adds <user> to <group>
+    plugin: PermissionsEx
+    permissions: permissions.manage.membership
+
+UserGroupSet:
+    command: pex user [user] group set [group]
+    description: Set user's group.
+    plugin: PermissionsEx
+    permissions: permissions.manage.membership
+
+Permusergrouprem:
+    command: pex user <user> group remove <group>
+    description: Removes <user> from <group>
+    plugin: PermissionsEx
+    permissions: permissions.manage.membership
+    
+Permtimeduseraddremperm:
+    command: pex user <user> timed [add/remove] <permission> [lifetime] [world]
+    description: Add or remove a timed permission to <user> in optional [world] with [lifetime]
+    plugin: PermissionsEx
+    permissions: permissions.manageusers.permissions.timed
+
+GroupList:
+    command: pex groups list
+    description: List all groups.
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups
+
+GroupPermissions:
+    command: pex group [group] list [world]
+    description: List group's permissions in optional [world].
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.permissions
+
+GroupAddRemovePermission:
+    command: pex group [group] [add/remove] <permission>
+    description: Add/Remove permission to group in optional [world].
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.permissions
+
+GroupTimedAddRemovePermission:
+    command: pex group [group] timed [add/remove] <permission> [lifetime] [world]
+    description: Add/Remove timed permission from group in optional [world] with [lifetime].
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.permissions.timed
+
+GroupListUsers:
+    command: pex group [group] users
+    description: List all users in a group.
+    plugin: PermissionsEx
+    permissions: permissions.manage.membership
+ 
+Permgroupsuffpreadd:
+    command: pex group <group> [prefix/suffix] [newpresuff]
+    description: Displays existing prefix or suffix, if a new is specified will overwrite old one.
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups
+
+Permgroupcreate:
+    command: pex group <group> create [parents]
+    description: Creates a new <group> with optional [parents] if multiple entries seperate with comma.
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.create
+
+Permgroupdelete:
+    command: pex group <group> delete
+    description: Remove <group> from permissions
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.remove
+
+Permgroupparentslist:
+    command: pex group <group> parents list
+    description: Lists parents for <group>
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.inheritance
+
+Permgroupparentsset:
+    command: pex group <group> parents set <parents>
+    description: Set parents for <group> if multiple space with comma.
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.inheritance
+    
+Permgroupoptionvalue:
+    command: pex group <group> set <option> <value> [world]
+    description: Set <option> to <value> for <group> in optional [world].
+    plugin: PermissionsEx
+    permissions: permissions.manage.groups.permissions
+
+Permusersgroupsaddremove:
+    command: pex group <group> user [add/remove] <user>
+    description: adds/removes <user(s)> to <group(s)> single or comma seperated list
+    plugin: PermissionsEx
+    permissions: permissions.manage.membership
+    
+Promote:
+    command: pex promote [user] [ladder]
+    description: Promote a user up a specified ladder.
+    plugin: PermissionsEx
+    permissions: permissions.user.promote.*
+
+Demote:
+    command: pex demote [user] [ladder]
+    description: Demote a user along a specified ladder.
+    plugin: PermissionsEx
+    permissions: permissions.user.demote.*

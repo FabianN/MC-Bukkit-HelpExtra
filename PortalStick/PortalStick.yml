@@ -1,0 +1,59 @@
+PortalStick:
+    command: help PortalStick
+    description: Display PortalStick Help.
+    main: true
+    plugin: PortalStick
+psdelall:
+    command: portal deleteall
+    description: Deletes all portals on the server
+    plugin: PortalStick
+    main: false
+    permissions: portalstick.admin.deleteall
+psdel:
+    command: portal delete
+    description: Deletes all of your portals on the server
+    plugin: PortalStick
+    main: true
+    permissions: portalstick.placeportal
+psdelreg:
+    command: portal deleteregion <name>
+    description: Deletes the specified region
+    plugin: PortalStick
+    main: false
+    permissions: portalstick.admin.regions
+psreglist:
+    command: portal regionlist
+    description: Lists all regions on server
+    plugin: PortalStick
+    main: false
+    permissions: portalstick.admin.regions
+psregtool:
+    command: portal regiontool
+    description: Allows you to use the region tool
+    plugin: PortalStick
+    main: false
+    permissions: portalstick.admin.regions
+psreginfo:
+    command: portal regioninfo
+    description: Tells you the region you are in
+    plugin: PortalStick
+    main: false
+    permissions: portalstick.admin.regions
+psregchg:
+    command: portal flag <region name> <setting> <value>
+    description: Change region settings
+    plugin: PortalStick
+    main: false
+    permissions: portalstick.admin.regions
+psregsave:
+    command: portal setregion
+    description: Saves region that you selected with region tool
+    plugin: PortalStick
+    main: false
+    permissions: portalstick.admin.regions
+psreload:
+    command: portal reload
+    description: Reloads the PS config file
+    plugin: PortalStick
+    main: false
+    permissions: portalstick.admin.deleteall

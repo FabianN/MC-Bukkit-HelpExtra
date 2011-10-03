@@ -1,0 +1,36 @@
+helpHelp:
+    visible: true
+    description: Displays more /help options
+    command: help Help
+    plugin: Help
+    main: true
+help:
+    visible: true
+    description: Displays the basic Help menu
+    command: help
+    plugin: Help
+    main: false
+help[plugin]:
+    visible: true
+    description: Displays the full help for [plugin]
+    command: help [plugin]
+    plugin: Help
+    main: true
+helpplugins:
+    visible: true
+    description: Show all the plugins with Help entries
+    command: help plugins
+    plugin: Help
+    main: false
+helpsearch[query]:
+    visible: true
+    description: Search the help entries for [query]
+    command: help search [query]
+    plugin: Help
+    main: false
+helpreload:
+    visible: true
+    description: Reload the ExtraHelp.yml entries
+    command: help reload
+    plugin: Help
+    main: false
