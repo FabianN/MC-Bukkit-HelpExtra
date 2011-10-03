@@ -1,0 +1,76 @@
+WERegion:
+    description: Show the WERegion help.
+    main: true
+    command: help WERegion
+    plugin: WERegion
+    permissions: worldedit.region    
+
+WERegionset:
+    description: Sets all blocks inside the region to the specified block.
+    command: /set <block>
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.set
+
+WERegionreplace:
+    description: Replaces all non air blocks inside the region to the chosen block.
+    command: /replace <block>
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.replace
+
+WERegionreplacefrto:
+    description: Replaces all specified blocks to another block type.
+    command: /replace <from-block> <to-block>
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.replace
+
+WERegionoverlay:
+    description: Place a block on top of blocks inside the region.
+    command: /overlay <block>
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.overlay
+
+WERegionwalls:
+    description: Build the wall of the region with the specified block
+    command: /walls <block>
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.walls
+
+WERegionoutline:
+    description: Outline the selection area with the selected block
+    command: /outline <block>
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.faces
+
+WERegionsmooth:
+    description: Smooth the selection's heightmap
+    command: /smooth [time to run]
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.smooth
+
+WERegionmove:
+    description: Moves the selections contents. A block can be left behind.
+    command: /move [count] [direction] [leavebehind-block]
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.smooth
+
+WERegionregen:
+    description: Regenerates the selected region
+    command: /regen
+    plugin: WERegion
+    main: false
+    permissions: worldedit.regen
+
+WERegionstack:
+    description: Stacks the selection
+    command: /stack [count] [direction]
+    plugin: WERegion
+    main: false
+    permissions: worldedit.region.stack

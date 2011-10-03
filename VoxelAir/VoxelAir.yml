@@ -1,0 +1,53 @@
+VoxelAir:
+    command: help VoxelAir
+    description: Display VoxelAir Help.
+    main: true
+    plugin: VoxelAir
+
+VAfly:
+    command: "letmefly"
+    description: "Allows an admin to toggle flight ability for all players."
+    plugin: VoxelAir
+    main: false
+
+VAthrust:
+    command: "thrust (#)"
+    description: "Sets the number of blocks each flap moves you."
+    plugin: VoxelAir
+    main: false
+
+VAconsume:
+    command: "toggleconsume"
+    description: "Turns feather consumption on or off."
+    plugin: VoxelAir
+    main: false
+    
+VAclassic:
+    command: "toggleclassic"
+    description: "Toggles the Classic / FlyRidgeFly mode."
+    plugin: VoxelAir
+    main: false
+VAhover:
+    command: "togglehover"
+    description: "Toggles ability to use Extended Flight mode."
+    plugin: VoxelAir
+    main: false
+
+VAderp:
+    command: "derp"
+    description: "Toggle Derp Mode."
+    plugin: VoxelAir
+    main: false
+
+VAgod:
+    command: "godsays (message)"
+    description: "Speak with the voice of God!"
+    plugin: VoxelAir
+    main: false
+
+VAconfig:
+    command: "voxelair"
+    description: "Displays the current configuration."
+    plugin: VoxelAir
+    main: false
+

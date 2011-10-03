@@ -1,0 +1,188 @@
+Citizens:
+    command: Help Citizens
+    description: Displays the Citizens Help
+    main: true
+    plugin: Citizens
+
+Citizensdbg:
+    command: citizens debug
+    description: Toggle debug mode, will print to console.
+    permissions: citizens.admin.debug
+    main: false
+    plugin: Citizens
+
+Citizensrld:
+    command: citizens reload
+    description: Reloads citizens configuration files
+    permissions: citizens.admin.reload
+    main: false
+    plugin: Citizens
+
+Citizenssave:
+    command: citizens save
+    description: Saves Citizens files
+    permissions: citizens.admin.save
+    main: false
+    plugin: Citizens
+
+Citizenscln:
+    command: citizens clean
+    description: Removes all ghost entities in your world
+    permissions: citizens.admin.clean
+    main: false
+    plugin: Citizens
+
+
+Citizensnpc:
+    command: npc
+    description: Information on the selected npc
+    permissions: citizens.basic.use.info
+    main: false
+    plugin: Citizens
+
+Citizensnpccreate:
+    command: npc create [name] (text)
+    description: Creates a NPC with [name] and saying (text)
+    permissions: citizens.basic.create
+    main: false
+    plugin: Citizens
+
+Citizensnpcmove:
+    command: npc move
+    description: Moves an NPC to your location
+    permissions: citizens.basic.modify.move
+    main: false
+    plugin: Citizens
+
+Citizensnpcmoveto:
+    command: npc moveto [x y z] (world pitch yaw)
+    description: Coordinates to teleport NPC to in the chosen world with pitch and yaw
+    permissions: citizens.basic.modify.moveto
+    main: false
+    plugin: Citizens
+
+Citizensnpcopy:
+    command: npc copy
+    description: Copy an NPC to your location
+    permissions: citizens.basic.modify.copy
+    main: false
+    plugin: Citizens
+
+Citizensnpcremove:
+    command: npc remove (all)
+    description: Remove a NPC or all NPCs
+    permissions: citizens.basic.modify.remove
+    main: false
+    plugin: Citizens
+
+Citizensnpcrename:
+    command: npc rename (name)
+    description: Renames a NPC with (name)
+    permissions: citizens.basic.modify.rename
+    main: false
+    plugin: Citizens
+
+Citizensnpccolor:
+    command: npc color &[code]
+    description: Color a NPC's nameplate
+    permissions: citizens.basic.modify.color
+    main: false
+    plugin: Citizens
+
+Citizensnpctextset:
+    command: npc set [text]
+    description: Set a NPC's text to [text]
+    permissions: citizens.basic.modify.settext
+    main: false
+    plugin: Citizens
+
+Citizensnpctextadd:
+    command: npc add [text]
+    description: Adds to a NPC's text
+    permissions: citizens.basic.modify.addtext
+    main: false
+    plugin: Citizens
+
+Citizensnpcreset:
+    command: npc reset
+    description: Remove a NPC's text
+    permissions: citizens.basic.modify.resettext
+    main: false
+    plugin: Citizens
+
+Citizensnpcequip:
+    command: npc equip
+    description: Enter equipment editing mode
+    permissions: citizens.basic.modify.equip
+    main: false
+    plugin: Citizens
+
+Citizensnpctp:
+    command: npc tp
+    description: Teleport to an NPC
+    permissions: citizens.basic.use.teleport
+    main: false
+    plugin: Citizens
+
+Citizensnpctalkclose:
+    command: npc talkclose
+    description: Toggle whether a NPC will talk when a player is near
+    permissions: citizens.basic.modify.talkclose
+    main: false
+    plugin: Citizens
+
+Citizensnpclookat:
+    command: npc lookat
+    description: Toggle whether a NPC will look at a near player
+    permissions: citizens.basic.modify.lookat
+    main: false
+    plugin: Citizens
+
+Citizensnpcselect:
+    command: npc select [id]
+    description: Select the NPC with [id]
+    permissions: citizens.basic.use.select
+    main: false
+    plugin: Citizens
+
+Citizensnpcsetowner:
+    command: npc setowner [player-name]
+    description: Set the owner of selected NPC to [player-name]
+    permissions: citizens.basic.modify.setowner
+    main: false
+    plugin: Citizens
+
+Citizensnpclist:
+    command: npc list (name) (page)
+    description: List all of (name) NPC and the chosen page
+    permissions: citizens.basic.use.list
+    main: false
+    plugin: Citizens
+
+Citizensnpcpath:
+    command: npc path
+    description: Start editing a NPC's waypoints
+    permissions: citizens.waypoints.edit
+    main: false
+    plugin: Citizens
+
+Citizensnpcwaypointsmod:
+    command: waypoints modifier [type]
+    description: Add a modifier to an NPC's waypoints
+    permissions: citizens.waypoints.modifier.*
+    main: false
+    plugin: Citizens
+
+Citizensnpctype:
+    command: toggle [type]
+    description: Toggle an NPC to become a type
+    permissions: citizens.toggle.*
+    main: false
+    plugin: Citizens
+
+Citizensnpctypeall:
+    command: toggle all [on/off]
+    description: Toggle all NPC types for a NPC
+    permissions: citizens.toggle.all
+    main: false
+    plugin: Citizens

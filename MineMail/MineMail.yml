@@ -1,0 +1,33 @@
+MineMail:
+    command: help MineMail
+    description: Display MineMail Help.
+    main: true
+    plugin: MineMail
+mmread:
+    command: mail read
+    description: shows the user his unread messages
+    plugin: MineMail
+    main: true
+mmwrite:
+    command: mail write [recipient] [message]
+    description: sends a message.
+    plugin: MineMail
+    main: true
+mmreload:
+    command: mail reload
+    description: reloads the database and settings
+    plugin: MineMail
+    main: false
+    permissions: minemail.reload
+mmwipe:
+    command: mail wipe
+    description: wipes the database after 1 minute
+    plugin: MineMail
+    main: false
+    permissions: minemail.wipe
+mmpaper:
+    command: mail paper
+    description: toggles reading with paper
+    plugin: MineMail
+    main: false
+    permissions: minemail.paper

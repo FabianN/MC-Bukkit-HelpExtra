@@ -1,36 +1,59 @@
+nSpleef:
+    command: help nSpleef
+    description: Display nSpleef Help.
+    main: true
+    plugin: nSpleef
 spleef define:
     command: spleef define [arena]
     description: Defines the selected arena
     plugin: nSpleef
     main: false
-    permissions: nSpleef.admin
+    permissions: nSpleef.admin.define
 spleef game:
     command: spleef creategame [game][arena]
     description: Creates a game
     plugin: nSpleef
     main: false
-    permissions: nSpleef.member
+    permissions: nSpleef.member.creategame
 spleef delgame:
     command: spleef deletegame [game]
     description: Deletes [game]
     plugin: nSpleef
     main: false
-    permissions: nSpleef.member
+    permissions: nSpleef.member.deletegame
 spleef join:
     command: spleef join [game]
     description: Joins [game]
     plugin: nSpleef
     main: false
-    permissions: nSpleef.member
+    permissions: nSpleef.member.join
+spleef frcjoin:
+    command: spleef forcejoin [player]
+    description: Forces the [player to join game]
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.admin.forcejoin
 spleef leave:
     command: spleef leave
     description: Leaves the spleef game
     plugin: nSpleef
     main: false
-    permissions: nSpleef.member
+    permissions: nSpleef.member.leave
+spleef frcleave:
+    command: spleef forceleave [player]
+    description: Forces [player] to leave the game
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.admin.forceleave
 spleef list:
     command: spleef list
     description: Lists all arenas and games
     plugin: nSpleef
     main: false
-    permissions: nSpleef.member
+    permissions: nSpleef.member.list
+spleef frcready:
+    command: spleef forceready
+    description: Forces the game to start
+    plugin: nSpleef
+    main: false
+    permissions: nSpleef.admin.forceready

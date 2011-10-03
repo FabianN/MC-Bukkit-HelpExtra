@@ -1,0 +1,25 @@
+MidiBanks:
+    command: help MidiBanks
+    description: Display MidiBanks Help.
+    main: true
+    plugin: MidiBanks
+midilst:
+    command: midi list [PAGE]
+    description: Lists all midi files
+    plugin: MidiBanks
+    main: false
+midichk:
+    command: midi check [FILENAME]
+    description: Shows information about the [FILENAME] midi
+    plugin: MidiBanks
+    main: false
+midichktrk:
+    command: midi check [FILENAME] [TRACKNUMBER]
+    description: Lists all midi files
+    plugin: MidiBanks
+    main: false
+midichnl:
+    command: midi channels [FILENAME]
+    description: Lists which channels are used by [FILENAME]
+    plugin: MidiBanks
+    main: false

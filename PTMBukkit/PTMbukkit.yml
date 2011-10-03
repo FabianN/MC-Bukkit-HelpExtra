@@ -1,0 +1,29 @@
+PTMbukkit:
+    command: help PTMbukkit
+    description: Displays PTM help
+    main: true
+    plugin: PTMbukkit
+
+PTMbukkitrld:
+    command: ptm reload
+    description: reloads configuration for your world
+    main: false
+    plugin: PTMbukkit
+    
+PTMbukkitbiome:
+    command: ptm biome
+    description: shows which biome in your location
+    main: false
+    plugin: PTMbukkit
+    
+PTMbukkitlistbob:
+    command: ptm list [page]
+    description: lists BOB plugins for this world
+    main: false
+    plugin: PTMbukkit
+    
+PTMbukkitspawnbob:
+    command: ptm spawn [BOBName]
+    description: Spawn BOB to the specified place
+    main: false
+    plugin: PTMbukkit

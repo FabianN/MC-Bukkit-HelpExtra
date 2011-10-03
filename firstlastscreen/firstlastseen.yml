@@ -1,0 +1,22 @@
+firstlastseenhelp:
+    command: help firstlastseen
+    description: Displays the firstlastseen Help
+    plugin: firstlastseen
+    main: true
+firstseen:
+    command: firstseen [player]
+    description: Tell the first time [player] was online
+    plugin: firstlastseen
+    main: false
+lastseen:
+    command: lastseen [player]
+    description: Shows the last time [player] was online
+    plugin: firstlastseen
+    main: true
+lstseenadv:
+    command: seen[player]
+    description: Shows both the first join and last seen times.
+    plugin: firstlastseen
+    main: false
+
+    
