@@ -4,7 +4,6 @@ WEClip:
     plugin: WorldEdit
     main: false
     permissions: worldedit.clipboard
-	
 clearclipboard:
     description: Clear your clipboard
     command: clearclipboard
